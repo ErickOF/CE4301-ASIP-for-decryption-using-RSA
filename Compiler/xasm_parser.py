@@ -1,4 +1,5 @@
 import re
+from tkinter import filedialog
 
 
 instructions = {
@@ -19,8 +20,8 @@ instFmt = {'add': 'add Rd, Rf1, K',
            'add': 'add Rd, Rf1, Rf2',
            'and': 'add Rd, Rf1, Rf2',
            'jmp': 'jmp label',
-           'ldr': 'ld Rd, Dd (Rb)',
-           'str': 'st Rd, Dd (Rb)'}
+           'ldr': 'ldr Rd, Dd (Rb)',
+           'str': 'str Rd, Dd (Rb)'}
 
 constants = {}
 
@@ -28,61 +29,42 @@ memory = []
 
 # Comments
 pattern = ';(.*)'
-# Program Name
-pattern = pattern + '|.program(\s)+(.)+'
 # Constants section
 pattern = pattern + '|.const'
 # Constants definition
-pattern = pattern + '|([a-z]|[A-Z])*\s*=\s*(([0-9]+)|(0x(([0-9]*|[a-f]*|[A-F]*)+)))'
+pattern = pattern + '|([a-z]|[A-Z])+([0-9]*)\s*=\s*((0x(([0-9]|[a-f]|[A-F])+)|([0-9]+)))'
 # Text definition
 pattern = pattern + '|.text'
 # Flags
-pattern = pattern + '|([a-z]*|[A-Z]*|\_*)+:*'
+pattern = pattern + '|([a-z]|[A-Z]|\_)+:'
 # Instruction A
-pattern = pattern + '|([a-z]{2,3}\s+(R([0-9]|1[0-5]))),\s*(R([0-9]|1[0-5]),\s*(R([0-9]|1[0-5])))'
+pattern = pattern + '|([a-z]{2,3}\s*(R([0-9]|1[0-5]))),\s*(R([0-9]|1[0-5]),\s*(R([0-9]|1[0-5])))'
 # Instruction I
-pattern = pattern + '|([a-z]{2,3}\s+(R([0-9]|1[0-5]))),\s*(([a-z]|[A-Z])+|[0-9]+|0x([0-9]*|[a-f]*|[A-F]*)+)\s*\(R([0-9]|1[0-5])\)'
+pattern = pattern + '|([a-z]{2,3}\s*(R([0-9]|1[0-5]))),\s*(([a-z]|[A-Z])+|[0-9]+|0x([0-9]*|[a-f]*|[A-F]*)+)\s*\(R([0-9]|1[0-5])\)'
 # Instruction J
-pattern = pattern + '|jmp\s*([a-z]*|[A-Z]*|\_*)+'
+pattern = pattern + '|jmp\s*([a-z]|[A-Z]|\_)+'
 
-code = '''.program Primerejemplo
-;-------------------------------------------
-; Programa para ilustrar una entrada posible
-; ------------------------------------------
-.const
-num    =    29
-num2   =   400
-cadena = 0x230
-a      = 28
-b      = 0x2C3
 
-.text
-ciclo_infinito
-ld
-ld      R1, a (R0); Carga el puntero inicial
-ld      R2, b (R1)
-ld      R3, 32 (R2); Carga el valor verdadero
-add     R4, 2, R2
-and     R4, R4, R2
-andi    R4, R4, 29
-jmp ciclo_infinito
-st      R4, a (R0)'''
+filename = 'code.asm'
+code = ''
 
-code = code.split('\n')
+with open(filename, 'r') as file:
+    code = file.read()
+    code = code.split('\n')
 
+
+def checkInstruction(instruction):
+    for instType, inst in instructions.items():
+        if instruction in inst:
+            return True, instType
+    
+    return False, ''
 
 def findError(line):
     line = re.split('\s+|,\s*', line)
     
-    found = False
-    instructionType = ''
     instruction = line[0]
-
-    for instType, inst in instructions.items():
-        if instruction in inst:
-            found = True
-            instructionType = instType
-            break
+    found, instructionType = checkInstruction(instruction)
         
     if not found:
         if len(line) == 1 and instruction[-1] != ':':
