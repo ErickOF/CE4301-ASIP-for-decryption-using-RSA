@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1080</width>
-    <height>720</height>
+    <height>820</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -32,7 +32,7 @@
       <x>20</x>
       <y>0</y>
       <width>581</width>
-      <height>661</height>
+      <height>561</height>
      </rect>
     </property>
     <property name="font">
@@ -51,7 +51,7 @@
       <x>620</x>
       <y>50</y>
       <width>441</width>
-      <height>381</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="font">
@@ -59,6 +59,9 @@
       <family>Ubuntu Mono</family>
       <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
     </property>
     <property name="rowCount">
      <number>32</number>
@@ -162,21 +165,21 @@
      <string>Next step</string>
     </property>
    </widget>
-   <widget class="QListView" name="listViewErrors">
+   <widget class="QListWidget" name="listWidgetOutputs">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>471</y>
-      <width>441</width>
+      <x>20</x>
+      <y>600</y>
+      <width>1041</width>
       <height>191</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="lblError">
+   <widget class="QLabel" name="lblOutput">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>440</y>
+      <x>20</x>
+      <y>570</y>
       <width>451</width>
       <height>31</height>
      </rect>
@@ -188,7 +191,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Errors</string>
+     <string>Outputs</string>
     </property>
    </widget>
   </widget>
@@ -293,15 +296,39 @@
    <property name="text">
     <string>&amp;Check sintax</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu Mono</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
   </action>
   <action name="actionBuild">
    <property name="text">
     <string>&amp;Build</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu Mono</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
   </action>
   <action name="actionRun">
    <property name="text">
     <string>&amp;Run</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu Mono</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </action>
  </widget>

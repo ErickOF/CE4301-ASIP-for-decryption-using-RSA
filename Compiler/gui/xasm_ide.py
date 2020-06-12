@@ -1,9 +1,10 @@
 from PyQt5 import QtWidgets, uic
-from PyQt5.QtWidgets import QAction, QFileDialog, QMainWindow, QMessageBox
-from PyQt5.QtWidgets import QPlainTextEdit, QPushButton, QTableWidget
-from PyQt5.QtWidgets import QTableWidgetItem
+from PyQt5.QtWidgets import QAction, QFileDialog, QListWidget
+from PyQt5.QtWidgets import QMainWindow, QMessageBox, QPlainTextEdit
+from PyQt5.QtWidgets import QPushButton, QTableWidget, QTableWidgetItem
 from threading import Thread
 
+from tools.parser import Parser
 from tools.registers import RegisterSet
 from tools.xasm_file import XAsmFile
 
@@ -33,6 +34,10 @@ class XAsmIde(QMainWindow):
         self.__codeEditor = self.findChild(QPlainTextEdit, 'codeEditor')
         self.__codeEditorThread = Thread(target=self.__setUnsavedFile)
         self.__codeEditorThread.start()
+
+        # Output list
+        self.__listWidgetOutputs = self.findChild(QListWidget,
+                                                  'listWidgetOutputs')
 
         # Actions
         self.__initActions()
@@ -66,25 +71,35 @@ class XAsmIde(QMainWindow):
                 QTableWidgetItem(bin(registerValue)))
 
     def __initActions(self) -> None:
+        # Menu File actions
         # New File
         actionNewFile = self.findChild(QAction, 'actionNew_File')
         actionNewFile.setStatusTip('New XASM file')
         actionNewFile.triggered.connect(self.__onNewFileClick)
 
         # Open File
-        actionNewFile = self.findChild(QAction,'actionOpen')
-        actionNewFile.setStatusTip('Open a XASM file')
-        actionNewFile.triggered.connect(self.__onOpenFileClick)
+        actionOpenFile = self.findChild(QAction,'actionOpen')
+        actionOpenFile.setStatusTip('Open a XASM file')
+        actionOpenFile.triggered.connect(self.__onOpenFileClick)
 
         # Save File
-        actionNewFile = self.findChild(QAction,'actionSave')
-        actionNewFile.setStatusTip('Save file')
-        actionNewFile.triggered.connect(self.__onSaveClick)
+        actionSaveFile = self.findChild(QAction,'actionSave')
+        actionSaveFile.setStatusTip('Save file')
+        actionSaveFile.triggered.connect(self.__onSaveClick)
 
         # Save File As
-        actionNewFile = self.findChild(QAction, 'actionSave_As')
-        actionNewFile.setStatusTip('Save file as')
-        actionNewFile.triggered.connect(self.__onSaveAsClick)
+        actionSaveFileAs = self.findChild(QAction, 'actionSave_As')
+        actionSaveFileAs.setStatusTip('Save file as')
+        actionSaveFileAs.triggered.connect(self.__onSaveAsClick)
+
+        # Menu Compiler Actions
+        # Check sintax
+        actionCheckSintax = self.findChild(QAction, 'actionCheck_sintax')
+        actionCheckSintax.setStatusTip('Check code sintax')
+        actionCheckSintax.triggered.connect(self.__onCheckSintax)
+
+        #<addaction name="actionBuild"/>
+        #<addaction name="actionRun"/>
     
     def __onNewFileClick(self) -> None:
         # Check if file exists o was saved
@@ -108,6 +123,8 @@ class XAsmIde(QMainWindow):
         self.__codeEditor.setPlainText('')
         # Set window title
         self.setWindowTitle(self.__title)
+        # Clear outputs
+        self.__listWidgetOutputs.clear()
 
     def __openFile(self) -> None:
         # Get file path
@@ -130,6 +147,8 @@ class XAsmIde(QMainWindow):
                 self.__file.save()
                 # Set new window title
                 self.setWindowTitle(self.__title)
+                # Clear outputs
+                self.__listWidgetOutputs.clear()
 
     def __onOpenFileClick(self) -> None:
         # Check if file exists o was saved
@@ -186,7 +205,26 @@ class XAsmIde(QMainWindow):
 
         # Waits by user answer and returns it
         return msgBox.exec_()
+    
+    def __onCheckSintax(self):
+        filename = self.__file.getPath().split('/')[-1]
+        parser = Parser()
 
+        # Check code
+        code = self.__file.getContent().split('\n')
+        valid, errors = parser.parseCode(code)
+
+        # Clear outputs
+        self.__listWidgetOutputs.clear()
+        # Add parsing message
+        self.__listWidgetOutputs.addItem('Parsing ' + filename + '...')
+
+        if not valid:
+            self.__listWidgetOutputs.addItems(errors)
+
+        # Finish message
+        self.__listWidgetOutputs.addItem('Parser has finished with ' +\
+                                         str(len(errors)) + ' errors.')
 
     def closeEvent(self, event):
         self.__running = False
