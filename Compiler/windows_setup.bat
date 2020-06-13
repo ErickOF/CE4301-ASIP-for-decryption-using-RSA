@@ -1,3 +1,3 @@
-#-----------------------------INSTALLATION-----------------------------
-# Installing PyQt5
+::-----------------------------INSTALLATION-----------------------------
+:: Installing PyQt5
 pip install PyQt5
