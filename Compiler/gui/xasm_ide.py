@@ -4,10 +4,14 @@ from PyQt5.QtWidgets import QMainWindow, QMessageBox, QPlainTextEdit
 from PyQt5.QtWidgets import QPushButton, QTableWidget, QTableWidgetItem
 from threading import Thread
 
+from tools.compiler import Compiler
+from tools.memory import DataMemory
 from tools.parser import Parser
 from tools.registers import RegisterSet
 from tools.xasm_file import XAsmFile
 
+
+MEMSIZE = 10000
 
 class XAsmIde(QMainWindow):
     """X-Assambler Ide class
@@ -15,8 +19,15 @@ class XAsmIde(QMainWindow):
     def __init__(self):
         super(XAsmIde, self).__init__()
         self.__running = True
-        self.__title = 'XAsm Editor v0.0.1'
+        self.__title = 'XAsm Editor v0.1.1'
         self.__file = XAsmFile()
+        # If code was checked
+        self.__checked = False
+        # If code was built
+        self.__built = False
+        # Data after each compilation stage
+        self.__data = {}
+        self.__dataMem: DataMemory = DataMemory.getInstance(MEMSIZE)
 
         # Call the inherited classes __init__ method
         super(XAsmIde, self).__init__()
@@ -29,6 +40,10 @@ class XAsmIde(QMainWindow):
         # 32 registers
         registers = RegisterSet(32)
         self.__setRegistersValue(registers.getRegisters())
+
+        # Memory table
+        self.__tableMemory = self.findChild(QTableWidget, 'tableMemory')
+        self.__setMemoryValues()
 
         # Code editor
         self.__codeEditor = self.findChild(QPlainTextEdit, 'codeEditor')
@@ -51,6 +66,12 @@ class XAsmIde(QMainWindow):
                 # Mark file as unsaved
                 self.__file.setContent(self.__codeEditor.toPlainText())
                 self.__file.setUnsaved()
+                # Code was not checked
+                self.__checked = False
+                # Code was not built
+                self.__built = False
+                self.__data = {}
+                self.__dataMem.clear()
 
                 # Set unsaved in window title
                 self.setWindowTitle('*' + self.__title)
@@ -69,6 +90,16 @@ class XAsmIde(QMainWindow):
                 QTableWidgetItem(hex(registerValue)))
             self.__tableRegisters.setItem(i, 3,
                 QTableWidgetItem(bin(registerValue)))
+
+    def __setMemoryValues(self):
+        # Get data memory
+        self.__tableMemory.setRowCount(MEMSIZE//4)
+
+        for i in range(MEMSIZE//4):
+            address = hex(i*4)
+            self.__tableMemory.setItem(i, 0, QTableWidgetItem(address))
+            self.__tableMemory.setItem(i, 1,
+                QTableWidgetItem(hex(self.__dataMem.getValue(address))))
 
     def __initActions(self) -> None:
         # Menu File actions
@@ -98,7 +129,11 @@ class XAsmIde(QMainWindow):
         actionCheckSintax.setStatusTip('Check code sintax')
         actionCheckSintax.triggered.connect(self.__onCheckSintax)
 
-        #<addaction name="actionBuild"/>
+        # Build code
+        actionBuild = self.findChild(QAction, 'actionBuild')
+        actionBuild.setStatusTip('Check code sintax')
+        actionBuild.triggered.connect(self.__onBuildCode)
+
         #<addaction name="actionRun"/>
     
     def __onNewFileClick(self) -> None:
@@ -208,11 +243,11 @@ class XAsmIde(QMainWindow):
     
     def __onCheckSintax(self):
         filename = self.__file.getPath().split('/')[-1]
-        parser = Parser()
+        parser: Parser = Parser()
 
         # Check code
         code = self.__file.getContent().split('\n')
-        valid, errors = parser.parseCode(code)
+        valid, data = parser.parseCode(code)
 
         # Clear outputs
         self.__listWidgetOutputs.clear()
@@ -220,11 +255,30 @@ class XAsmIde(QMainWindow):
         self.__listWidgetOutputs.addItem('Parsing ' + filename + '...')
 
         if not valid:
-            self.__listWidgetOutputs.addItems(errors)
+            self.__listWidgetOutputs.addItems(data['errors'])
+        else:
+            self.__checked = True
+            self.__data['parser'] = data
 
         # Finish message
         self.__listWidgetOutputs.addItem('Parser has finished with ' +\
-                                         str(len(errors)) + ' errors.')
+                                        str(len(data['errors'])) + ' errors.')
+
+    def __onBuildCode(self):
+        if not self.__checked:
+            self.__onCheckSintax()
+        
+        self.__dataMem.clear()
+
+        compiler: Compiler = Compiler()
+        consDirs = compiler.compileConstants(self.__data['parser']['constants'])
+
+        for address in consDirs:
+            self.__dataMem.setValue(address, consDirs[address][1])
+
+        self.__setMemoryValues()
+        self.__listWidgetOutputs.addItem('Built has finished correctly.')
+            
 
     def closeEvent(self, event):
         self.__running = False
