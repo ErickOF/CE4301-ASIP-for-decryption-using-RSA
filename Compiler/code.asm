@@ -4,7 +4,7 @@
 .const
 num1  =   29H
 num2  =   F9h
-num3  = 2A3ah
+num3  =   3ah
 num4  = 0x230
 num5  = 0x2C3
 num6  =    28
@@ -17,11 +17,12 @@ num11 =   223b
 .text
 CICLO_INFINITO:
 ;ldr
-LDR R1, a (R0)
-LDR R2, b (R1)
+LDR R1, num1 (R0)
+LDR R2, num2 (R1)
 LDR R3, 32 (R2)
 ;add R4, 2, R2
 AND R4, R4, R2
 AND R4, R4, 29
 JMP CICLO_INFINITO
-STR R4, a (R0)
+;JNE CICLO
+STR R4, num1 (R0)
