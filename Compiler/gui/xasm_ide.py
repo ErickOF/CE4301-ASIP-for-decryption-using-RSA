@@ -45,6 +45,9 @@ class XAsmIde(QMainWindow):
         self.__tableMemory = self.findChild(QTableWidget, 'tableMemory')
         self.__setMemoryValues()
 
+        # Instructions table
+        self.__tableInstructions = self.findChild(QTableWidget, 'tableInstructions')
+
         # Code editor
         self.__codeEditor = self.findChild(QPlainTextEdit, 'codeEditor')
         self.__codeEditorThread = Thread(target=self.__setUnsavedFile)
@@ -91,15 +94,30 @@ class XAsmIde(QMainWindow):
             self.__tableRegisters.setItem(i, 3,
                 QTableWidgetItem(bin(registerValue)))
 
-    def __setMemoryValues(self):
+    def __setMemoryValues(self) -> None:
         # Get data memory
         self.__tableMemory.setRowCount(MEMSIZE//4)
 
         for i in range(MEMSIZE//4):
             address = hex(i*4)
+
             self.__tableMemory.setItem(i, 0, QTableWidgetItem(address))
             self.__tableMemory.setItem(i, 1,
                 QTableWidgetItem(hex(self.__dataMem.getValue(address))))
+    
+    def __setInstructionMemory(self, lines) -> None:
+        i = 0
+        self.__tableInstructions.setRowCount(len(lines))
+
+        for line, compiled in zip(self.__data['parser']['lines'], lines):
+            address = hex(i*4)
+            print(line, compiled)
+
+            self.__tableInstructions.setItem(i, 0, QTableWidgetItem(address))
+            self.__tableInstructions.setItem(i, 1, QTableWidgetItem(line))
+            self.__tableInstructions.setItem(i, 2, QTableWidgetItem(compiled))
+
+            i += 1
 
     def __initActions(self) -> None:
         # Menu File actions
@@ -271,12 +289,10 @@ class XAsmIde(QMainWindow):
         self.__dataMem.clear()
 
         compiler: Compiler = Compiler()
-        consDirs = compiler.compileConstants(self.__data['parser']['constants'])
+        lines = compiler.compile(self.__data['parser']['split'])
 
-        for address in consDirs:
-            self.__dataMem.setValue(address, consDirs[address][1])
+        self.__setInstructionMemory(lines)
 
-        self.__setMemoryValues()
         self.__listWidgetOutputs.addItem('Built has finished correctly.')
             
 

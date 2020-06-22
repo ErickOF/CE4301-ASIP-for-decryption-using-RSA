@@ -16,13 +16,10 @@ num11 =   223b
 
 .text
 CICLO_INFINITO:
-;ldr
-LDR R1, num1 (R0)
-LDR R2, num2 (R1)
-LDR R3, 32 (R2)
-;add R4, 2, R2
-AND R4, R4, R2
-AND R4, R4, 29
-JMP CICLO_INFINITO
-;JNE CICLO
-STR R4, num1 (R0)
+	LDR R1, num1 (R0)
+	LDR R2, num2 (R1)
+	LDR R3, 32 (R2)
+	ADD R4, R4, R2
+	ADD R4, R4, 29
+	JMP CICLO_INFINITO
+	STR R4, num1 (R0)

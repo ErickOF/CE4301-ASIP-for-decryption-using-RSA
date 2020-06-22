@@ -42,8 +42,11 @@ instFmt = {
     'STR': 'STR RD, K (RA)',
     'JEQ': 'JEQ LABEL',
     'NE': 'NE LABEL',
-    'JMP': 'JMP LABEL'
+    'JMP': 'JMP LABEL',
+    'INC': 'INC RS',
+    'DEC': 'DEC RS'
 }
+
 
 # Regular Expression
 commentRe = ';(.*)'
@@ -69,7 +72,7 @@ instRCRe = f'({instructionRe}\s*{registerRe},\s*{registerRe},\s*{numericRe})'
 # Load/Store Type Instructions
 instLSRe = f'({instructionRe}\s*{registerRe},\s*({numericRe}|{varNameRe})\s*\({registerRe}\))'
 # Jump Instructions
-instJmpRe = f'J(MP|EQ|NE|GT|GE|LT|LE)\s+{varNameRe}'
+instJmpRe = f'J(MP|EQ|NE)\s+{varNameRe}'
 
 # Patterns
 # Comments
@@ -139,44 +142,6 @@ class Parser:
 
         # Error was not found
         return 'Undefined error.'
-
-    def __replaceConstants(self, line, instructionType, constants):
-        # Split instruction
-        value1, value2 = line.split(' ')[2:]
-
-        # If it's a Register-Constant instruction
-        if instructionType == 'RC':
-            # Constant value must be value2
-            if value2 in constants:
-                return True, line
-            # If it's hex value
-            elif (value2[-1] in 'Hh' and value2[:-1]) or ('0x' == value2[:2] and value2[2:]):
-                return True, line
-            # If it's bin value
-            elif (value2[-1] in 'Bb' and value2[:-1]) or ('0b' == value2[:2] and value2[2:]):
-                return True, line
-            # If it's dec value
-            elif value2.isnumeric():
-                return True, line
-            else:
-                return False, value2
-        # If it's a Load-Store instruction
-        else:
-            print(value1, constants)
-            # Constant value must be value1
-            if value1 in constants:
-                return True, line
-            # If it's hex value
-            elif (value2[-1] in 'Hh' and value2[:-1]) or ('0x' == value2[:2] and value2[2:]):
-                return True, line
-            # If it's bin value
-            elif (value2[-1] in 'Bb' and value2[:-1]) or ('0b' == value2[:2] and value2[2:]):
-                return True, line
-            # If it's dec value
-            elif value1.isnumeric():
-                return True, line
-            else:
-                return False, value1
 
     def __validateCode(self, code: str, pattern: str):
         errors, validLine, validConstants = [], [], []
@@ -296,6 +261,94 @@ class Parser:
 
         return errors, validLine, validConstants
 
+    def __replaceConstants(self, line, instructionType, constants):
+        # Split instruction
+        instr, reg, value1, value2 = line.split(' ')
+
+        # If it's a Register-Constant instruction
+        if instructionType == 'RC':
+            # Constant value must be value2
+            if value2 in constants:
+                return True, f'{instr} {reg} {value1} {constants[value2]}'
+            # If it's hex value
+            elif (value2[-1] in 'Hh' and value2[:-1]) or ('0x' == value2[:2] and value2[2:]):
+                return True, line
+            # If it's bin value
+            elif (value2[-1] in 'Bb' and value2[:-1]) or ('0b' == value2[:2] and value2[2:]):
+                return True, line
+            # If it's dec value
+            elif value2.isnumeric():
+                return True, line
+            else:
+                return False, value2
+        # If it's a Load-Store instruction
+        else:
+            # Constant value must be value1
+            if value1 in constants:
+                return True, f'{instr} {reg} {constants[value1]} {value2}'
+            # If it's hex value
+            elif (value2[-1] in 'Hh' and value2[:-1]) or ('0x' == value2[:2] and value2[2:]):
+                return True, line
+            # If it's bin value
+            elif (value2[-1] in 'Bb' and value2[:-1]) or ('0b' == value2[:2] and value2[2:]):
+                return True, line
+            # If it's dec value
+            elif value1.isnumeric():
+                return True, line
+            else:
+                return False, value1
+    
+    def __flagsToAddresses(self, lines: list) -> list:
+        address = 0
+        flagsAddress = {}
+        outputLines = []
+
+        for line in lines:
+            # If line is a flag, convert to an address
+            if line[-1] == ':':
+                flagsAddress[line[:-1].upper()] = address
+            # If line is a jump instruction
+            elif line[0].upper() == 'J':
+                # Replace flag by address
+                instr, flag = line.split(' ')
+                outputLines.append(f'{instr} {hex(flagsAddress[flag.upper()])}')
+                address += 4
+            else:
+                outputLines.append(line)
+                address += 4
+        
+        return outputLines
+    
+    def __splitInstructions(self, instructions):
+        output = []
+
+        for instruction in instructions:
+            _, instrType = self.__isInstruction(instruction[:3])
+
+            # Register Register
+            if instrType == 'RR':
+                instr, rd, ra, rb = instruction.split(' ')
+
+                # Register Constant
+                if rb.isnumeric() or rb[-1] in 'hHbB' or rb[:2] in '0x0b':
+                    output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[:-1],
+                                'K': rb, 'type': 'RK'})
+                # Register Register
+                else:
+                    output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[:-1],
+                                'RB': rb, 'type': 'RR'})
+            # Register Constant
+            elif instrType == 'LS':
+                instr, rd, k, ra = instruction.split(' ')
+                output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[1:-1],
+                               'K': k, 'type': 'LS'})
+            # Jump
+            else:
+                instr, flag = instruction.split(' ')
+                output.append({'I': instr, 'flag': flag, 'type': 'J'})
+
+        return output
+
     def parseCode(self, code: str):
         # Validate code
         wrongLines, validLines, validConstants = self.__validateCode(code, pattern)
@@ -311,8 +364,12 @@ class Parser:
         data['errors'] = errors
 
         if wrongLines == []:
+            validLines = self.__flagsToAddresses(validLines)
             data['lines'] = validLines
-            data['constants'] = validConstants
+            data['split'] = self.__splitInstructions(validLines)
+
+            with open('tools/.temp/parse.txt', 'w') as file:
+                file.write("\n".join(validLines))
 
         return valid, data
 
