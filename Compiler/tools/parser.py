@@ -16,7 +16,7 @@ MULT_CODE="""MULT_FLAG_XASM_COMPILER_NUM:
 SUB RD, RD, RD
 MULT_FLAG_XASM_COMPILER_NUM_LOOP:
 ADD RD, RD, RB
-SUB RD, RD, 0x01
+SUB RA, RA, 0x01
 CMP RA, 0x0
 JNE MULT_FLAG_XASM_COMPILER_NUM_LOOP
 """
@@ -163,6 +163,7 @@ class Parser:
 
     def __validateCode(self, code: str, pattern: str):
         errors, validLine, validConstants = [], [], []
+        mult, div = 1, 1
 
         _type = ''
         constants = {}
@@ -267,6 +268,22 @@ class Parser:
                                     else:
                                         errors.append((lineNumber, codeLine,
                                             f'Constant {line} does not exist.'))
+                                # Instruction is multiply or divide
+                                elif line[:3] == 'MUL' or line[:3] == 'DIV':
+                                    _, rd, ra, value = line.split(' ')
+
+                                    newLine = MULT_CODE.replace('NUM', str(mult))
+                                    newLine = newLine.replace('RD', rd[:-1])
+                                    newLine = newLine.replace('RA', ra[:-1])
+                                    newLine = newLine.replace('RB', value)
+
+                                    mult_code = newLine.split('\n')
+
+                                    for mult_line in mult_code:
+                                        if mult_line != '':
+                                            validLine.append(mult_line)
+
+                                    mult += 1
                                 # If not found, only add value
                                 else:
                                     validLine.append(line)

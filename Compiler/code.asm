@@ -26,6 +26,7 @@ TEST:
 	JNE LOOP
 	STR R4, num1 (R0)
 	CMP R3, R2
+	MUL R0, R1, R2
 	JEQ TEST
 END:
 	ADD R0, R0, 0x1
