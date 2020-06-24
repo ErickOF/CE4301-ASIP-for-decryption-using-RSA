@@ -111,7 +111,6 @@ class XAsmIde(QMainWindow):
 
         for line, compiled in zip(self.__data['parser']['lines'], lines):
             address = hex(i*4)
-            print(line, compiled)
 
             self.__tableInstructions.setItem(i, 0, QTableWidgetItem(address))
             self.__tableInstructions.setItem(i, 1, QTableWidgetItem(line))

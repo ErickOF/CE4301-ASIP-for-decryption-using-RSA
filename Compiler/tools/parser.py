@@ -7,6 +7,20 @@ import re
 MAX_INT_VALUE = 4096
 MIN_INT_VALUE = 0
 
+# Mult code RD = RA x RB
+# NUM -> number of multiplication
+# RD -> Destination Register
+# RA -> Source Register 1
+# RB -> Source Register 2 or Constant
+MULT_CODE="""MULT_FLAG_XASM_COMPILER_NUM:
+SUB RD, RD, RD
+MULT_FLAG_XASM_COMPILER_NUM_LOOP:
+ADD RD, RD, RB
+SUB RD, RD, 0x01
+CMP RA, 0x0
+JNE MULT_FLAG_XASM_COMPILER_NUM_LOOP
+"""
+
 # Valid instructions
 instructions = {
     'RR': {
@@ -14,13 +28,13 @@ instructions = {
         'SUB': ('R', 'R', 'R'),
         'MUL': ('R', 'R', 'R'),
         'DIV': ('R', 'R', 'R'),
-        'CMP': ('R', 'R', 'R')
-    }, 'RC': {
+        'CMP': ('R', 'R')
+    }, 'RK': {
         'ADD': ('R', 'R', 'K'),
         'SUB': ('R', 'R', 'K'),
         'MUL': ('R', 'R', 'K'),
         'DIV': ('R', 'R', 'K'),
-        'CMP': ('R', 'R', 'K')
+        'CMP': ('R', 'K')
     }, 'LS': {
         'LDR': ('R', 'K', 'R'),
         'STR': ('R', 'K', 'R')
@@ -37,7 +51,7 @@ instFmt = {
     'SUB': 'SUB RD, RA, RB or SUB RD, RA, K',
     'MUL': 'MUL RD, RA, RB or MUL RD, RA, K',
     'DIV': 'DIV RD, RA, RB or DIV RD, RA, K',
-    'CMP': 'CMP RD, RA, RB or CMP RD, RA, K',
+    'CMP': 'CMP RD, RA or CMP RD, K',
     'LDR': 'LDR RD, K (RA)',
     'STR': 'STR RD, K (RA)',
     'JEQ': 'JEQ LABEL',
@@ -67,8 +81,10 @@ flagsRe = f'({varNameRe}+:)'
 instructionRe = f'{alphabetRe}' + '{2,3}'
 # Register-Register Type Instructions
 instRRRe = f'({instructionRe}\s*{registerRe},\s*{registerRe},\s*{registerRe})'
+# CMP instruction
+instCMP = f'(CMP\s*{registerRe},\s*({registerRe}|{numericRe}))'
 # Register-Constant Type Instructions
-instRCRe = f'({instructionRe}\s*{registerRe},\s*{registerRe},\s*{numericRe})'
+instRKRe = f'({instructionRe}\s*{registerRe},\s*{registerRe},\s*{numericRe})'
 # Load/Store Type Instructions
 instLSRe = f'({instructionRe}\s*{registerRe},\s*({numericRe}|{varNameRe})\s*\({registerRe}\))'
 # Jump Instructions
@@ -88,7 +104,9 @@ pattern += f'|{flagsRe}'
 # Register-Register Type Instructions
 pattern += f'|{instRRRe}'
 # Register-Constant Type Instructions
-pattern += f'|{instRCRe}'
+pattern += f'|{instRKRe}'
+# Compare instruction
+pattern += f'|{instCMP}'
 # Load/Store Type Instructions
 pattern += f'|{instLSRe}'
 # Jump Instructions
@@ -123,7 +141,7 @@ class Parser:
         # If a instruction was found
         else:
             # If the line only contains the instruction name
-            if len(line) == 1:
+            if len(line) < 3 and line[0] != 'CMP':
                 return 'Invalid format. Instruction \'' + instruction +\
                         '\' must be \'' + instFmt[instruction.upper()] + '\'.'
 
@@ -227,6 +245,8 @@ class Parser:
                                 else:
                                     errors.append((lineNumber, codeLine,
                                         f'Flag {flag} does not exist.'))
+                            elif line[:3].upper() == 'CMP':
+                                validLine.append(line)
                             # Other instructions are valid
                             else:
                                 # Check if it's a instruction
@@ -234,7 +254,7 @@ class Parser:
 
                                 # If instruction was found and it's Register-
                                 # Constant or Load-Store
-                                if found and instructionType in ['RC', 'LS']:
+                                if found and instructionType in ['RK', 'LS']:
                                     # Replace constants values in code line
                                     done, line = self.__replaceConstants(line,
                                                             instructionType,
@@ -266,13 +286,13 @@ class Parser:
         instr, reg, value1, value2 = line.split(' ')
 
         # If it's a Register-Constant instruction
-        if instructionType == 'RC':
+        if instructionType == 'RK':
             # Constant value must be value2
             if value2 in constants:
                 return True, f'{instr} {reg} {value1} {constants[value2]}'
             # If it's hex value
             elif (value2[-1] in 'Hh' and value2[:-1]) or ('0x' == value2[:2] and value2[2:]):
-                return True, line
+                return True, f'{instr} {reg} {value1} {int(value2, 16)}'
             # If it's bin value
             elif (value2[-1] in 'Bb' and value2[:-1]) or ('0b' == value2[:2] and value2[2:]):
                 return True, line
@@ -323,29 +343,41 @@ class Parser:
         output = []
 
         for instruction in instructions:
-            _, instrType = self.__isInstruction(instruction[:3])
+            if instruction[:3] != 'CMP':
+                _, instrType = self.__isInstruction(instruction[:3])
 
-            # Register Register
-            if instrType == 'RR':
-                instr, rd, ra, rb = instruction.split(' ')
+                # Register Register
+                if instrType == 'RR':
+                    instr, rd, ra, rb = instruction.split(' ')
+
+                    # Register Constant
+                    if rb.isnumeric() or rb[-1] in 'hHbB' or rb[:2] in '0x0b':
+                        output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[:-1],
+                                    'K': rb, 'type': 'RK'})
+                    # Register Register
+                    else:
+                        output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[:-1],
+                                    'RB': rb, 'type': 'RR'})
+                # Register Constant
+                elif instrType == 'LS':
+                    instr, rd, k, ra = instruction.split(' ')
+                    output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[1:-1],
+                                'K': k, 'type': 'LS'})
+                # Jump
+                else:
+                    instr, flag = instruction.split(' ')
+                    output.append({'I': instr, 'flag': flag, 'type': 'J'})
+            else:
+                instr, rd, value = instruction.split(' ')
 
                 # Register Constant
-                if rb.isnumeric() or rb[-1] in 'hHbB' or rb[:2] in '0x0b':
-                    output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[:-1],
-                                'K': rb, 'type': 'RK'})
+                if value.isnumeric() or value[-1] in 'hHbB' or value[:2] in '0x0b':
+                    output.append({'I': instr, 'RD': rd[:-1], 'K': value,
+                                   'RA': '00', 'type': 'RK'})
                 # Register Register
                 else:
-                    output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[:-1],
-                                'RB': rb, 'type': 'RR'})
-            # Register Constant
-            elif instrType == 'LS':
-                instr, rd, k, ra = instruction.split(' ')
-                output.append({'I': instr, 'RD': rd[:-1], 'RA': ra[1:-1],
-                               'K': k, 'type': 'LS'})
-            # Jump
-            else:
-                instr, flag = instruction.split(' ')
-                output.append({'I': instr, 'flag': flag, 'type': 'J'})
+                    output.append({'I': instr, 'RD': rd[:-1], 'RA': value,
+                                   'RB': '00', 'type': 'RR'})
 
         return output
 
