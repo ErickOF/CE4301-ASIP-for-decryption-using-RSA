@@ -1,21 +1,32 @@
 ;-------------------------------------------
 ; Programa para ilustrar una entrada posible
-; ------------------------------------------
+;-------------------------------------------
 .const
-num    =    29
-num2   =   400
-cadena = 0x230
-a      =    28
-b      = 0x2C3
+num1  =   29H
+num2  =   F9h
+num3  =   3ah
+num4  = 0x230
+num5  = 0x2C3
+num6  =    28
+num7  =   1010
+num8  =  0b010
+num9  =  1100b
+num10 =  1100B
+num11 =   223b
 
 .text
-ciclo_infinito:
-ldr
-ldr R1, a (R0); Carga el puntero inicial
-ldr R2, b (R1)
-ldr R3, 32 (R2); Carga el valor verdadero
-add R4, 2, R2
-and R4, R4, R2
-andi R4, R4, 29
-jmp ciclo_infinito
-str R4, a (R0)
+LOOP:
+	LDR R1, num1 (R0)
+	LDR R2, num2 (R1)
+	LDR R3, 32 (R2)
+	ADD R4, R4, R2
+	ADD R4, R4, 29
+TEST:
+	CMP R4, 0x0
+	JNE LOOP
+	STR R4, num1 (R0)
+	CMP R3, R2
+	MUL R0, R1, R2
+	JEQ TEST
+END:
+	ADD R0, R0, 0x1
