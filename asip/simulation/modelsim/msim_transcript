@@ -12,53 +12,31 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu_test.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:40:47 on Jun 30,2020
+# Start time: 11:25:27 on Jul 01,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu_test.sv 
 # -- Compiling module alu_test
 # 
 # Top level modules:
 # 	alu_test
-# End time: 23:40:48 on Jun 30,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/mux_not.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:40:48 on Jun 30,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/mux_not.sv 
-# -- Compiling module mux_not
-# 
-# Top level modules:
-# 	mux_not
-# End time: 23:40:48 on Jun 30,2020, Elapsed time: 0:00:00
+# End time: 11:25:27 on Jul 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:40:48 on Jun 30,2020
+# Start time: 11:25:27 on Jul 01,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 23:40:48 on Jun 30,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:40:48 on Jun 30,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 23:40:48 on Jun 30,2020, Elapsed time: 0:00:00
+# End time: 11:25:27 on Jul 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.alu_test
 # vsim work.alu_test 
-# Start time: 23:40:58 on Jun 30,2020
+# Start time: 11:25:32 on Jul 01,2020
 # Loading sv_std.std
 # Loading work.alu_test
 # Loading work.alu
-# Loading work.mux_not
-# Loading work.adder
 add wave -position end  sim:/alu_test/ALUControl
 add wave -position end  sim:/alu_test/a
 add wave -position end  sim:/alu_test/b
@@ -67,9 +45,9 @@ add wave -position end  sim:/alu_test/Z
 add wave -position end  sim:/alu_test/C
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
-#           Attempting to use alternate WLF file "./wlftqz3x9c".
+#           Attempting to use alternate WLF file "./wlftfditb9".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqz3x9c
+#           Using alternate file: ./wlftfditb9
 run 200
 # a=0000, b=0000, ALUControl=00, result=0000, Z=1, C=0
 # 
@@ -83,15 +61,17 @@ run 200
 # 
 # a=0001, b=0111, ALUControl=00, result=1000, Z=0, C=0
 # 
-# a=0000, b=0000, ALUControl=01, result=0000, Z=1, C=1
+# a=0000, b=0000, ALUControl=01, result=0000, Z=1, C=0
 # 
-# a=0000, b=1111, ALUControl=01, result=0001, Z=0, C=0
+# a=0000, b=1111, ALUControl=01, result=0001, Z=0, C=1
 # 
-# a=1111, b=0000, ALUControl=01, result=1111, Z=0, C=1
+# a=1111, b=0000, ALUControl=01, result=1111, Z=0, C=0
 # 
-# a=1111, b=1111, ALUControl=01, result=0000, Z=1, C=1
+# a=1111, b=1111, ALUControl=01, result=0000, Z=1, C=0
 # 
-# a=0110, b=0001, ALUControl=01, result=0101, Z=0, C=1
+# a=0110, b=0001, ALUControl=01, result=0101, Z=0, C=0
 # 
-# a=0001, b=0111, ALUControl=01, result=1010, Z=0, C=0
+# a=0001, b=0111, ALUControl=01, result=1010, Z=0, C=1
 # 
+# End time: 11:27:34 on Jul 01,2020, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 2
