@@ -12,12 +12,12 @@ module adder #(parameter N=32)
               (input  logic [N-1:0] a, b,
                output logic [N-1:0] y);
 
-logic [N-1:0] result_add;
+logic [N-1:0] resultAdd;
 
 always_comb begin
-	result_add <= a + b;
+	resultAdd <= a + b;
 end
 
-assign y = result_add;
+assign y = resultAdd;
 
 endmodule // adder

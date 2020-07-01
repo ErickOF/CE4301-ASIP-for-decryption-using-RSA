@@ -12,28 +12,28 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:35 on Jun 11,2020
+# Start time: 18:55:48 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 18:29:36 on Jun 11,2020, Elapsed time: 0:00:01
+# End time: 18:55:49 on Jun 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/add_test.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:36 on Jun 11,2020
+# Start time: 18:55:49 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/add_test.sv 
 # -- Compiling module add_test
 # 
 # Top level modules:
 # 	add_test
-# End time: 18:29:36 on Jun 11,2020, Elapsed time: 0:00:00
+# End time: 18:55:49 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.add_test
 # vsim work.add_test 
-# Start time: 18:29:40 on Jun 11,2020
+# Start time: 18:56:12 on Jun 30,2020
 # Loading sv_std.std
 # Loading work.add_test
 # Loading work.adder
@@ -55,5 +55,5 @@ run 100
 # 
 # a = 111, b = 111, y = 110
 # 
-# End time: 18:30:10 on Jun 11,2020, Elapsed time: 0:00:30
+# End time: 18:57:48 on Jun 30,2020, Elapsed time: 0:01:36
 # Errors: 0, Warnings: 0
