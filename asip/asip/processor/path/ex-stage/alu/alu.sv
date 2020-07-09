@@ -25,11 +25,15 @@ module alu #(parameter N=32)
 	logic 		  cout;
 	logic [N-1:0] result_sum;
 	logic [N-1:0] result_mux_not;
-
-	// Verify if b operand has to be changed
-	mux_not #(N) mux_not_module   (b, aluFunc, result_mux_not);
-	// Add operands
-	adder   #(N) fulladder_module (a, result_mux_not, aluFunc, result_sum, cout);
+	
+	always_comb begin
+		if (aluFunc == 1'b0) begin
+			{cout, result_sum} <= a + b;
+		end
+		else begin
+		   {cout, result_sum} <= a - b;
+		end
+	end
 
 	// Assign flags
 	assign C = cout;

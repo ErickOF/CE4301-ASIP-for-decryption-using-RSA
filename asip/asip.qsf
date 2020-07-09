@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY alu_test
+set_global_assignment -name TOP_LEVEL_ENTITY instr_fetch_test
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:36:27  JUNE 11, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -51,12 +51,14 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/instr_fetch_test.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/pc_ff.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/if_stage_test.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE asip/memories/instruction_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/adder.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/pc_mux.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/ex-stage/alu/alu_test.sv"
-set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/ex-stage/alu/add_sub_test.sv"
-set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/ex-stage/alu/mux_not.sv"
-set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/ex-stage/alu/adder_test.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/ex-stage/alu/alu.sv"
-set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/ex-stage/alu/adder.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE asip/processor/processor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/data-to-color-converter/data_to_color_converter.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/clock-divider/clock_divider.sv"
