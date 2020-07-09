@@ -1,7 +1,7 @@
-|if_stage_test
+|instr_fetch_test
 
 
-|if_stage_test|if_stage:DUT
+|instr_fetch_test|if_stage:DUT
 clk => clk.IN1
 reset => reset.IN1
 jmp_pc[0] => jmp_pc[0].IN1
@@ -71,7 +71,7 @@ pc[30] <= pc[30].DB_MAX_OUTPUT_PORT_TYPE
 pc[31] <= pc[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|if_stage_test|if_stage:DUT|pc_ff:pc_ff_instance
+|instr_fetch_test|if_stage:DUT|pc_ff:pc_ff_instance
 clk => next_pc[0]~reg0.CLK
 clk => next_pc[1]~reg0.CLK
 clk => next_pc[2]~reg0.CLK
@@ -202,7 +202,7 @@ next_pc[30] <= next_pc[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 next_pc[31] <= next_pc[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|if_stage_test|if_stage:DUT|pc_mux:pc_mux_instance
+|instr_fetch_test|if_stage:DUT|pc_mux:pc_mux_instance
 pc[0] => result.DATAB
 pc[1] => result.DATAB
 pc[2] => result.DATAB
@@ -333,7 +333,7 @@ selected_pc[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_pc[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|if_stage_test|if_stage:DUT|adder:adder_instance
+|instr_fetch_test|if_stage:DUT|adder:adder_instance
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -430,5 +430,72 @@ result[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|instr_fetch_test|instruction_mem:imen
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => rom.RADDR
+a[3] => rom.RADDR1
+a[4] => rom.RADDR2
+a[5] => rom.RADDR3
+a[6] => rom.RADDR4
+a[7] => rom.RADDR5
+a[8] => ~NO_FANOUT~
+a[9] => ~NO_FANOUT~
+a[10] => ~NO_FANOUT~
+a[11] => ~NO_FANOUT~
+a[12] => ~NO_FANOUT~
+a[13] => ~NO_FANOUT~
+a[14] => ~NO_FANOUT~
+a[15] => ~NO_FANOUT~
+a[16] => ~NO_FANOUT~
+a[17] => ~NO_FANOUT~
+a[18] => ~NO_FANOUT~
+a[19] => ~NO_FANOUT~
+a[20] => ~NO_FANOUT~
+a[21] => ~NO_FANOUT~
+a[22] => ~NO_FANOUT~
+a[23] => ~NO_FANOUT~
+a[24] => ~NO_FANOUT~
+a[25] => ~NO_FANOUT~
+a[26] => ~NO_FANOUT~
+a[27] => ~NO_FANOUT~
+a[28] => ~NO_FANOUT~
+a[29] => ~NO_FANOUT~
+a[30] => ~NO_FANOUT~
+a[31] => ~NO_FANOUT~
+rd[0] <= rom.DATAOUT
+rd[1] <= rom.DATAOUT1
+rd[2] <= rom.DATAOUT2
+rd[3] <= rom.DATAOUT3
+rd[4] <= rom.DATAOUT4
+rd[5] <= rom.DATAOUT5
+rd[6] <= rom.DATAOUT6
+rd[7] <= rom.DATAOUT7
+rd[8] <= rom.DATAOUT8
+rd[9] <= rom.DATAOUT9
+rd[10] <= rom.DATAOUT10
+rd[11] <= rom.DATAOUT11
+rd[12] <= rom.DATAOUT12
+rd[13] <= rom.DATAOUT13
+rd[14] <= rom.DATAOUT14
+rd[15] <= rom.DATAOUT15
+rd[16] <= rom.DATAOUT16
+rd[17] <= rom.DATAOUT17
+rd[18] <= rom.DATAOUT18
+rd[19] <= rom.DATAOUT19
+rd[20] <= rom.DATAOUT20
+rd[21] <= rom.DATAOUT21
+rd[22] <= rom.DATAOUT22
+rd[23] <= rom.DATAOUT23
+rd[24] <= rom.DATAOUT24
+rd[25] <= rom.DATAOUT25
+rd[26] <= rom.DATAOUT26
+rd[27] <= rom.DATAOUT27
+rd[28] <= rom.DATAOUT28
+rd[29] <= rom.DATAOUT29
+rd[30] <= rom.DATAOUT30
+rd[31] <= rom.DATAOUT31
 
 

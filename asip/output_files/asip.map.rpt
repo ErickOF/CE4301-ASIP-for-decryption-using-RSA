@@ -1,5 +1,5 @@
 Analysis & Elaboration report for asip
-Wed Jul 08 22:44:30 2020
+Thu Jul 09 12:53:51 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -13,10 +13,11 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   5. Parameter Settings for User Entity Instance: if_stage:DUT|pc_ff:pc_ff_instance
   6. Parameter Settings for User Entity Instance: if_stage:DUT|pc_mux:pc_mux_instance
   7. Parameter Settings for User Entity Instance: if_stage:DUT|adder:adder_instance
-  8. Analysis & Elaboration Settings
-  9. Port Connectivity Checks: "if_stage:DUT|adder:adder_instance"
- 10. Port Connectivity Checks: "if_stage:DUT"
- 11. Analysis & Elaboration Messages
+  8. Parameter Settings for User Entity Instance: instruction_mem:imen
+  9. Analysis & Elaboration Settings
+ 10. Port Connectivity Checks: "instruction_mem:imen"
+ 11. Port Connectivity Checks: "if_stage:DUT|adder:adder_instance"
+ 12. Analysis & Elaboration Messages
 
 
 
@@ -42,10 +43,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Jul 08 22:44:30 2020       ;
+; Analysis & Elaboration Status ; Successful - Thu Jul 09 12:53:51 2020       ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                 ; asip                                        ;
-; Top-level Entity Name         ; if_stage_test                               ;
+; Top-level Entity Name         ; instr_fetch_test                            ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -113,13 +114,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instruction_mem:imen ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; if_stage_test      ; asip               ;
+; Top-level entity name                                                           ; instr_fetch_test   ; asip               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -200,6 +211,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "instruction_mem:imen"                                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------+
 ; Port Connectivity Checks: "if_stage:DUT|adder:adder_instance" ;
 +----------+-------+----------+---------------------------------+
@@ -211,31 +231,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+---------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "if_stage:DUT"                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; pc   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Jul 08 22:44:21 2020
+    Info: Processing started: Thu Jul 09 12:53:40 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/instr_fetch_test.sv
+    Info (12023): Found entity 1: instr_fetch_test File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/pc_ff.sv
     Info (12023): Found entity 1: pc_ff File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/if_stage_test.sv
     Info (12023): Found entity 1: if_stage_test File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/memories/instruction_mem.sv
-    Info (12023): Found entity 1: instruction_mem File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv Line: 1
+    Info (12023): Found entity 1: instruction_mem File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/adder.sv
     Info (12023): Found entity 1: adder File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/pc_mux.sv
@@ -258,41 +271,45 @@ Info (12021): Found 0 design units, including 0 entities, in source file asip/pr
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/hazard_unit/hazard_unit.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/control_unit/control_unit.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/vga-controller/vga_controller.sv
-Info (12127): Elaborating entity "if_stage_test" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(12): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 12
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(15): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 15
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(18): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 18
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(21): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 21
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(24): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 24
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(27): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 27
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(30): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 30
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(33): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 33
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(36): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 36
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(39): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 39
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(43): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 43
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(46): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 46
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(49): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 49
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(52): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 52
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(55): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 55
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(58): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 58
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(61): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 61
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(64): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 64
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(68): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 68
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(71): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 71
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(74): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 74
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(77): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 77
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(80): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 80
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(83): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 83
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(86): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 86
-Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(89): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 89
-Info (12128): Elaborating entity "if_stage" for hierarchy "if_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 5
+Info (12127): Elaborating entity "instr_fetch_test" for the top level hierarchy
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(13): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 13
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(16): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 16
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(19): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 19
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(22): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 22
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(25): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 25
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(28): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 28
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(31): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 31
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(34): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 34
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(37): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 37
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(40): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 40
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(44): clk=0, reset=0, jmp_pc=0000005c, pc_selector=1, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 44
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(47): clk=1, reset=0, jmp_pc=0000005c, pc_selector=1, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 47
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(50): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 50
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(53): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 53
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(56): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 56
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(59): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 59
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(62): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 62
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(65): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 65
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(69): clk=0, reset=0, jmp_pc=0000005c, pc_selector=1, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 69
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(72): clk=1, reset=0, jmp_pc=0000005c, pc_selector=1, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 72
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(75): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 75
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(78): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 78
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(81): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 81
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(84): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 84
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(87): clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 87
+Info (10648): Verilog HDL Display System Task info at instr_fetch_test.sv(90): clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 90
+Info (12128): Elaborating entity "if_stage" for hierarchy "if_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 5
 Info (12128): Elaborating entity "pc_ff" for hierarchy "if_stage:DUT|pc_ff:pc_ff_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 29
 Info (12128): Elaborating entity "pc_mux" for hierarchy "if_stage:DUT|pc_mux:pc_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 30
 Info (12128): Elaborating entity "adder" for hierarchy "if_stage:DUT|adder:adder_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 31
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+Info (12128): Elaborating entity "instruction_mem" for hierarchy "instruction_mem:imen" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv Line: 6
+Warning (10030): Net "rom.data_a" at instruction_mem.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv Line: 17
+Warning (10030): Net "rom.waddr_a" at instruction_mem.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv Line: 17
+Warning (10030): Net "rom.we_a" at instruction_mem.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv Line: 17
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4774 megabytes
-    Info: Processing ended: Wed Jul 08 22:44:30 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Processing ended: Thu Jul 09 12:53:51 2020
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 

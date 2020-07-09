@@ -1,12 +1,26 @@
-module instruction_mem(input  logic [31:0] a,
-				           output logic [31:0] rd);
+/*
+ * Instruction Memory.
+ * 
+ * Parameters:
+ *     N  - number of bits.
+ *
+ * Inputs:
+ *     a  - addres to read.
+ *
+ * Outputs
+ *     rd - read data.
+ */
+module instruction_mem #(parameter N=32)
+                        (input  logic [N-1:0] a,
+				             output logic [N-1:0] rd);
 
-logic [31:0] RAM[22:0];
+	logic [N-1:0] rom[38:0];
 
-initial begin
-    $readmemh("./instructions.txt", RAM);
-end
+	initial begin
+		 $readmemh("C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instructions.txt", rom);
+	end
+	
 
-assign rd = RAM[a[31:0]];
+	assign rd = rom[a[N-1:2]];
 
 endmodule // instruction_mem
