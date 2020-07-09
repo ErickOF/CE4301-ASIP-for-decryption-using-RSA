@@ -10,68 +10,141 @@
 # Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu_test.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:25:27 on Jul 01,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu_test.sv 
-# -- Compiling module alu_test
+# Start time: 22:44:36 on Jul 08,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv 
+# -- Compiling module pc_ff
 # 
 # Top level modules:
-# 	alu_test
-# End time: 11:25:27 on Jul 01,2020, Elapsed time: 0:00:00
+# 	pc_ff
+# End time: 22:44:36 on Jul 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:25:27 on Jul 01,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv 
-# -- Compiling module alu
+# Start time: 22:44:36 on Jul 08,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv 
+# -- Compiling module if_stage_test
 # 
 # Top level modules:
-# 	alu
-# End time: 11:25:27 on Jul 01,2020, Elapsed time: 0:00:00
+# 	if_stage_test
+# End time: 22:44:36 on Jul 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:44:36 on Jul 08,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 22:44:36 on Jul 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:44:36 on Jul 08,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv 
+# -- Compiling module pc_mux
+# 
+# Top level modules:
+# 	pc_mux
+# End time: 22:44:36 on Jul 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:44:36 on Jul 08,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv 
+# -- Compiling module if_stage
+# 
+# Top level modules:
+# 	if_stage
+# End time: 22:44:36 on Jul 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.alu_test
-# vsim work.alu_test 
-# Start time: 11:25:32 on Jul 01,2020
+vsim work.if_stage_test
+# vsim work.if_stage_test 
+# Start time: 22:44:41 on Jul 08,2020
 # Loading sv_std.std
-# Loading work.alu_test
-# Loading work.alu
-add wave -position end  sim:/alu_test/ALUControl
-add wave -position end  sim:/alu_test/a
-add wave -position end  sim:/alu_test/b
-add wave -position end  sim:/alu_test/result
-add wave -position end  sim:/alu_test/Z
-add wave -position end  sim:/alu_test/C
+# Loading work.if_stage_test
+# Loading work.if_stage
+# Loading work.pc_ff
+# Loading work.pc_mux
+# Loading work.adder
+add wave -position end  sim:/if_stage_test/pc
+add wave -position end  sim:/if_stage_test/jmp_pc
+add wave -position end  sim:/if_stage_test/clk
+add wave -position end  sim:/if_stage_test/reset
+add wave -position end  sim:/if_stage_test/pc_selector
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
-#           Attempting to use alternate WLF file "./wlftfditb9".
+#           Attempting to use alternate WLF file "./wlft3e8sy4".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfditb9
-run 200
-# a=0000, b=0000, ALUControl=00, result=0000, Z=1, C=0
+#           Using alternate file: ./wlft3e8sy4
+run 500
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000
 # 
-# a=0000, b=1111, ALUControl=00, result=1111, Z=0, C=0
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000004
 # 
-# a=1111, b=0000, ALUControl=00, result=1111, Z=0, C=0
 # 
-# a=1111, b=1111, ALUControl=00, result=1110, Z=0, C=1
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000004
 # 
-# a=0110, b=0001, ALUControl=00, result=0111, Z=0, C=0
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000008
 # 
-# a=0001, b=0111, ALUControl=00, result=1000, Z=0, C=0
 # 
-# a=0000, b=0000, ALUControl=01, result=0000, Z=1, C=0
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000008
 # 
-# a=0000, b=1111, ALUControl=01, result=0001, Z=0, C=1
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0000000c
 # 
-# a=1111, b=0000, ALUControl=01, result=1111, Z=0, C=0
 # 
-# a=1111, b=1111, ALUControl=01, result=0000, Z=1, C=0
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0000000c
 # 
-# a=0110, b=0001, ALUControl=01, result=0101, Z=0, C=0
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000010
 # 
-# a=0001, b=0111, ALUControl=01, result=1010, Z=0, C=1
 # 
-# End time: 11:27:34 on Jul 01,2020, Elapsed time: 0:02:02
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000010
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000014
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=0000ffff
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=0000ffff
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00010003
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00010007
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00010007
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0001000b
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0001000b
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0001000f
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=0000ffff
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=0000ffff
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00010003
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00010007
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00010007
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0001000b
+# 
+# 
+# clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0001000b
+# 
+# clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=0001000f
+# 
+# 
+# End time: 22:45:36 on Jul 08,2020, Elapsed time: 0:00:55
 # Errors: 0, Warnings: 2

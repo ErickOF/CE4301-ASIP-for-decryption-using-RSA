@@ -1,5 +1,5 @@
-Analysis & Synthesis report for asip
-Wed Jul 01 11:29:10 2020
+Analysis & Elaboration report for asip
+Wed Jul 08 22:44:30 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -7,17 +7,16 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |alu
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: if_stage:DUT
+  5. Parameter Settings for User Entity Instance: if_stage:DUT|pc_ff:pc_ff_instance
+  6. Parameter Settings for User Entity Instance: if_stage:DUT|pc_mux:pc_mux_instance
+  7. Parameter Settings for User Entity Instance: if_stage:DUT|adder:adder_instance
+  8. Analysis & Elaboration Settings
+  9. Port Connectivity Checks: "if_stage:DUT|adder:adder_instance"
+ 10. Port Connectivity Checks: "if_stage:DUT"
+ 11. Analysis & Elaboration Messages
 
 
 
@@ -40,36 +39,87 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jul 01 11:29:10 2020       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                   ; asip                                        ;
-; Top-level Entity Name           ; alu                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 99                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Jul 08 22:44:30 2020       ;
+; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                 ; asip                                        ;
+; Top-level Entity Name         ; if_stage_test                               ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: if_stage:DUT ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: if_stage:DUT|pc_ff:pc_ff_instance ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: if_stage:DUT|pc_mux:pc_mux_instance ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: if_stage:DUT|adder:adder_instance ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; alu                ; asip               ;
+; Top-level entity name                                                           ; if_stage_test      ; asip               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -150,131 +200,46 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "if_stage:DUT|adder:adder_instance" ;
++----------+-------+----------+---------------------------------+
+; Port     ; Type  ; Severity ; Details                         ;
++----------+-------+----------+---------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                    ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                    ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                    ;
++----------+-------+----------+---------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+-----------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                            ; Library ;
-+-----------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; asip/processor/path/ex-stage/alu/alu.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv ;         ;
-+-----------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "if_stage:DUT"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; pc   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimate of Logic utilization (ALMs needed) ; 24            ;
-;                                             ;               ;
-; Combinational ALUT usage for logic          ; 41            ;
-;     -- 7 input functions                    ; 0             ;
-;     -- 6 input functions                    ; 6             ;
-;     -- 5 input functions                    ; 0             ;
-;     -- 4 input functions                    ; 0             ;
-;     -- <=3 input functions                  ; 35            ;
-;                                             ;               ;
-; Dedicated logic registers                   ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 99            ;
-;                                             ;               ;
-; Total DSP Blocks                            ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; aluFunc~input ;
-; Maximum fan-out                             ; 34            ;
-; Total fan-out                               ; 302           ;
-; Average fan-out                             ; 1.26          ;
-+---------------------------------------------+---------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |alu                       ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 99   ; 0            ; |alu                ; alu         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |alu ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 32    ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 41                          ;
-;     arith             ; 34                          ;
-;         1 data inputs ; 2                           ;
-;         3 data inputs ; 32                          ;
-;     normal            ; 7                           ;
-;         2 data inputs ; 1                           ;
-;         6 data inputs ; 6                           ;
-; boundary_port         ; 99                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.80                        ;
-; Average LUT depth     ; 4.85                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Jul 01 11:28:56 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip
+    Info: Processing started: Wed Jul 08 22:44:21 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/pc_ff.sv
+    Info (12023): Found entity 1: pc_ff File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/if_stage_test.sv
+    Info (12023): Found entity 1: if_stage_test File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file asip/memories/instruction_mem.sv
+    Info (12023): Found entity 1: instruction_mem File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/pc_mux.sv
+    Info (12023): Found entity 1: pc_mux File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/ex-stage/alu/alu_test.sv
     Info (12023): Found entity 1: alu_test File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/ex-stage/alu/alu.sv
@@ -285,25 +250,49 @@ Info (12021): Found 0 design units, including 0 entities, in source file asip/cl
 Info (12021): Found 0 design units, including 0 entities, in source file asip/asip.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/wb-stage/wb_stage.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/mem-stage/mem_stage.sv
-Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/if-stage/if_stage.sv
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/if_stage.sv
+    Info (12023): Found entity 1: if_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 17
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/id-stage/id_stage.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/ex-stage/ex_stage.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/path.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/hazard_unit/hazard_unit.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/control_unit/control_unit.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/vga-controller/vga_controller.sv
-Info (12127): Elaborating entity "alu" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 140 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 65 input pins
-    Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 41 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Wed Jul 01 11:29:10 2020
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:22
+Info (12127): Elaborating entity "if_stage_test" for the top level hierarchy
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(12): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 12
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(15): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 15
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(18): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 18
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(21): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 21
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(24): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 24
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(27): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 27
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(30): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 30
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(33): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 33
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(36): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 36
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(39): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 39
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(43): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 43
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(46): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 46
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(49): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 49
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(52): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 52
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(55): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 55
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(58): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 58
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(61): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 61
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(64): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 64
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(68): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 68
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(71): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=1, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 71
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(74): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 74
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(77): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 77
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(80): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 80
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(83): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 83
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(86): clk=0, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 86
+Info (10648): Verilog HDL Display System Task info at if_stage_test.sv(89): clk=1, reset=0, jmp_pc=0000ffff, pc_selector=0, pc=00000000\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 89
+Info (12128): Elaborating entity "if_stage" for hierarchy "if_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage_test.sv Line: 5
+Info (12128): Elaborating entity "pc_ff" for hierarchy "if_stage:DUT|pc_ff:pc_ff_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 29
+Info (12128): Elaborating entity "pc_mux" for hierarchy "if_stage:DUT|pc_mux:pc_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 30
+Info (12128): Elaborating entity "adder" for hierarchy "if_stage:DUT|adder:adder_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 31
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Wed Jul 08 22:44:30 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 
