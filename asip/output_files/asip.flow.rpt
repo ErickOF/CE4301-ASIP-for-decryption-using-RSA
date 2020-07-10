@@ -1,5 +1,5 @@
 Flow report for asip
-Thu Jul 09 20:03:42 2020
+Fri Jul 10 16:20:12 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Thu Jul 09 20:03:42 2020       ;
+; Flow Status                 ; Successful - Fri Jul 10 16:20:12 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; asip                                        ;
 ; Top-level Entity Name       ; id_stage_test                               ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/09/2020 20:03:33 ;
+; Start date & time ; 07/10/2020 16:20:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; asip                ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 97351243532289.159434661301296         ; --            ; --            ; --             ;
+; COMPILER_SIGNATURE_ID               ; 97351243532289.159441960104524         ; --            ; --            ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --            ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --            ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation ;
@@ -94,8 +94,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4776 MB             ; 00:00:22                           ;
-; Total                  ; 00:00:10     ; --                      ; --                  ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4775 MB             ; 00:00:25                           ;
+; Total                  ; 00:00:11     ; --                      ; --                  ; 00:00:25                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

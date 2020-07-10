@@ -1,5 +1,5 @@
 Analysis & Elaboration report for asip
-Thu Jul 09 20:03:42 2020
+Fri Jul 10 16:20:12 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Jul 09 20:03:42 2020       ;
+; Analysis & Elaboration Status ; Successful - Fri Jul 10 16:20:12 2020       ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                 ; asip                                        ;
 ; Top-level Entity Name         ; id_stage_test                               ;
@@ -206,6 +206,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; op       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; func     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ra       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rb       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rf       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; rda      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; rdb      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; extended ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
@@ -218,7 +221,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Jul 09 20:03:32 2020
+    Info: Processing started: Fri Jul 10 16:20:01 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -259,20 +262,49 @@ Info (12021): Found 0 design units, including 0 entities, in source file asip/pr
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/if_stage.sv
     Info (12023): Found entity 1: if_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/id-stage/id_stage.sv
-    Info (12023): Found entity 1: id_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 24
+    Info (12023): Found entity 1: id_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 28
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/ex-stage/ex_stage.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/path.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/hazard_unit/hazard_unit.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/control_unit/control_unit.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/vga-controller/vga_controller.sv
 Info (12127): Elaborating entity "id_stage_test" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(15): clk=1, inst=00088000, rb_sel=0, we=0, wd=00000000, ext_sel=11, op=..., func=.., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 15
-Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(19): clk=0, inst=00088000, rb_sel=0, we=0, wd=00000001, ext_sel=11, op=..., func=.., rda=00000000, rdb=00000000, extended=................................\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 19
-Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(25): clk=1, inst=00088000, rb_sel=0, we=0, wd=00000000, ext_sel=00, op=..., func=.., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 25
-Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(29): clk=0, inst=01100029, rb_sel=0, we=0, wd=00000001, ext_sel=00, op=..., func=.., rda=00000000, rdb=00000000, extended=................................\n\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 29
-Info (12128): Elaborating entity "id_stage" for hierarchy "id_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 7
-Info (12128): Elaborating entity "rb_mux" for hierarchy "id_stage:DUT|rb_mux:rb_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 46
-Info (12128): Elaborating entity "registers" for hierarchy "id_stage:DUT|registers:regs_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 47
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(15): ADD R0, R1, R2 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 15
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(17): clk=1, inst=00088000, rb_sel=0, we=0, rw=00000, wd=0a000001, ext_sel=11, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 17
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(21): clk=0, inst=00088000, rb_sel=0, we=1, rw=00000, wd=0a000001, ext_sel=11, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 21
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(26): ADD R1, R2, 10 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 26
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(28): clk=1, inst=01100029, rb_sel=0, we=1, rw=00001, wd=0a000002, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 28
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(32): clk=0, inst=01100029, rb_sel=0, we=1, rw=00001, wd=0a000002, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(37): SUB R2, R3, R4 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 37
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(39): clk=1, inst=02190002, rb_sel=0, we=0, rw=00010, wd=0a000003, ext_sel=11, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 39
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(43): clk=0, inst=02190002, rb_sel=0, we=1, rw=00010, wd=0a000003, ext_sel=11, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 43
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(48): SUB R3, R4, 10 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 48
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(50): clk=1, inst=0320002b, rb_sel=0, we=1, rw=00011, wd=0a000004, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 50
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(54): clk=0, inst=0320002b, rb_sel=0, we=1, rw=00011, wd=0a000004, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 54
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(59): LDR R5, 32 (R6) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 59
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(61): clk=1, inst=45300020, rb_sel=0, we=1, rw=00100, wd=0a000005, ext_sel=01, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 61
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(65): clk=0, inst=45300020, rb_sel=0, we=1, rw=00100, wd=0a000005, ext_sel=01, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 65
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(70): STR R6, 32 (R7) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 70
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(72): clk=1, inst=66380020, rb_sel=1, we=1, rw=00101, wd=0a000006, ext_sel=01, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 72
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(76): clk=0, inst=66380020, rb_sel=1, we=1, rw=00101, wd=0a000006, ext_sel=01, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 76
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(81): CMP R0, R1 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 81
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(83): clk=1, inst=20004002, rb_sel=0, we=1, rw=00110, wd=0a000007, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 83
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(87): clk=0, inst=20004002, rb_sel=0, we=1, rw=00110, wd=0a000007, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 87
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(92): JEQ 0x0 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 92
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(94): clk=1, inst=80000000, rb_sel=0, we=1, rw=00111, wd=0a000008, ext_sel=10, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 94
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(98): clk=0, inst=80000000, rb_sel=0, we=1, rw=00111, wd=0a000008, ext_sel=10, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 98
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(103): CMP R3, R4 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 103
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(105): clk=1, inst=2010c002, rb_sel=0, we=1, rw=01000, wd=0a000009, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 105
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(109): clk=0, inst=2010c002, rb_sel=0, we=1, rw=01000, wd=0a000009, ext_sel=00, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 109
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(114): JNE 0x8 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 114
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(116): clk=1, inst=a0000008, rb_sel=0, we=1, rw=01001, wd=0a00000a, ext_sel=10, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 116
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(120): clk=0, inst=a0000008, rb_sel=0, we=1, rw=01001, wd=0a00000a, ext_sel=10, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 120
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(125): JMP 0x10 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 125
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(127): clk=1, inst=c0000010, rb_sel=0, we=1, rw=01010, wd=0a00000b, ext_sel=10, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................ File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 127
+Info (10648): Verilog HDL Display System Task info at id_stage_test.sv(131): clk=0, inst=c0000010, rb_sel=0, we=1, rw=01010, wd=0a00000b, ext_sel=10, op=..., func=.., ra=....., rb=....., rf=....., rda=00000000, rdb=00000000, extended=................................\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 131
+Info (12128): Elaborating entity "id_stage" for hierarchy "id_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv Line: 8
+Info (12128): Elaborating entity "rb_mux" for hierarchy "id_stage:DUT|rb_mux:rb_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 54
+Info (12128): Elaborating entity "registers" for hierarchy "id_stage:DUT|registers:regs_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 55
 Warning (10235): Verilog HDL Always Construct warning at registers.sv(34): variable "we" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 34
 Warning (10235): Verilog HDL Always Construct warning at registers.sv(36): variable "wd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 36
 Warning (10235): Verilog HDL Always Construct warning at registers.sv(36): variable "rw" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 36
@@ -1301,11 +1333,11 @@ Info (10041): Inferred latch for "rf[31][28]" at registers.sv(33) File: C:/Users
 Info (10041): Inferred latch for "rf[31][29]" at registers.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 33
 Info (10041): Inferred latch for "rf[31][30]" at registers.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 33
 Info (10041): Inferred latch for "rf[31][31]" at registers.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 33
-Info (12128): Elaborating entity "zero_extension" for hierarchy "id_stage:DUT|zero_extension:zext_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 48
+Info (12128): Elaborating entity "zero_extension" for hierarchy "id_stage:DUT|zero_extension:zext_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 56
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Thu Jul 09 20:03:42 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4775 megabytes
+    Info: Processing ended: Fri Jul 10 16:20:12 2020
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 
