@@ -1,12 +1,12 @@
 /**
- * Mux to select PC.
+ * Instruction Fetch Stage.
  *
  * Parameters:
  *     N           - number of bits.
  *
  * Inputs:
- * 	 clk        - clock.
- *     reset      - reset signal.
+ * 	 clk         - clock signal.
+ *     reset       - reset signal.
  *     jmp_pc      - pc to jump.
  *     pc_selector - function to be executed.
  *

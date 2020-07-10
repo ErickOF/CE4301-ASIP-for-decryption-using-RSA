@@ -10,7 +10,7 @@
  *     pc_selector - pc to be selected.
  *
  * Outputs:
- *     selected_pc - alu result.
+ *     selected_pc - selected pc.
  *
  */
 module pc_mux #(parameter N=32)
