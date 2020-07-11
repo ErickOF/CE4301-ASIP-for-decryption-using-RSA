@@ -4,6 +4,13 @@
 *.obj
 *.bc
 
+### Quartus ###
+asip/db
+asip/incremental_db
+asip/output_files
+asip/asip_nativelink_simulation.rpt
+*.sv.bak
+
 ### C ###
 # Prerequisites
 *.d
@@ -79,7 +86,6 @@ dkms.conf
 *__pycache__/
 *.py[cod]
 *$py.class
-
 
 # C extensions
 
