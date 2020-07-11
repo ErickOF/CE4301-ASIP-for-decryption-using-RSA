@@ -10,131 +10,88 @@
 # Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage_test.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:20:18 on Jul 10,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv 
-# -- Compiling module zero_extension
+# Start time: 19:35:59 on Jul 10,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage_test.sv 
+# -- Compiling module ex_stage_test
 # 
 # Top level modules:
-# 	zero_extension
-# End time: 16:20:18 on Jul 10,2020, Elapsed time: 0:00:00
+# 	ex_stage_test
+# End time: 19:36:00 on Jul 10,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:20:19 on Jul 10,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv 
-# -- Compiling module registers
+# Start time: 19:36:00 on Jul 10,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv 
+# -- Compiling module opb_mux
 # 
 # Top level modules:
-# 	registers
-# End time: 16:20:19 on Jul 10,2020, Elapsed time: 0:00:00
+# 	opb_mux
+# End time: 19:36:00 on Jul 10,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:20:19 on Jul 10,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv 
-# -- Compiling module rb_mux
+# Start time: 19:36:00 on Jul 10,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv 
+# -- Compiling module alu
 # 
 # Top level modules:
-# 	rb_mux
-# End time: 16:20:19 on Jul 10,2020, Elapsed time: 0:00:00
+# 	alu
+# End time: 19:36:00 on Jul 10,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:20:19 on Jul 10,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage_test.sv 
-# -- Compiling module id_stage_test
+# Start time: 19:36:00 on Jul 10,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv 
+# -- Compiling module ex_stage
 # 
 # Top level modules:
-# 	id_stage_test
-# End time: 16:20:19 on Jul 10,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:20:19 on Jul 10,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv 
-# -- Compiling module id_stage
-# 
-# Top level modules:
-# 	id_stage
-# End time: 16:20:19 on Jul 10,2020, Elapsed time: 0:00:00
+# 	ex_stage
+# End time: 19:36:00 on Jul 10,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.id_stage_test
-# vsim work.id_stage_test 
-# Start time: 16:20:26 on Jul 10,2020
+vsim work.ex_stage_test
+# vsim work.ex_stage_test 
+# Start time: 19:36:05 on Jul 10,2020
 # Loading sv_std.std
-# Loading work.id_stage_test
-# Loading work.id_stage
-# Loading work.rb_mux
-# Loading work.registers
-# Loading work.zero_extension
-add wave -position end  sim:/id_stage_test/clk
-add wave -position end  sim:/id_stage_test/reset
-add wave -position end  sim:/id_stage_test/rb_selector
-add wave -position end  sim:/id_stage_test/we
-add wave -position end  sim:/id_stage_test/ext_selector
-add wave -position end  sim:/id_stage_test/func
-add wave -position end  sim:/id_stage_test/op
-add wave -position end  sim:/id_stage_test/ra
-add wave -position end  sim:/id_stage_test/rb
-add wave -position end  sim:/id_stage_test/rf
-add wave -position end  sim:/id_stage_test/rw
-add wave -position end  sim:/id_stage_test/instruction
-add wave -position end  sim:/id_stage_test/wd
-add wave -position end  sim:/id_stage_test/rda
-add wave -position end  sim:/id_stage_test/rdb
-add wave -position end  sim:/id_stage_test/extended
+# Loading work.ex_stage_test
+# Loading work.ex_stage
+# Loading work.opb_mux
+# Loading work.alu
+add wave -position end  sim:/ex_stage_test/alu_func
+add wave -position end  sim:/ex_stage_test/opb_selector
+add wave -position end  sim:/ex_stage_test/Z
+add wave -position end  sim:/ex_stage_test/C
+add wave -position end  sim:/ex_stage_test/rda
+add wave -position end  sim:/ex_stage_test/rdb
+add wave -position end  sim:/ex_stage_test/extended
+add wave -position end  sim:/ex_stage_test/alu_result
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
-#           Attempting to use alternate WLF file "./wlft19rc5s".
+#           Attempting to use alternate WLF file "./wlft86gh1y".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft19rc5s
+#           Using alternate file: ./wlft86gh1y
 run 300
-# ADD R0, R1, R2
-# clk=1, inst=00088000, rb_sel=0, we=0, rw=00000, wd=0a000001, ext_sel=11, op=000, func=00, ra=00001, rb=00010, rf=00000, rda=00000000, rdb=00000000, extended=00000000000000000000000000000000
-# clk=0, inst=00088000, rb_sel=0, we=1, rw=00000, wd=0a000001, ext_sel=11, op=000, func=00, ra=00001, rb=00010, rf=00000, rda=00000000, rdb=00000000, extended=00000000000000000000000000000000
+# rda=aa00aa00, rdb=00aa00aa, extended=00004444, alu_func=0, opb_selector=0, result=aaaaaaaa, Z=0
 # 
-# ADD R1, R2, 10
-# clk=1, inst=01100029, rb_sel=0, we=1, rw=00001, wd=0a000002, ext_sel=00, op=000, func=01, ra=00010, rb=00000, rf=00001, rda=00000000, rdb=0a000001, extended=00000000000000000000000000001010
-# clk=0, inst=01100029, rb_sel=0, we=1, rw=00001, wd=0a000002, ext_sel=00, op=000, func=01, ra=00010, rb=00000, rf=00001, rda=00000000, rdb=0a000001, extended=00000000000000000000000000001010
+# rda=aa00aa01, rdb=00aa00aa, extended=00004444, alu_func=0, opb_selector=0, result=aaaaaaab, Z=0
 # 
-# SUB R2, R3, R4
-# clk=1, inst=02190002, rb_sel=0, we=0, rw=00010, wd=0a000003, ext_sel=11, op=000, func=10, ra=00011, rb=00100, rf=00010, rda=00000000, rdb=00000000, extended=00000000000000000000000000000000
-# clk=0, inst=02190002, rb_sel=0, we=1, rw=00010, wd=0a000003, ext_sel=11, op=000, func=10, ra=00011, rb=00100, rf=00010, rda=00000000, rdb=00000000, extended=00000000000000000000000000000000
+# rda=aa00aa00, rdb=00aa00aa, extended=00004444, alu_func=0, opb_selector=1, result=aa00ee44, Z=0
 # 
-# SUB R3, R4, 10
-# clk=1, inst=0320002b, rb_sel=0, we=1, rw=00011, wd=0a000004, ext_sel=00, op=000, func=11, ra=00100, rb=00000, rf=00011, rda=00000000, rdb=0a000001, extended=00000000000000000000000000001010
-# clk=0, inst=0320002b, rb_sel=0, we=1, rw=00011, wd=0a000004, ext_sel=00, op=000, func=11, ra=00100, rb=00000, rf=00011, rda=00000000, rdb=0a000001, extended=00000000000000000000000000001010
+# rda=aa00aa01, rdb=00aa00aa, extended=00004444, alu_func=0, opb_selector=1, result=aa00ee45, Z=0
 # 
-# LDR R5, 32 (R6)
-# clk=1, inst=45300020, rb_sel=0, we=1, rw=00100, wd=0a000005, ext_sel=01, op=010, func=00, ra=00110, rb=00000, rf=00101, rda=00000000, rdb=0a000001, extended=00000000000000000000000000100000
-# clk=0, inst=45300020, rb_sel=0, we=1, rw=00100, wd=0a000005, ext_sel=01, op=010, func=00, ra=00110, rb=00000, rf=00101, rda=00000000, rdb=0a000001, extended=00000000000000000000000000100000
+# rda=aa00aa00, rdb=00aa00aa, extended=00004444, alu_func=1, opb_selector=0, result=a956a956, Z=0
 # 
-# STR R6, 32 (R7)
-# clk=1, inst=66380020, rb_sel=1, we=1, rw=00101, wd=0a000006, ext_sel=01, op=011, func=00, ra=00111, rb=00000, rf=00110, rda=00000000, rdb=00000000, extended=00000000000000000000000000100000
-# clk=0, inst=66380020, rb_sel=1, we=1, rw=00101, wd=0a000006, ext_sel=01, op=011, func=00, ra=00111, rb=00000, rf=00110, rda=00000000, rdb=00000000, extended=00000000000000000000000000100000
+# rda=aa00aa00, rdb=aa00aa00, extended=00004444, alu_func=1, opb_selector=0, result=00000000, Z=1
 # 
-# CMP R0, R1
-# clk=1, inst=20004002, rb_sel=0, we=1, rw=00110, wd=0a000007, ext_sel=00, op=001, func=10, ra=00000, rb=00001, rf=00000, rda=0a000001, rdb=0a000002, extended=00000000000000000000000000000000
-# clk=0, inst=20004002, rb_sel=0, we=1, rw=00110, wd=0a000007, ext_sel=00, op=001, func=10, ra=00000, rb=00001, rf=00000, rda=0a000001, rdb=0a000002, extended=00000000000000000000000000000000
+# rda=aa00aa00, rdb=00aa00aa, extended=00004444, alu_func=1, opb_selector=1, result=aa0065bc, Z=0
 # 
-# JEQ 0x0
-# clk=1, inst=80000000, rb_sel=0, we=1, rw=00111, wd=0a000008, ext_sel=10, op=100, func=00, ra=00000, rb=00000, rf=00000, rda=0a000001, rdb=0a000001, extended=00000000000000000000000000000000
-# clk=0, inst=80000000, rb_sel=0, we=1, rw=00111, wd=0a000008, ext_sel=10, op=100, func=00, ra=00000, rb=00000, rf=00000, rda=0a000001, rdb=0a000001, extended=00000000000000000000000000000000
+# rda=00004444, rdb=aa00aa00, extended=00004444, alu_func=1, opb_selector=1, result=00000000, Z=1
 # 
-# CMP R3, R4
-# clk=1, inst=2010c002, rb_sel=0, we=1, rw=01000, wd=0a000009, ext_sel=00, op=001, func=10, ra=00010, rb=00011, rf=00000, rda=0a000003, rdb=0a000004, extended=00000000000000000000000000000000
-# clk=0, inst=2010c002, rb_sel=0, we=1, rw=01000, wd=0a000009, ext_sel=00, op=001, func=10, ra=00010, rb=00011, rf=00000, rda=0a000003, rdb=0a000004, extended=00000000000000000000000000000000
+# rda=00004444, rdb=aa00aa00, extended=00004444, alu_func=1, opb_selector=0, result=55ff9a44, Z=0
 # 
-# JNE 0x8
-# clk=1, inst=a0000008, rb_sel=0, we=1, rw=01001, wd=0a00000a, ext_sel=10, op=101, func=00, ra=00000, rb=00000, rf=00000, rda=0a000001, rdb=0a000001, extended=00000000000000000000000000001000
-# clk=0, inst=a0000008, rb_sel=0, we=1, rw=01001, wd=0a00000a, ext_sel=10, op=101, func=00, ra=00000, rb=00000, rf=00000, rda=0a000001, rdb=0a000001, extended=00000000000000000000000000001000
+# rda=00004444, rdb=aa00aa00, extended=00004444, alu_func=1, opb_selector=1, result=00000000, Z=1
 # 
-# JMP 0x10
-# clk=1, inst=c0000010, rb_sel=0, we=1, rw=01010, wd=0a00000b, ext_sel=10, op=110, func=00, ra=00000, rb=00000, rf=00000, rda=0a000001, rdb=0a000001, extended=00000000000000000000000000010000
-# clk=0, inst=c0000010, rb_sel=0, we=1, rw=01010, wd=0a00000b, ext_sel=10, op=110, func=00, ra=00000, rb=00000, rf=00000, rda=0a000001, rdb=0a000001, extended=00000000000000000000000000010000
-# 
-# End time: 16:27:26 on Jul 10,2020, Elapsed time: 0:07:00
+# End time: 19:41:51 on Jul 10,2020, Elapsed time: 0:05:46
 # Errors: 0, Warnings: 2

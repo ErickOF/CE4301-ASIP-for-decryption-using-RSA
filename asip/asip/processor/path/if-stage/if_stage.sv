@@ -11,7 +11,7 @@
  *     pc_selector - function to be executed.
  *
  * Outputs:
- *     instruction - fetched instruction.
+ *     pc          - current pc.
  *
  */
 module if_stage #(parameter N=32)
@@ -24,7 +24,6 @@ module if_stage #(parameter N=32)
 	logic [N-1:0] result;
 	logic [N-1:0] pc_plus4;
 	logic [N-1:0] pc_reg;
-	logic [N-1:0] fetched_instruction;
 	
 	pc_ff  #(32) pc_ff_instance(clk, reset, pc_plus4, pc_reg);
 	pc_mux #(32) pc_mux_instance(pc_reg, jmp_pc, pc_selector, pc);
