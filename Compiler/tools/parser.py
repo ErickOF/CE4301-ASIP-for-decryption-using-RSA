@@ -385,16 +385,16 @@ class Parser:
                     instr, flag = instruction.split(' ')
                     output.append({'I': instr, 'flag': flag, 'type': 'J'})
             else:
-                instr, rd, value = instruction.split(' ')
+                instr, ra, value = instruction.split(' ')
 
                 # Register Constant
                 if value.isnumeric() or value[-1] in 'hHbB' or value[:2] in '0x0b':
-                    output.append({'I': instr, 'RD': rd[:-1], 'K': value,
-                                   'RA': '00', 'type': 'RK'})
+                    output.append({'I': instr, 'RD': '00', 'K': value,
+                                   'RA': ra[:-1], 'type': 'RK'})
                 # Register Register
                 else:
-                    output.append({'I': instr, 'RD': rd[:-1], 'RA': value,
-                                   'RB': '00', 'type': 'RR'})
+                    output.append({'I': instr, 'RD': '00', 'RA': ra[:-1],
+                                   'RB': value, 'type': 'RR'})
 
         return output
 
