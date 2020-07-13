@@ -38,7 +38,11 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
+<<<<<<< refs/remotes/origin/master
 set_global_assignment -name TOP_LEVEL_ENTITY mem_stage_test
+=======
+set_global_assignment -name TOP_LEVEL_ENTITY vga_controller
+>>>>>>> [Update] - New files were added to VGA controller
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:36:27  JUNE 11, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -51,6 +55,7 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+<<<<<<< refs/remotes/origin/master
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/mem-stage/data_memory.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/mem-stage/mem_stage_test.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE asip/memories/data_mem.sv
@@ -64,6 +69,16 @@ set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/id-stage/reg
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/id-stage/registers.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/id-stage/rb_mux.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/id-stage/id_stage_test.sv"
+=======
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/mux_2.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/frecuencyDivider.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/demux_2.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/counter.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/comparator.sv"
+>>>>>>> [Update] - New files were added to VGA controller
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/instr_fetch_test.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/pc_ff.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/if_stage_test.sv"
@@ -85,7 +100,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE asip/processor/path/path.sv
 set_global_assignment -name SYSTEMVERILOG_FILE asip/processor/hazard_unit/hazard_unit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE asip/processor/control_unit/control_unit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/vga_controller.sv"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
