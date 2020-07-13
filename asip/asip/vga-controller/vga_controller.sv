@@ -16,7 +16,7 @@
  *     posy
  *
  */
-module vgaController #(parameter 		HACTIVE = 10'd640,
+module vga_controller #(parameter 		HACTIVE = 10'd640,
 										HFP 	= 10'd16,
 										HSYN    = 10'd96,
 										HBP     = 10'd48,
@@ -63,4 +63,4 @@ module vgaController #(parameter 		HACTIVE = 10'd640,
    assign posx = hCnt;
    assign posy = vCnt;
 	
-endmodule
+endmodule // vga_controller

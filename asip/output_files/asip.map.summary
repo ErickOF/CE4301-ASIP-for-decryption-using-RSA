@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Jul 09 12:53:51 2020
+Analysis & Elaboration Status : Successful - Sun Jul 12 19:42:18 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : asip
-Top-level Entity Name : instr_fetch_test
+Top-level Entity Name : vga_controller
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

@@ -24,6 +24,6 @@ module counter #(parameter N = 8)
 		if (rst)			
 			cnt <= 0;
 		else if (ena)	
-			cnt <= o_cnt + 1;
+			cnt <= cnt + 1;
 	
 endmodule
