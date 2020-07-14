@@ -25,42 +25,37 @@ module vga_controller #(parameter 		HACTIVE = 10'd640,
 										HMAX    = HSYN + HBP + HACTIVE + HFP,
 										
 										VACTIVE = 10'd480,
-										VFP     = 10'd11,
+										VFP     = 10'd10,
 										VSYN    = 10'd2,
-										VBP     = 10'd31,
+										VBP     = 10'd33,
 										VSS     = VSYN + VBP,
 										VSE     = VSYN + VBP + VACTIVE,
 										VMAX    = VSYN + VBP + VACTIVE + VFP)
 	(input logic clk, rst,
 	output logic H_Sync, V_Sync, Blank_n,
-	output logic [9:0] posx, posy); 	
+	output logic [9:0] posx, 
+	output logic [8:0] posy); 	
 	
 	logic hRstF, vRstF, hDS, hDE, vDS, vDE = 0;
 	
-	logic [9:0] hCnt, vCnt;
+	logic [9:0] hCnt;
+	logic [8:0]	vCnt;
 	
 	//	Pixel Counter
-	counter#(10) HorizontalCounter(clk, (rst | hRstF), 1, hCnt);
-	counter#(10) VerticalCounter(clk, (rst | hRstF & vRstF), hRstF, vCnt);
+	counter#(10) HorizontalCounter(clk, (rst | hRstF), hCnt);
+	counter#(10) VerticalCounter(hRstF, (rst | vRstF), vCnt);
 	
-	//	Max Line Comparator
-	comparator#(10) hMaxComparator(.a(hCnt), .b(HMAX - 1), .gte(hRstF));
-	comparator#(10) vMaxComparator(.a(vCnt), .b(VMAX - 1), .gte(vRstF));
+	comparator#(10) hComparator(.a(hCnt), .b(HMAX), .c(HSYN), .d(HSS), .e(HSE),
+	.gte(hRstF), .gte2(H_Sync), .gte3(hDS), .lt(hDE));
+	comparator#(9) vComparator(.a(vCnt), .b(VMAX), .c(VSYN), .d(HSS), .e(VSE),
+	.gte(vRstF), .gte2(V_Sync), .gte3(vDS), .lt(vDE));
 	
-	//	Sync Signals (Low Active)
-	comparator#(10) hSSComparator(.a(hCnt), .b(HSYN), .gte(H_Sync));
-	comparator#(10) vSEComparator(.a(vCnt), .b(VSYN), .gte(V_Sync));
+
 	
-	//	Blank Comparator
-	comparator#(10) hDisplayStartComparator(.a(hCnt), .b(HSS), .gte(hDS));
-	comparator#(10) hDisplayEndComparator(.a(hCnt), .b(HSE), .lt(hDE));
-	
-	comparator#(10) vDisplayStartComparator(.a(vCnt), .b(VSS), .gte(vDS));
-	comparator#(10) vDisplayEndComparator(.a(vCnt), .b(VSE), .lt(vDE));
-	
-	assign Blank_n = H_Sync & V_Sync;
+	//assign Blank_n = H_Sync & V_Sync;
+	assign Blank_n = hDS & hDE & vDS & vDE;
 	
    assign posx = hCnt;
    assign posy = vCnt;
 	
-endmodule // vga_controller
+endmodule

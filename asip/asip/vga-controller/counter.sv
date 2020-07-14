@@ -16,14 +16,13 @@
 module counter #(parameter N = 8) 
 	(input  logic clk,
 	 input  logic rst,
-	 input  logic ena,
 	 output logic [N-1:0] cnt);
 	 
 	// Synchronous reset.
 	always_ff @(posedge clk)
 		if (rst)			
 			cnt <= 0;
-		else if (ena)	
+		else	
 			cnt <= cnt + 1;
 	
 endmodule
