@@ -2,27 +2,28 @@
  * Counter module.
  *
  * Parameters:
- *     N       - number of bits.
+ *     N   - number of bits.
  *
  * Inputs:
- *     clk       - Clock signal.
- *     rst       - Reset signal.
- *     ena       - Enable signal.
+ *     clk - clock signal.
+ *     rst - reset signal.
+ *     ena - enable signal.
  *
  * Outputs:
- *     cnt 		 - Count.
+ *     cnt - count.
  *
  */
-module counter #(parameter N = 8) 
-	(input  logic clk,
-	 input  logic rst,
-	 output logic [N-1:0] cnt);
-	 
+module counter #(parameter N=8) 
+	             (input  logic         clk, rst,
+	              output logic [N-1:0] cnt);
+
 	// Synchronous reset.
-	always_ff @(posedge clk)
-		if (rst)			
+	always_ff @(posedge clk) begin
+		if (rst)	begin		
 			cnt <= 0;
-		else	
+		end else begin
 			cnt <= cnt + 1;
-	
-endmodule
+		end
+	end
+
+endmodule // counter
