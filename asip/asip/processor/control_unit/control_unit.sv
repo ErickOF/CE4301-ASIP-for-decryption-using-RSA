@@ -16,8 +16,8 @@
  *
  */
 
-module ControlUnit (
-	input logic [2:0] OpCode
+module control_unit (
+	input logic [2:0] OpCode,
 	input logic [1:0] Funct,
 	output logic [1:0] Branch, Ext_Sel,
 	output logic WR_En, Opb_Sel, Alu_Func, WD_Sel, WM_En);
@@ -45,7 +45,7 @@ always_comb begin
 			//Verificar si la instrucción es add
 			2'd0: controls = 9'b110010000;
 
-			//Verificar si la instrucción es and inm
+			//Verificar si la instrucción es add inm
 			2'd1: controls = 9'b110111000;
 
 			//Verificar si la instrucción es sub
@@ -55,11 +55,12 @@ always_comb begin
 			2'd3: controls = 9'b110111100;
 			
 			//Valor default
-			default: controls = 9'b000000000;
+			default: controls = 9'b110010000;
 
 		endcase
+	end	
 
-	else if(OpCode == 1)
+	else if(OpCode == 1) begin
 
 		casex(Funct)
 
@@ -97,7 +98,7 @@ always_comb begin
 			3'd6: controls = 9'b101100000;
 
 			//Verificar si la instrucción es Nop
-			3'd7: controls = 9'b1111110000;
+			3'd7: controls = 9'b111100000;
 
 			//Valor default
 			default: controls = 9'b000000000;
