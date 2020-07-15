@@ -5,11 +5,11 @@
  *     N       - number of bits.
  *
  * Inputs:
- *     a       - first operand.
- *     b       - second operand.
- *     c       - third operand.
- *     d       - fourth operand.
- *     e       - fifth operand.
+ *     a       - first operand - Horizontal Count / Vertical Count.
+ *     b       - second operand - HMax / VMax.
+ *     c       - third operand - HSyn / VSyn.
+ *     d       - fourth operand - HSYN + HBP / VSYN + VBP.
+ *     e       - fifth operand - HSYN + HBP + HACTIVE / VSYN + VBP + VACTIVE.
  *
  * Outputs:
  *     eq  		- Equal to.
@@ -21,20 +21,16 @@
  *
  */
 
-module comparator #(parameter N=8)
-                   (input  logic [N-1:0] a, b, c, d, e,
-	                 output logic eq, neq, lt, lte, gt, gte, gte2, gte3);
+ module comparator #(parameter N = 8) (
+	input  logic [N-1:0] a, b, c, d, e,
+	output logic lt, gte, gte2, gte3);
 
 	always_comb begin
-		eq   = (a == b);
-		neq  = (a != b);
-		lt   = (a < e);
-		lte  = (a <= b);
-		gt   = (a > b);
-		gte  = (a >= b);
+		lt  = (a < e);
+		gte = (a >= b);
 		gte2 = (a >= c);
 		gte3 = (a >= d);
-	end
 
+	end
 endmodule
 	
