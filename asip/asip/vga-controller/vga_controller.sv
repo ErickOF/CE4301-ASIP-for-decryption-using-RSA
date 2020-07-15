@@ -17,7 +17,7 @@
  *
  */
 module vga_controller #(parameter 		HACTIVE = 10'd640,
-										HFP 	= 10'd16,
+									   HFP 	  = 10'd16,
 										HSYN    = 10'd96,
 										HBP     = 10'd48,
 										HSS     = HSYN + HBP,
@@ -31,10 +31,10 @@ module vga_controller #(parameter 		HACTIVE = 10'd640,
 										VSS     = VSYN + VBP,
 										VSE     = VSYN + VBP + VACTIVE,
 										VMAX    = VSYN + VBP + VACTIVE + VFP)
-	(input logic clk, rst,
-	output logic H_Sync, V_Sync, Blank_n,
-	output logic [9:0] posx, 
-	output logic [8:0] posy); 	
+	                    (input  logic clk, rst,
+	                     output logic H_Sync, V_Sync, Blank_n,
+	                     output logic [9:0] posx, 
+	                     output logic [8:0] posy); 	
 	
 	logic hRstF, vRstF, hDS, hDE, vDS, vDE = 0;
 	
@@ -42,17 +42,15 @@ module vga_controller #(parameter 		HACTIVE = 10'd640,
 	logic [8:0]	vCnt;
 	
 	//	Pixel Counter
-	counter#(10) HorizontalCounter(clk, (rst | hRstF), hCnt);
-	counter#(10) VerticalCounter(hRstF, (rst | vRstF), vCnt);
+	counter#(10) h_counter(clk, (rst | hRstF), hCnt);
+	counter#(9)  v_counter(hRstF, (rst | vRstF), vCnt);
 	
-	comparator#(10) hComparator(.a(hCnt), .b(HMAX), .c(HSYN), .d(HSS), .e(HSE),
-	.gte(hRstF), .gte2(H_Sync), .gte3(hDS), .lt(hDE));
-	comparator#(9) vComparator(.a(vCnt), .b(VMAX), .c(VSYN), .d(HSS), .e(VSE),
-	.gte(vRstF), .gte2(V_Sync), .gte3(vDS), .lt(vDE));
+	comparator#(10) h_comparator(.a(hCnt), .b(HMAX), .c(HSYN), .d(HSS), .e(HSE),
+	                             .gte(hRstF), .gte2(H_Sync), .gte3(hDS), .lt(hDE));
+	comparator#(9)  v_comparator(.a(vCnt), .b(VMAX), .c(VSYN), .d(HSS), .e(VSE),
+	                             .gte(vRstF), .gte2(V_Sync), .gte3(vDS), .lt(vDE));
 	
-
-	
-	//assign Blank_n = H_Sync & V_Sync;
+	// Assign Blank_n = H_Sync & V_Sync;
 	assign Blank_n = hDS & hDE & vDS & vDE;
 	
    assign posx = hCnt;

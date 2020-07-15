@@ -1,5 +1,5 @@
 Flow report for asip
-Sun Jul 12 19:42:18 2020
+Wed Jul 15 02:26:32 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Jul 12 19:42:18 2020       ;
+; Flow Status                 ; Successful - Wed Jul 15 02:26:32 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; asip                                        ;
 ; Top-level Entity Name       ; vga_controller                              ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/12/2020 19:42:06 ;
+; Start date & time ; 07/15/2020 02:26:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; asip                ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+----------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 97351243532289.159460452612332         ; --            ; --             ; --             ;
+; COMPILER_SIGNATURE_ID               ; 97351243532289.159480157505564         ; --            ; --             ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --             ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --             ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --             ; eda_simulation ;
@@ -94,8 +94,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4775 MB             ; 00:00:24                           ;
-; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4773 MB             ; 00:00:23                           ;
+; Total                  ; 00:00:25     ; --                      ; --                  ; 00:00:23                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
