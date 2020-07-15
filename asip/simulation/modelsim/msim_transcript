@@ -10,153 +10,199 @@
 # Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:57 on Jul 09,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/instr_fetch_test.sv 
-# -- Compiling module instr_fetch_test
+# Start time: 02:40:42 on Jul 15,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller_tb.sv 
+# -- Compiling module vga_controller_tb
 # 
 # Top level modules:
-# 	instr_fetch_test
-# End time: 12:53:57 on Jul 09,2020, Elapsed time: 0:00:00
+# 	vga_controller_tb
+# End time: 02:40:42 on Jul 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:57 on Jul 09,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv 
-# -- Compiling module pc_ff
+# Start time: 02:40:42 on Jul 15,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/counter.sv 
+# -- Compiling module counter
 # 
 # Top level modules:
-# 	pc_ff
-# End time: 12:53:57 on Jul 09,2020, Elapsed time: 0:00:00
+# 	counter
+# End time: 02:40:42 on Jul 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:57 on Jul 09,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv 
-# -- Compiling module adder
+# Start time: 02:40:42 on Jul 15,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv 
+# -- Compiling module comparator
 # 
 # Top level modules:
-# 	adder
-# End time: 12:53:57 on Jul 09,2020, Elapsed time: 0:00:00
+# 	comparator
+# End time: 02:40:42 on Jul 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:57 on Jul 09,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv 
-# -- Compiling module pc_mux
+# Start time: 02:40:42 on Jul 15,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv 
+# -- Compiling module vga_controller
 # 
 # Top level modules:
-# 	pc_mux
-# End time: 12:53:57 on Jul 09,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:57 on Jul 09,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv 
-# -- Compiling module if_stage
-# 
-# Top level modules:
-# 	if_stage
-# End time: 12:53:57 on Jul 09,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:57 on Jul 09,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/instruction_mem.sv 
-# -- Compiling module instruction_mem
-# 
-# Top level modules:
-# 	instruction_mem
-# End time: 12:53:57 on Jul 09,2020, Elapsed time: 0:00:00
+# 	vga_controller
+# End time: 02:40:42 on Jul 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.instr_fetch_test
-# vsim work.instr_fetch_test 
-# Start time: 12:54:07 on Jul 09,2020
+vsim work.vga_controller_tb
+# vsim work.vga_controller_tb 
+# Start time: 02:40:49 on Jul 15,2020
 # Loading sv_std.std
-# Loading work.instr_fetch_test
-# Loading work.if_stage
-# Loading work.pc_ff
-# Loading work.pc_mux
-# Loading work.adder
-# Loading work.instruction_mem
-add wave -position end  sim:/instr_fetch_test/pc
-add wave -position end  sim:/instr_fetch_test/jmp_pc
-add wave -position end  sim:/instr_fetch_test/instr
-add wave -position end  sim:/instr_fetch_test/clk
-add wave -position end  sim:/instr_fetch_test/reset
-add wave -position end  sim:/instr_fetch_test/pc_selector
+# Loading work.vga_controller_tb
+# Loading work.vga_controller
+# Loading work.counter
+# Loading work.comparator
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/h_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'b'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'c'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'd'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'e'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3839) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(39): Variable '/vga_controller_tb/DUT/vDE', driven via a port connection, is multiply driven. See C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv
+vsim work.vga_controller_tb
+# End time: 02:40:53 on Jul 15,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 15
+# vsim work.vga_controller_tb 
+# Start time: 02:40:53 on Jul 15,2020
+# Loading sv_std.std
+# Loading work.vga_controller_tb
+# Loading work.vga_controller
+# Loading work.counter
+# Loading work.comparator
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/h_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'b'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'c'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'd'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'e'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3839) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(39): Variable '/vga_controller_tb/DUT/vDE', driven via a port connection, is multiply driven. See C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv
+run 1000
+add wave -position end  sim:/vga_controller_tb/clk
+add wave -position end  sim:/vga_controller_tb/rst
+add wave -position end  sim:/vga_controller_tb/h_sync
+add wave -position end  sim:/vga_controller_tb/v_sync
+add wave -position end  sim:/vga_controller_tb/blank_n
+add wave -position end  sim:/vga_controller_tb/posx
+add wave -position end  sim:/vga_controller_tb/posy
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
-#           Attempting to use alternate WLF file "./wlfte26cm9".
+#           Attempting to use alternate WLF file "./wlftcv1h9n".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfte26cm9
-run 320
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000000, instr=e04f000f
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000004, instr=e2802005
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000004, instr=e2802005
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000008, instr=e280300c
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000008, instr=e280300c
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=0000000c, instr=e2437009
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=0000000c, instr=e2437009
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000010, instr=e1874002
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000010, instr=e1874002
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000014, instr=e0035004
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=1, pc=0000005c, instr=41000029
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=1, pc=0000005c, instr=41000029
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000060, instr=420800f9
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000064, instr=43100020
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000064, instr=43100020
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000068, instr=04208000
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000068, instr=04208000
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=0000006c, instr=04200075
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=1, pc=0000005c, instr=41000029
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=1, pc=0000005c, instr=41000029
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000060, instr=420800f9
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000064, instr=43100020
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000064, instr=43100020
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000068, instr=04208000
-# 
-# 
-# clk=0, reset=0, jmp_pc=0000005c, pc_selector=0, pc=00000068, instr=04208000
-# 
-# clk=1, reset=0, jmp_pc=0000005c, pc_selector=0, pc=0000006c, instr=04200075
-# 
-# 
-# End time: 12:54:25 on Jul 09,2020, Elapsed time: 0:00:18
-# Errors: 0, Warnings: 2
+#           Using alternate file: ./wlftcv1h9n
+restart -f
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/h_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(48): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Too few port connections. Expected 13, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'b'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'c'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'd'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [PCDPC] - Port size (9) does not match connection size (10) for port 'e'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT/v_comparator File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/comparator.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3839) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(39): Variable '/vga_controller_tb/DUT/vDE', driven via a port connection, is multiply driven. See C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv(50).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_controller_tb/DUT File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/vga-controller/vga_controller.sv
+run 1000
+run 10000
+run 10000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 10000
+run 10000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+run 100000
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# h_sync=x, v_sync=x, blank_n=x, posx=   x, posy=  x
+# End time: 02:42:35 on Jul 15,2020, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 32

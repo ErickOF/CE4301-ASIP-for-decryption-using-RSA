@@ -1,4 +1,7 @@
-|vga_controller
+|vga_controller_tb
+
+
+|vga_controller_tb|vga_controller:DUT
 clk => clk.IN1
 rst => comb.IN0
 rst => comb.IN1
@@ -26,7 +29,7 @@ posy[7] <= counter:v_counter.port2
 posy[8] <= counter:v_counter.port2
 
 
-|vga_controller|counter:h_counter
+|vga_controller_tb|vga_controller:DUT|counter:h_counter
 clk => cnt[0]~reg0.CLK
 clk => cnt[1]~reg0.CLK
 clk => cnt[2]~reg0.CLK
@@ -59,7 +62,7 @@ cnt[8] <= cnt[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 cnt[9] <= cnt[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga_controller|counter:v_counter
+|vga_controller_tb|vga_controller:DUT|counter:v_counter
 clk => cnt[0]~reg0.CLK
 clk => cnt[1]~reg0.CLK
 clk => cnt[2]~reg0.CLK
@@ -89,7 +92,7 @@ cnt[7] <= cnt[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 cnt[8] <= cnt[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga_controller|comparator:h_comparator
+|vga_controller_tb|vga_controller:DUT|comparator:h_comparator
 a[0] => Equal0.IN9
 a[0] => LessThan0.IN10
 a[0] => LessThan1.IN10
@@ -240,7 +243,7 @@ gte2 <= LessThan4.DB_MAX_OUTPUT_PORT_TYPE
 gte3 <= LessThan5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga_controller|comparator:v_comparator
+|vga_controller_tb|vga_controller:DUT|comparator:v_comparator
 a[0] => Equal0.IN8
 a[0] => LessThan0.IN9
 a[0] => LessThan1.IN9
