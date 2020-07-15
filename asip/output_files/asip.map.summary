@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Wed Jul 15 02:07:25 2020
+Analysis & Elaboration Status : Successful - Wed Jul 15 02:10:27 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : asip
-Top-level Entity Name : control_unit_tb
+Top-level Entity Name : wb_stage_test
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

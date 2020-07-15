@@ -22,7 +22,7 @@ module wb_stage #(parameter N=32)
 	logic [N-1:0] result;
 	
 	always_comb begin
-		if (wd_selector) begin
+		if (wd_selector == 1'b0) begin
 			result <= alu_result;
 		end
 		else begin
