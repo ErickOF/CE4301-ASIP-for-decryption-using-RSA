@@ -1,5 +1,5 @@
 Analysis & Elaboration report for asip
-Sat Jul 11 12:35:03 2020
+Wed Jul 15 02:07:25 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -9,10 +9,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: wb_stage:DUT
-  5. Analysis & Elaboration Settings
-  6. Port Connectivity Checks: "wb_stage:DUT"
-  7. Analysis & Elaboration Messages
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "control_unit:ctrl"
+  6. Analysis & Elaboration Messages
 
 
 
@@ -38,10 +37,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Jul 11 12:35:03 2020       ;
+; Analysis & Elaboration Status ; Successful - Wed Jul 15 02:07:25 2020       ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                 ; asip                                        ;
-; Top-level Entity Name         ; wb_stage_test                               ;
+; Top-level Entity Name         ; control_unit_tb                             ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -69,23 +68,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: wb_stage:DUT ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; N              ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; wb_stage_test      ; asip               ;
+; Top-level entity name                                                           ; control_unit_tb    ; asip               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,13 +155,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "wb_stage:DUT"                                                                                ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                             ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; selected_data ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "control_unit:ctrl"                                                                      ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; branch   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ext_sel  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wr_en    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; opb_sel  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; alu_func ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wd_sel   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wm_en    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -181,10 +176,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat Jul 11 12:34:52 2020
+    Info: Processing started: Wed Jul 15 02:07:14 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/control_unit/control_unit_tb.sv
+    Info (12023): Found entity 1: control_unit_tb File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/wb-stage/wb_stage_test.sv
     Info (12023): Found entity 1: wb_stage_test File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/ex-stage/ex_stage_test.sv
@@ -234,18 +231,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file asip/pr
     Info (12023): Found entity 1: ex_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv Line: 20
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/path.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/hazard_unit/hazard_unit.sv
-Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/control_unit/control_unit.sv
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/control_unit/control_unit.sv
+    Info (12023): Found entity 1: control_unit File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv Line: 18
 Info (12021): Found 0 design units, including 0 entities, in source file asip/vga-controller/vga_controller.sv
-Info (12127): Elaborating entity "wb_stage_test" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at wb_stage_test.sv(11): wd_select=0, rd=00aabbcc, alu_result=00001122, selected_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv Line: 11
-Info (10648): Verilog HDL Display System Task info at wb_stage_test.sv(14): wd_select=0, rd=00111111, alu_result=00112222, selected_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv Line: 14
-Info (10648): Verilog HDL Display System Task info at wb_stage_test.sv(17): wd_select=1, rd=00aabbcc, alu_result=00001122, selected_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv Line: 17
-Info (10648): Verilog HDL Display System Task info at wb_stage_test.sv(20): wd_select=1, rd=00111111, alu_result=00112222, selected_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv Line: 20
-Info (12128): Elaborating entity "wb_stage" for hierarchy "wb_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv Line: 5
+Info (12127): Elaborating entity "control_unit_tb" for the top level hierarchy
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:ctrl" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv Line: 6
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Sat Jul 11 12:35:03 2020
+    Info: Processing ended: Wed Jul 15 02:07:25 2020
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Total CPU time (on all processors): 00:00:24
 
 

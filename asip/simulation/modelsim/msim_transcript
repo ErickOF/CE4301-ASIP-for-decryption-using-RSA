@@ -10,50 +10,47 @@
 # Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:35:10 on Jul 11,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv 
-# -- Compiling module wb_stage_test
+# Start time: 02:07:32 on Jul 15,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv 
+# -- Compiling module control_unit_tb
 # 
 # Top level modules:
-# 	wb_stage_test
-# End time: 12:35:10 on Jul 11,2020, Elapsed time: 0:00:00
+# 	control_unit_tb
+# End time: 02:07:32 on Jul 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:35:10 on Jul 11,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv 
-# -- Compiling module wb_stage
+# Start time: 02:07:32 on Jul 15,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv 
+# -- Compiling module control_unit
 # 
 # Top level modules:
-# 	wb_stage
-# End time: 12:35:10 on Jul 11,2020, Elapsed time: 0:00:00
+# 	control_unit
+# End time: 02:07:32 on Jul 15,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.wb_stage_test
-# vsim work.wb_stage_test 
-# Start time: 12:35:36 on Jul 11,2020
+vsim work.control_unit_tb
+# vsim work.control_unit_tb 
+# Start time: 02:07:37 on Jul 15,2020
 # Loading sv_std.std
-# Loading work.wb_stage_test
-# Loading work.wb_stage
-add wave -position end  sim:/wb_stage_test/wd_selector
-add wave -position end  sim:/wb_stage_test/read_data
-add wave -position end  sim:/wb_stage_test/alu_result
-add wave -position end  sim:/wb_stage_test/selected_data
+# Loading work.control_unit_tb
+# Loading work.control_unit
+add wave -position end  sim:/control_unit_tb/OpCode
+add wave -position end  sim:/control_unit_tb/Funct
+add wave -position end  sim:/control_unit_tb/Branch
+add wave -position end  sim:/control_unit_tb/Ext_Sel
+add wave -position end  sim:/control_unit_tb/WR_En
+add wave -position end  sim:/control_unit_tb/Opb_Sel
+add wave -position end  sim:/control_unit_tb/Alu_Func
+add wave -position end  sim:/control_unit_tb/WD_Sel
+add wave -position end  sim:/control_unit_tb/WM_En
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
-#           Attempting to use alternate WLF file "./wlft0dy1de".
+#           Attempting to use alternate WLF file "./wlft7t239n".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0dy1de
-run 100
-# wd_select=0, rd=00aabbcc, alu_result=00001122, selected_data=xxxxxxxx
-# 
-# wd_select=0, rd=00111111, alu_result=00112222, selected_data=00aabbcc
-# 
-# wd_select=1, rd=00aabbcc, alu_result=00001122, selected_data=00111111
-# 
-# wd_select=1, rd=00111111, alu_result=00112222, selected_data=00001122
-# 
-# End time: 12:41:12 on Jul 11,2020, Elapsed time: 0:05:36
+#           Using alternate file: ./wlft7t239n
+run 200
+# End time: 02:08:01 on Jul 15,2020, Elapsed time: 0:00:24
 # Errors: 0, Warnings: 2

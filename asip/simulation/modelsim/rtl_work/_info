@@ -8,52 +8,52 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/simulation/modelsim
-vwb_stage
+vcontrol_unit
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1594492510
+Z2 !s110 1594800452
 !i10b 1
-!s100 ]94126mUV4@3QSZfimT>T0
-IC2NlKI=1InC=c6MH3jn[^0
+!s100 7S>]OQ52ll<G8`d2LQb9o0
+I9M`:BU03kIJ`cAiVJEHo90
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 wb_stage_sv_unit
+!s105 control_unit_sv_unit
 S1
 R0
-w1594492423
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
-L0 16
+w1594800317
+8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv
+FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv
+L0 18
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1594492510.000000
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv|
+Z5 !s108 1594800452.000000
+!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage
+Z7 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit
 Z8 tCvgOpt 0
-vwb_stage_test
+vcontrol_unit_tb
 R1
 R2
 !i10b 1
-!s100 zC5UoRG?ZfL^9E@SK`Cz41
-I@B``ngn2WhLDVeB3l<<hi2
+!s100 Rzk4AB?8e_LEVKeKhPEX01
+I6^7H2e^cH>^;FlJ9`h6eO1
 R3
-!s105 wb_stage_test_sv_unit
+!s105 control_unit_tb_sv_unit
 S1
 R0
-w1594492235
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv
+w1594800430
+8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv
+FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage_test.sv|
+!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit_tb.sv|
 !i113 1
 R6
 R7

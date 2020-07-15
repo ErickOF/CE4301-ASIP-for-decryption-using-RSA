@@ -2,111 +2,124 @@
  * Control Unit module.
  *
  * Inputs:
- *     OpCode       - Instruction Operator Code.
- *     Function     - Instruction Function Code.
+ *     opcode   - operation code.
+ *     func     - ALU function to be executed.
  *
  * Outputs:
- *     Branch	 -  
- *     Ext_Sel	 - 
- *     WR_En	 -
- *     Opb_Sel	 - 
- *     Alu_Func	 - 
- *     WD_Sel	 - 
- *     WM_En	 - 
- *
+ *     branch	 - indicates which type of branch must be executed.
+ *     ext_sel	 - select zero extension type to be executed.
+ *     wr_en	 - signal to write in the registers file.
+ *     opb_sel	 - signal to select the second operad of the ALU.
+ *     alu_func - operation to be executed by the ALU.
+ *     wd_sel	 - signal to select the data to be written in registers file.
+ *     wm_en	 - signal to write in memory.
  */
 
-module control_unit (
-	input logic [2:0] OpCode,
-	input logic [1:0] Funct,
-	output logic [1:0] Branch, Ext_Sel,
-	output logic WR_En, Opb_Sel, Alu_Func, WD_Sel, WM_En);
+module control_unit (input  logic [2:0] opcode,
+                     input  logic [1:0] funct,
+							output logic [1:0] branch, ext_sel,
+							output logic       wr_en, opb_sel, alu_func, wd_sel, wm_en);
 
-/*
-Controls:
-controls[1:0] = Branch;
-controls[3:2] = Ext_Sel[1:0];
-controls[4] = WR_En;
-controls[5] =Opb_Sel;
-controls[6] = Alu_Func;
-controls[7] = WD_Sel;
-controls[8] = WM_En;
- */
-logic [8:0] controls;
+	/*
+	Controls:
+	controls[8:7] = branch;
+	controls[6:5] = ext_sel;
+	controls[4]   = wr_en;
+	controls[3]   = opb_sel;
+	controls[2]   = alu_func;
+	controls[1]   = wd_sel;
+	controls[0]   = wm_en;
+	*/
+	logic [8:0] controls;
 
-always_comb begin
+	always_comb begin
+		// Check if the opcode is for a arithmetic operation
+		if(opcode == 3'b000) begin
+			case(funct)
+				// Check if the instruction is an add
+				// branch=11; ext_sel=11; we_en=1; opb_sel=0; alu_func=0;
+				// wd_sel=0; wm_en=0
+				2'b00: controls = 9'b111110000;
 
-	/*Verificar que el opcode es cero, para así poder
-	identificar cada instrucción por funct */
-	if(OpCode == 0) begin
+				// Check if the instruction is an add imm
+				// branch=11; ext_sel=00; we_en=1; opb_sel=1; alu_func=0;
+				// wd_sel=0; wm_en=0
+				2'b01: controls = 9'b110011000;
 
-		casex(Funct)
+				// Check if the instruction is a substraction
+				// branch=11; ext_sel=11; we_en=1; opb_sel=0; alu_func=1;
+				// wd_sel=0; wm_en=0
+				2'b10: controls = 9'b111110100;
 
-			//Verificar si la instrucción es add
-			2'd0: controls = 9'b110010000;
+				// Check if the instruction is a substraction imm
+				// branch=11; ext_sel=00; we_en=1; opb_sel=1; alu_func=1;
+				// wd_sel=0; wm_en=0
+				2'b11: controls = 9'b110011100;
 
-			//Verificar si la instrucción es add inm
-			2'd1: controls = 9'b110111000;
+				// Default value
+				default: controls = 9'b111110000;
+			endcase
+		end
 
-			//Verificar si la instrucción es sub
-			2'd2: controls = 9'b110010100;
+		// Check if the instruction is a CMP
+		else if(opcode == 3'b001) begin
+			case(funct)
+				// Check if the instruction is a CMP between two registers
+				// branch=11; ext_sel=11; we_en=0; opb_sel=0; alu_func=1;
+				// wd_sel=0; wm_en=0
+				2'd2: controls = 9'b111100100;
 
-			//Verificar si la instrucción es sub inm
-			2'd3: controls = 9'b110111100;
-			
-			//Valor default
-			default: controls = 9'b110010000;
+				// Check if the instruction is a CMP between a register and a
+				// constants
+				// branch=11; ext_sel=00; we_en=0; opb_sel=1; alu_func=1;
+				// wd_sel=0; wm_en=0
+				2'd3: controls = 9'b110001100;
 
-		endcase
-	end	
+				// Default value
+				default: controls = 9'b000000000;
+			endcase
+		end
 
-	else if(OpCode == 1) begin
+		// Other instructions (they don't use func)
+		else begin
+			case(opcode)
+				// Check if the instruction is a LDR
+				// branch=11; ext_sel=01; we_en=1; opb_sel=1; alu_func=0;
+				// wd_sel=1; wm_en=0
+				3'b010: controls = 9'b110111010;
 
-		casex(Funct)
+				// Check if the instruction is a STR
+				// branch=11; ext_sel=01; we_en=0; opb_sel=1; alu_func=0;
+				// wd_sel=0; wm_en=1
+				3'b011: controls = 9'b110101001;
 
-			//Verificar si la instrucción es CMP-sub
-			2'd2: controls = 9'b110000100;
+				// Check if the instruction is a JEQ Label
+				// branch=00; ext_sel=10; we_en=0; opb_sel=0; alu_func=0;
+				// wd_sel=0; wm_en=0
+				3'b100: controls = 9'b001000000;
 
-			//Verificar si la instrucción es CMP-sub inm
-			2'd3: controls = 9'b110101100;
-			
-			//Valor default
-			default: controls = 9'b000000000;
+				// Check if the instruction is a JNE Label
+				// branch=01; ext_sel=10; we_en=0; opb_sel=0; alu_func=0;
+				// wd_sel=0; wm_en=0
+				3'b101: controls = 9'b011000000;
 
-		endcase
+				// Check if the instruction is a JMP Label
+				// branch=10; ext_sel=10; we_en=0; opb_sel=0; alu_func=0;
+				// wd_sel=0; wm_en=0
+				3'b110: controls = 9'b101000000;
 
-	end 
+				// Check if the instruction is a Nop
+				// branch=11; ext_sel=10; we_en=0; opb_sel=0; alu_func=0;
+				// wd_sel=0; wm_en=0
+				3'b111: controls = 9'b111000000;
 
-	//Case para clasificar las instrucciones por su OpCode
-	else begin
-
-		casex(OpCode)
-
-			//Verificar si la instrucción es LDR
-			3'd2: controls = 9'b111011010;
-
-			//Verificar si la instrucción es STR
-			3'd3: controls = 9'b111001001;
-
-			//Verificar si la instrucción es JEQ Label
-			3'd4: controls = 9'b001100000;
-
-			//Verificar si la instrucción es JNE Label
-			3'd5: controls = 9'b011100000;
-
-			//Verificar si la instrucción es JMP Label
-			3'd6: controls = 9'b101100000;
-
-			//Verificar si la instrucción es Nop
-			3'd7: controls = 9'b111100000;
-
-			//Valor default
-			default: controls = 9'b000000000;
-
-		endcase 
+				// Default value
+				default: controls = 9'b000000000;
+			endcase 
+		end
 	end
-end
 
-assign {Branch, Ext_Sel, WR_En, Opb_Sel, Alu_Func, WD_Sel, WM_En} = controls;
+	// Assign signals
+	assign {branch, ext_sel, wr_en, opb_sel, alu_func, wd_sel, wm_en} = controls;
 
-endmodule
+endmodule // control_unit
