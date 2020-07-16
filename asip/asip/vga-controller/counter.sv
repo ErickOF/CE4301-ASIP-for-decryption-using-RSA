@@ -2,28 +2,29 @@
  * Counter module.
  *
  * Parameters:
- *     N   - number of bits.
+ *     MAX    - max value to count.
  *
  * Inputs:
- *     clk - clock signal.
- *     rst - reset signal.
- *     ena - enable signal.
+ *     clk    - clock signal.
+ *     reset  - reset signal.
+ *     enable - enable signal.
  *
  * Outputs:
- *     cnt - count.
+ *     value  - value.
  *
  */
-module counter #(parameter N=8) 
-	             (input  logic         clk, rst,
-	              output logic [N-1:0] cnt);
+module counter #(parameter MAX=320)
+                (input  logic clk, reset,
+                 output logic [int'($clog2(MAX)):0] value);
 
-	// Synchronous reset.
-	always_ff @(posedge clk) begin
-		if (rst)	begin		
-			cnt <= 0;
-		end else begin
-			cnt <= cnt + 1;
+	always_ff @(posedge clk, posedge reset) begin
+		if (reset) begin
+			value <= 10'b0;
+		end
+		else begin
+			value <= value + 10'b1;
 		end
 	end
 
 endmodule // counter
+
