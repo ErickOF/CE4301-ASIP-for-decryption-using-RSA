@@ -19,7 +19,7 @@
  *     func         - function.
  *     ra           - source register a.
  *     rb           - source register b.
- *     rf           - register to write.
+ *     rw           - register to write.
  *     rda          - data in source register a.
  *     rdb          - data in source register b.
  *     extended     - extended value.
@@ -33,16 +33,16 @@ module id_stage #(parameter N=32)
 						input  logic [4:0]   rw,
 						output logic [2:0]   op,
 						output logic [1:0]   func,
-				      output logic [4:0]   ra, rb, rf,
+				      output logic [4:0]   ra, rb, rw,
 						output logic [N-1:0] rda, rdb, extended);
 
 	// Temps vars
-	logic [4:0]  ra_temp, rb_temp, rf_temp, source_b;
+	logic [4:0]  ra_temp, rb_temp, rw_temp, source_b;
 	logic [28:0] constant;
 	
 	always_comb begin
 		// Destiny
-		rf_temp <= instruction[28:24];
+		rw_temp <= instruction[28:24];
 		// Source register A
 		ra_temp <= instruction[23:19];
 		// Source register B
@@ -51,7 +51,7 @@ module id_stage #(parameter N=32)
 		constant <= instruction[28:0];
 	end
 	
-	rb_mux         #(5) rb_mux_instance(rb_temp, rf_temp, rb_selector, source_b);
+	rb_mux         #(5) rb_mux_instance(rb_temp, rw_temp, rb_selector, source_b);
 	registers      #(N) regs_instance(clk, reset, we, ra_temp, source_b, rw, wd, rda, rdb);
 	zero_extension #(N) zext_instance(constant, ext_selector, extended);
 
@@ -62,6 +62,6 @@ module id_stage #(parameter N=32)
 	// Registers
 	assign ra = ra_temp;
 	assign rb = rb_temp;
-	assign rf = rf_temp;
+	assign rw = rw_temp;
 
 endmodule // id_stage
