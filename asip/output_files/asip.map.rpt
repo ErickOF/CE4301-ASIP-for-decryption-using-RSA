@@ -1,5 +1,5 @@
 Analysis & Elaboration report for asip
-Wed Jul 15 14:38:57 2020
+Wed Jul 15 22:13:28 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -9,14 +9,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: mem_stage:DUT
-  5. Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem0
-  6. Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem1
-  7. Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem2
-  8. Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem3
-  9. Analysis & Elaboration Settings
- 10. Port Connectivity Checks: "mem_stage:DUT"
- 11. Analysis & Elaboration Messages
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -42,10 +37,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Jul 15 14:38:57 2020       ;
+; Analysis & Elaboration Status ; Failed - Wed Jul 15 22:13:28 2020           ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                 ; asip                                        ;
-; Top-level Entity Name         ; mem_stage_test                              ;
+; Top-level Entity Name         ; path                                        ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -73,67 +68,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mem_stage:DUT ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; N              ; 32    ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem0 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 16    ; Signed Integer                                      ;
-; BITS           ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem1 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 16    ; Signed Integer                                      ;
-; BITS           ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem2 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 16    ; Signed Integer                                      ;
-; BITS           ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mem_stage:DUT|data_memory:dmem3 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 16    ; Signed Integer                                      ;
-; BITS           ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; mem_stage_test     ; asip               ;
+; Top-level entity name                                                           ; path               ; asip               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -214,25 +155,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mem_stage:DUT"                                                                           ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; read_data ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Jul 15 14:38:44 2020
+    Info: Processing started: Wed Jul 15 22:13:18 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if_id_pipe.sv
+    Info (12023): Found entity 1: if_id_pipe File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/id_ex_pipe.sv
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/mem-stage/data_memory.sv
     Info (12023): Found entity 1: data_memory File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/mem-stage/mem_stage_test.sv
@@ -288,102 +223,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file asip/pr
     Info (12023): Found entity 1: id_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/ex-stage/ex_stage.sv
     Info (12023): Found entity 1: ex_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv Line: 20
+Error (10759): Verilog HDL error at path.sv(11): object pc declared in a list of port declarations cannot be redeclared within the module body File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 11
+Error (10112): Ignored design unit "path" at path.sv(1) due to previous errors File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/path.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/hazard_unit/hazard_unit.sv
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/control_unit/control_unit.sv
     Info (12023): Found entity 1: control_unit File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv Line: 18
 Info (12021): Found 0 design units, including 0 entities, in source file asip/vga-controller/vga_controller.sv
-Info (12127): Elaborating entity "mem_stage_test" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(9): Read memory 0 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 9
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(11): clk=1, write_enable=0, address=00000000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 11
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(14): clk=0, write_enable=0, address=00000000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 14
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(17): clk=1, write_enable=0, address=00000004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 17
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(20): clk=0, write_enable=0, address=00000004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 20
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(23): clk=1, write_enable=0, address=00000008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 23
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(26): clk=0, write_enable=0, address=00000008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 26
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(30): Read memory 1 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 30
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(32): clk=1, write_enable=0, address=00010000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(35): clk=0, write_enable=0, address=00010000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 35
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(38): clk=1, write_enable=0, address=00010004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 38
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(41): clk=0, write_enable=0, address=00010004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 41
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(44): clk=1, write_enable=0, address=00010008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 44
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(47): clk=0, write_enable=0, address=00010008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 47
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(51): Read memory 2 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 51
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(53): clk=1, write_enable=0, address=00020000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 53
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(56): clk=0, write_enable=0, address=00020000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 56
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(59): clk=1, write_enable=0, address=00020004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 59
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(62): clk=0, write_enable=0, address=00020004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 62
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(65): clk=1, write_enable=0, address=00020008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 65
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(68): clk=0, write_enable=0, address=00020008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 68
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(72): Read memory 3 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 72
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(74): clk=1, write_enable=0, address=00030000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 74
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(77): clk=0, write_enable=0, address=00030000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 77
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(80): clk=1, write_enable=0, address=00030004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 80
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(83): clk=0, write_enable=0, address=00030004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 83
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(86): clk=1, write_enable=0, address=00030008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 86
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(89): clk=0, write_enable=0, address=00030008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 89
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(93): Write into memory 0 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 93
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(95): clk=1, write_enable=1, address=00000000, write_data=00000010, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 95
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(98): clk=0, write_enable=1, address=00000000, write_data=00000010, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 98
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(101): clk=1, write_enable=1, address=00000004, write_data=00000011, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 101
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(104): clk=0, write_enable=1, address=00000004, write_data=00000011, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 104
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(107): clk=1, write_enable=1, address=00000008, write_data=00000012, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 107
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(110): clk=0, write_enable=1, address=00000008, write_data=00000012, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 110
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(114): Write into memory 1 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 114
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(116): clk=1, write_enable=1, address=00010000, write_data=00010024, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 116
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(119): clk=0, write_enable=1, address=00010000, write_data=00010024, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 119
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(122): clk=1, write_enable=1, address=00010004, write_data=00010007, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 122
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(125): clk=0, write_enable=1, address=00010004, write_data=00010007, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 125
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(128): clk=1, write_enable=1, address=00010008, write_data=00010009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 128
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(131): clk=0, write_enable=1, address=00010008, write_data=00010009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 131
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(135): Write into memory 2 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 135
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(137): clk=1, write_enable=1, address=00020000, write_data=00020024, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 137
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(140): clk=0, write_enable=1, address=00020000, write_data=00020024, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 140
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(143): clk=1, write_enable=1, address=00020004, write_data=00020007, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 143
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(146): clk=0, write_enable=1, address=00020004, write_data=00020007, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 146
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(149): clk=1, write_enable=1, address=00020008, write_data=00020009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 149
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(152): clk=0, write_enable=1, address=00020008, write_data=00020009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 152
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(156): Write into memory 3 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 156
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(158): clk=1, write_enable=1, address=00030000, write_data=00030012, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 158
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(161): clk=0, write_enable=1, address=00030000, write_data=00030012, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 161
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(164): clk=1, write_enable=1, address=00030004, write_data=00030018, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 164
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(167): clk=0, write_enable=1, address=00030004, write_data=00030018, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 167
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(170): clk=1, write_enable=1, address=00030008, write_data=00030032, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 170
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(173): clk=0, write_enable=1, address=00030008, write_data=00030032, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 173
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(178): Read memory 0 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 178
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(180): clk=1, write_enable=0, address=00000000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 180
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(183): clk=0, write_enable=0, address=00000000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 183
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(186): clk=1, write_enable=0, address=00000004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 186
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(189): clk=0, write_enable=0, address=00000004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 189
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(192): clk=1, write_enable=0, address=00000008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 192
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(195): clk=0, write_enable=0, address=00000008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 195
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(199): Read memory 1 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 199
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(201): clk=1, write_enable=0, address=00010000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 201
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(204): clk=0, write_enable=0, address=00010000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 204
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(207): clk=1, write_enable=0, address=00010004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 207
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(210): clk=0, write_enable=0, address=00010004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 210
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(213): clk=1, write_enable=0, address=00010008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 213
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(216): clk=0, write_enable=0, address=00010008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 216
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(220): Read memory 2 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 220
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(222): clk=1, write_enable=0, address=00020000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 222
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(225): clk=0, write_enable=0, address=00020000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 225
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(228): clk=1, write_enable=0, address=00020004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 228
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(231): clk=0, write_enable=0, address=00020004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 231
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(234): clk=1, write_enable=0, address=00020008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 234
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(237): clk=0, write_enable=0, address=00020008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 237
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(241): Read memory 3 File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 241
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(243): clk=1, write_enable=0, address=00030000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 243
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(246): clk=0, write_enable=0, address=00030000, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 246
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(249): clk=1, write_enable=0, address=00030004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 249
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(252): clk=0, write_enable=0, address=00030004, write_data=00000005, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 252
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(255): clk=1, write_enable=0, address=00030008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 255
-Info (10648): Verilog HDL Display System Task info at mem_stage_test.sv(258): clk=0, write_enable=0, address=00030008, write_data=00000009, read_data=00000000\n File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 258
-Info (12128): Elaborating entity "mem_stage" for hierarchy "mem_stage:DUT" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv Line: 5
-Info (12128): Elaborating entity "data_memory" for hierarchy "mem_stage:DUT|data_memory:dmem0" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv Line: 35
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Wed Jul 15 14:38:57 2020
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+Info (144001): Generated suppressed messages file C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/output_files/asip.map.smsg
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4771 megabytes
+    Error: Processing ended: Wed Jul 15 22:13:28 2020
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:23
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/output_files/asip.map.smsg.
 
 

@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Wed Jul 15 14:38:57 2020
+Analysis & Elaboration Status : Failed - Wed Jul 15 22:13:28 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : asip
-Top-level Entity Name : mem_stage_test
+Top-level Entity Name : path
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
