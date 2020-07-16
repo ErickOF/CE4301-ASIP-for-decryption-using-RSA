@@ -1,34 +1,20 @@
-/**
- * Comparator module.
- *
- * Parameters:
- *     N       - number of bits.
+/*
+ * Comparator Module
  *
  * Inputs:
- *     a       - first operand.
- *     b       - second operand.
- *
+ * 	 1 - first  to compare.
+ *     2 - second  to compare.
  * Outputs:
- *     eq  		- Equal to.
- *     neq 		- Not Equal to.
- *     lt  		- Less than.
- *     lte  	- Less than or equal to.
- *     gt  		- Grather than.
- *     gte  	- Grather than or equal to. 
- *
+ *     lower  - indicate if 1 is lower than 2.
+ *     upper  - indicate if 1 is greather than 2.
+ *     equal  - indicate if values are equal.
  */
+module comparator #(parameter N=9)
+                   (input  logic [N-1:0]  value1, value2,
+                    output logic          lower, greater, equal);
 
-module comparator #(parameter N = 8) (
-	input  logic [N-1:0] a, b,
-	output logic eq, neq, lt, lte, gt, gte);
+	assign lower   = value1 < value2  ? 1'b1 : 1'b0;
+	assign greater = value1 > value2  ? 1'b1 : 1'b0;
+	assign equal   = value1 == value2 ? 1'b1 : 1'b0;
 
-	always_comb begin
-		eq  = (a == b);
-		neq = (a != b);
-		lt  = (a < b);
-		lte = (a <= b);
-		gt  = (a > b);
-		gte = (a >= b);
-	end
-endmodule
-	
+endmodule // comparator
