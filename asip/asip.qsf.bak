@@ -57,6 +57,7 @@ set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/frecuencyDiv
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/demux_2.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/counter.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/vga-controller/comparator.sv"
+>>>>>>> [Update] - New files were added to VGA controller
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/instr_fetch_test.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/pc_ff.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "asip/processor/path/if-stage/if_stage_test.sv"
