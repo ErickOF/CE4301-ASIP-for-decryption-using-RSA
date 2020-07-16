@@ -2,14 +2,14 @@ module vga_controller_tb ();
 
 	logic clk, rst, h_sync, v_sync, blank_n;
 	logic [9:0] posx; 
-	logic [8:0] posy;
+	logic [9:0] posy;
 
 	vga_controller DUT(clk, rst, h_sync, v_sync, blank_n, posx, posy);
 
 	initial begin
-	    #10 rst = 1;
-		 rst = 0;
-		 clk = 0;
+		 #10 rst=0; clk=0;
+	    #10 rst=1; clk=1;
+		 #10 rst=0; clk=0;
 	end
 
 	always begin

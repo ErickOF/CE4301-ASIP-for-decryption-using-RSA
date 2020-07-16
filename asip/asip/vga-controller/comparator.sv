@@ -1,36 +1,20 @@
-/**
- * Comparator module.
- *
- * Parameters:
- *     N       - number of bits.
+/*
+ * Comparator Module
  *
  * Inputs:
- *     a       - first operand - Horizontal Count / Vertical Count.
- *     b       - second operand - HMax / VMax.
- *     c       - third operand - HSyn / VSyn.
- *     d       - fourth operand - HSYN + HBP / VSYN + VBP.
- *     e       - fifth operand - HSYN + HBP + HACTIVE / VSYN + VBP + VACTIVE.
- *
+ * 	 1 - first  to compare.
+ *     2 - second  to compare.
  * Outputs:
- *     eq  		- Equal to.
- *     neq 		- Not Equal to.
- *     lt  		- Less than.
- *     lte  	- Less than or equal to.
- *     gt  		- Grather than.
- *     gte  	- Grather than or equal to. 
- *
+ *     lower  - indicate if 1 is lower than 2.
+ *     upper  - indicate if 1 is greather than 2.
+ *     equal  - indicate if values are equal.
  */
+module comparator #(parameter N=9)
+                   (input  logic [N-1:0]  value1, value2,
+                    output logic          lower, greater, equal);
 
- module comparator #(parameter N = 8) (
-	input  logic [N-1:0] a, b, c, d, e,
-	output logic lt, gte, gte2, gte3);
+	assign lower   = value1 < value2  ? 1'b1 : 1'b0;
+	assign greater = value1 > value2  ? 1'b1 : 1'b0;
+	assign equal   = value1 == value2 ? 1'b1 : 1'b0;
 
-	always_comb begin
-		lt  = (a < e);
-		gte = (a >= b);
-		gte2 = (a >= c);
-		gte3 = (a >= d);
-
-	end
-endmodule
-	
+endmodule // comparator
