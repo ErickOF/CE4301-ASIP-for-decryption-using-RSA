@@ -18,7 +18,11 @@ module pc_ff #(parameter N=32)
                output logic [N-1:0] next_pc);
 
 always_ff @(posedge clk, posedge reset)
-	if (reset) next_pc <= 0;
-	else next_pc <= current_pc;
+	if (reset) begin
+		next_pc <= 0;
+	end
+	else begin
+		next_pc <= current_pc;
+	end
 
 endmodule // pc_ff

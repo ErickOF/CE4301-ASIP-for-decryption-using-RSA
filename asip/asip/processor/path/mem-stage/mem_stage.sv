@@ -32,10 +32,10 @@ module mem_stage #(parameter N=32)
 	assign we3 = (address[N-1:16]) == 16'b11 ? (1'b1 && write_enable) : 1'b0;
 
 	// Memory Array
-	data_memory #(16, 32) dmem0(clk, we0,  address[15:0], write_data, rd0);
-	data_memory #(16, 32) dmem1(clk, we1,  address[15:0], write_data, rd1);
-	data_memory #(16, 32) dmem2(clk, we2,  address[15:0], write_data, rd2);
-	data_memory #(16, 32) dmem3(clk, we3,  address[15:0], write_data, rd3);
+	data_memory #(16, 32, "0") dmem0(clk, we0,  address[15:0], write_data, rd0);
+	data_memory #(16, 32, "1") dmem1(clk, we1,  address[15:0], write_data, rd1);
+	data_memory #(16, 32, "2") dmem2(clk, we2,  address[15:0], write_data, rd2);
+	data_memory #(16, 32, "3") dmem3(clk, we3,  address[15:0], write_data, rd3);
 
 	always_comb begin
 		if (address[N-1:16] == 0) begin
