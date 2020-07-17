@@ -8,500 +8,78 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/simulation/modelsim
-vadder
+vdata_mem
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1595012209
+Z2 !s110 1595022771
 !i10b 1
-!s100 fzTAnm[iN>bW6lNGlHg2c0
-IQYj8?iYe6S]BVheZWVAkR2
+!s100 TC4C@N9Z=d`NInC=>5i742
+IIBnjcHBG3jGbE5Ed=P@_W1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 adder_sv_unit
+!s105 data_mem_sv_unit
 S1
 R0
-Z4 w1594594210
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv
-Z5 L0 15
-Z6 OV;L;10.5b;63
+w1595021532
+8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem.sv
+FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem.sv
+Z4 L0 18
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1595012209.000000
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv|
+Z6 !s108 1595022771.000000
+!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem.sv|
 !i113 1
-Z8 o-sv -work work
-Z9 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage
-Z10 tCvgOpt 0
-valu
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories
+Z9 tCvgOpt 0
+vdata_mem_test
 R1
-R2
+!s110 1595022770
 !i10b 1
-!s100 Qm7NMO[U?M2BB@LLN5nEH2
-ITh9gEJEahdnZ9KlEo@dFK0
+!s100 MghRmS83ze32fWk<zL3^G2
+I4ol0iR>YDg6o:Z@z]7Vh`3
 R3
-!s105 alu_sv_unit
+!s105 data_mem_test_sv_unit
 S1
 R0
-R4
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv
-Z11 L0 18
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv|
-!i113 1
-R8
-!s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu
-R10
-vdata_memory
-R1
-Z12 !s110 1595012208
-!i10b 1
-!s100 om4lZdA5aac:R61jklmRd1
-I4z<T0=mHX<6iZIjaMZd8`1
-R3
-!s105 data_memory_sv_unit
-S1
-R0
-w1594870399
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv
-R11
-R6
-r1
-!s85 0
-31
-Z13 !s108 1595012208.000000
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv|
-!i113 1
-R8
-Z14 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage
-R10
-vex_mem_pipe
-R1
-R12
-!i10b 1
-!s100 ?:_7z@2E=SoV]I6OK`1IB0
-I6I2Zc`?`RbhbYbjV0=j>81
-R3
-!s105 ex_mem_pipe_sv_unit
-S1
-R0
-w1595011321
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+w1595022448
+8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem_test.sv
+FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem_test.sv
 L0 1
-R6
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv|
-!i113 1
-R8
-Z15 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path
-R10
-vex_stage
-R1
-R2
-!i10b 1
-!s100 Le9OV3QhoKn5jlH@H?`:52
-IiUL>Y37g?]9UDgUgKa@_T0
-R3
-!s105 ex_stage_sv_unit
-S1
-R0
-Z16 w1594867810
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
-L0 20
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv|
-!i113 1
-R8
-Z17 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage
-R10
-vid_ex_pipe
-R1
-R12
-!i10b 1
-!s100 DE>UQX;eMD57Y6X:m[`1[2
-IiAR7[XSXTb8EA[c:WSD5o0
-R3
-!s105 id_ex_pipe_sv_unit
-S1
-R0
-w1595011289
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv
-L0 1
-R6
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv|
-!i113 1
-R8
-R15
-R10
-vid_stage
-R1
-R2
-!i10b 1
-!s100 nz3OlSV]7hgZKkHHzMGX92
-Ifdn0^J`QkV=?ecn3C8[Yj3
-R3
-!s105 id_stage_sv_unit
-S1
-R0
-w1594960686
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv
-L0 28
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv|
-!i113 1
-R8
-Z18 !s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage
-R10
-vif_id_pipe
-R1
-R12
-!i10b 1
-!s100 N7Xh>zOAI9X@6;F>6d5M@2
-I104iUl@CUTaa7695`cIM13
-R3
-!s105 if_id_pipe_sv_unit
-S1
-R0
-w1595011275
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv
-L0 1
-R6
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv|
-!i113 1
-R8
-R15
-R10
-vif_stage
-R1
-!s110 1595012697
-!i10b 1
-!s100 iB0FBEGCKUamQWLDj8<gF2
-IVX;kf15FWjz04d^U?V_kj0
-R3
-!s105 if_stage_sv_unit
-S1
-R0
-w1595012473
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv
-L0 17
-R6
-r1
-!s85 0
-31
-!s108 1595012697.000000
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv|
-!i113 1
-Z19 o-work work
-R10
-vmem_stage
-R1
-R2
-!i10b 1
-!s100 WJIB[EoDZ1TdQj66FfDNc3
-I_D3iVJfoK;n@Nh3[2WB`F0
-R3
-!s105 mem_stage_sv_unit
-S1
-R0
-w1594870168
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv
-R11
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv|
-!i113 1
-R8
-R14
-R10
-vmem_wb_pipe
-R1
-R12
-!i10b 1
-!s100 FN1Z;TdP2gN[mRBz>J5;N0
-Ii7=aPCfz6F;X;<:6SeZM`3
-R3
-!s105 mem_wb_pipe_sv_unit
-S1
-R0
-w1595011328
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
-L0 1
-R6
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv|
-!i113 1
-R8
-R15
-R10
-vopb_mux
-R1
-R12
-!i10b 1
-!s100 dDQV9f9]=CczoKz]8c^FB1
-IVdj>jeR3kF4g2;_k35PR:0
-R3
-!s105 opb_mux_sv_unit
-S1
-R0
-R16
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv
-Z20 L0 16
-R6
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv|
-!i113 1
-R8
-R17
-R10
-vpath
-R1
-R2
-!i10b 1
-!s100 S;SKR8>@e<3h[;AlA;am11
-IJ3kDhgE^V8OfH[lP`eZ>A1
-R3
-!s105 path_sv_unit
-S1
-R0
-w1594967874
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv
-L0 1
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv|
-!i113 1
-R8
-R15
-R10
-vpath_test
-R1
-!s110 1595012873
-!i10b 1
-!s100 K;I[3W;iHTm[1?^6@>]TA0
-I8Xa>8]RXIeNNfYVEQB4no2
-R3
-!s105 path_test_sv_unit
-S1
-R0
-w1595012859
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv
-L0 1
-R6
-r1
-!s85 0
-31
-!s108 1595012873.000000
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv|
-!i113 1
-R19
-R10
-vpc_ff
-R1
-!s110 1595012691
-!i10b 1
-!s100 6jeLTE`iIba5lB]OIO31`3
-ILHVe8PWG`fh_46P^4Zi1b2
-R3
-!s105 pc_ff_sv_unit
-S1
-R0
-w1595007647
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv
 R5
-R6
 r1
 !s85 0
 31
-!s108 1595012691.000000
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv|
+!s108 1595022770.000000
+!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/data_mem_test.sv|
 !i113 1
-R19
-R10
-vpc_mux
-R1
-R2
-!i10b 1
-!s100 m>AS;kBRTHWF;mV6^JEc80
-IGoG4Ed:[G92kL6aISRMlh0
-R3
-!s105 pc_mux_sv_unit
-S1
-R0
-R16
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv
-R20
-R6
-r1
-!s85 0
-31
 R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv|
-!i113 1
 R8
 R9
-R10
-vrb_mux
+vdmem_cell
 R1
 R2
 !i10b 1
-!s100 :E72;=CPZ86H9N?dQW]Q@1
-IZ?U^cg:XzEPSo46`cDZLj0
+!s100 6:PTdHZJ0dWWQKiNK6bZS0
+I<9Ze[J9PB?fjD<O?VZT2X2
 R3
-!s105 rb_mux_sv_unit
+!s105 dmem_cell_sv_unit
 S1
 R0
-R16
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv
-R20
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv|
-!i113 1
-R8
-R18
-R10
-vregisters
-R1
-R2
-!i10b 1
-!s100 a^FacPP?RgJF@:7BLPzGW3
-Ie6lg3g;=doc9kVi1[L]2h1
-R3
-!s105 registers_sv_unit
-S1
-R0
-R16
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv
-L0 21
-R6
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv|
-!i113 1
-R8
-R18
-R10
-vwb_stage
-R1
-R2
-!i10b 1
-!s100 1S@1ViZ@eafdR?`mRN8hX0
-IYnAbE>_fXbKd0FdOTcP9a2
-R3
-!s105 wb_stage_sv_unit
-S1
-R0
-R16
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
-R20
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv|
-!i113 1
-R8
-!s92 -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage
-R10
-vzero_extension
-R1
-R12
-!i10b 1
-!s100 WK86H@AeBCne@H?3G;PWl3
-II[hj@Ob]A2:e]K`QY_h_61
-R3
-!s105 zero_extension_sv_unit
-S1
-R0
-R16
-8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv
-FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv
+w1595020801
+8C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/dmem_cell.sv
+FC:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/dmem_cell.sv
+R4
 R5
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv|
+R6
+!s107 C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/dmem_cell.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories|C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/memories/dmem_cell.sv|
 !i113 1
+R7
 R8
-R18
-R10
+R9
