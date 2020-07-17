@@ -273,6 +273,8 @@ class XAsmIde(QMainWindow):
 
         if not valid:
             self.__listWidgetOutputs.addItems(data['errors'])
+            self.__checked = False
+            self.__data['parser'] = {}
         else:
             self.__checked = True
             self.__data['parser'] = data
@@ -284,17 +286,18 @@ class XAsmIde(QMainWindow):
     def __onBuildCode(self):
         if not self.__checked:
             self.__onCheckSintax()
-        
-        self.__dataMem.clear()
 
-        compiler: Compiler = Compiler()
-        lines = compiler.compile(self.__data['parser']['split'])
+        if self.__data != {}:
+            self.__dataMem.clear()
 
-        self.__setInstructionMemory(lines)
+            compiler: Compiler = Compiler()
+            lines = compiler.compile(self.__data['parser']['split'])
 
-        self.__listWidgetOutputs.addItem('Built has finished correctly.')
-            
+            self.__setInstructionMemory(lines)
+
+            self.__listWidgetOutputs.addItem('Built has finished correctly.')
 
     def closeEvent(self, event):
         self.__running = False
         event.accept()
+

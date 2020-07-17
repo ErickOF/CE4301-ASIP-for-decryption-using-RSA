@@ -351,10 +351,8 @@ Info (12021): Found 0 design units, including 0 entities, in source file asip/pr
 Info (12021): Found 0 design units, including 0 entities, in source file asip/data-to-color-converter/data_to_color_converter.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/clock-divider/clock_divider.sv
 Info (12021): Found 0 design units, including 0 entities, in source file asip/asip.sv
-Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/wb-stage/wb_stage.sv
-    Info (12023): Found entity 1: wb_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv Line: 16
-Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/mem-stage/mem_stage.sv
-    Info (12023): Found entity 1: mem_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv Line: 18
+Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/wb-stage/wb_stage.sv
+Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/mem-stage/mem_stage.sv
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if-stage/if_stage.sv
     Info (12023): Found entity 1: if_stage File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/id-stage/id_stage.sv
