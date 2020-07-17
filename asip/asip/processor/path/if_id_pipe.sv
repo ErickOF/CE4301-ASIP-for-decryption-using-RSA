@@ -6,7 +6,7 @@ module if_id_pipe #(parameter N=32)
 	// Var to save result
 	logic [N-1:0] instr_temp;
 	
-	always_ff @(clock) begin
+	always_ff @(clock, reset) begin
 		if (reset) begin
 			instr_temp = 0;
 		end

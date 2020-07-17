@@ -30,7 +30,7 @@ module id_stage #(parameter N=32)
 				      input  logic         rb_selector, we,
 					   input  logic [N-1:0] instruction, wd,
 					   input  logic [1:0]   ext_selector,
-						input  logic [4:0]   rw,
+						input  logic [4:0]   rw_wb,
 						output logic [2:0]   op,
 						output logic [1:0]   func,
 				      output logic [4:0]   ra, rb, rw,
@@ -52,7 +52,7 @@ module id_stage #(parameter N=32)
 	end
 	
 	rb_mux         #(5) rb_mux_instance(rb_temp, rw_temp, rb_selector, source_b);
-	registers      #(N) regs_instance(clk, reset, we, ra_temp, source_b, rw, wd, rda, rdb);
+	registers      #(N) regs_instance(clk, reset, we, ra_temp, source_b, rw_wb, wd, rda, rdb);
 	zero_extension #(N) zext_instance(constant, ext_selector, extended);
 
 	// Operation code

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for asip
-Thu Jul 16 01:21:29 2020
+Fri Jul 17 00:40:35 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -19,12 +19,27 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  11. Parameter Settings for User Entity Instance: id_stage:ids|rb_mux:rb_mux_instance
  12. Parameter Settings for User Entity Instance: id_stage:ids|registers:regs_instance
  13. Parameter Settings for User Entity Instance: id_stage:ids|zero_extension:zext_instance
- 14. Analysis & Elaboration Settings
- 15. Port Connectivity Checks: "id_stage:ids"
- 16. Port Connectivity Checks: "if_id_pipe:ifidp"
- 17. Port Connectivity Checks: "if_stage:ifs|adder:adder_instance"
- 18. Analysis & Elaboration Messages
- 19. Analysis & Elaboration Suppressed Messages
+ 14. Parameter Settings for User Entity Instance: id_ex_pipe:idexp
+ 15. Parameter Settings for User Entity Instance: ex_stage:exs
+ 16. Parameter Settings for User Entity Instance: ex_stage:exs|opb_mux:opb_mux_instance
+ 17. Parameter Settings for User Entity Instance: ex_stage:exs|alu:alu_instance
+ 18. Parameter Settings for User Entity Instance: ex_mem_pipe:exmemp
+ 19. Parameter Settings for User Entity Instance: mem_stage:mems
+ 20. Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem0
+ 21. Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem1
+ 22. Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem2
+ 23. Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem3
+ 24. Parameter Settings for User Entity Instance: mem_wb_pipe:memwbp
+ 25. Parameter Settings for User Entity Instance: wb_stage:wbs
+ 26. Analysis & Elaboration Settings
+ 27. Port Connectivity Checks: "wb_stage:wbs"
+ 28. Port Connectivity Checks: "mem_wb_pipe:memwbp"
+ 29. Port Connectivity Checks: "mem_stage:mems"
+ 30. Port Connectivity Checks: "ex_mem_pipe:exmemp"
+ 31. Port Connectivity Checks: "ex_stage:exs"
+ 32. Port Connectivity Checks: "if_stage:ifs|adder:adder_instance"
+ 33. Analysis & Elaboration Messages
+ 34. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -50,7 +65,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Jul 16 01:21:29 2020       ;
+; Analysis & Elaboration Status ; Successful - Fri Jul 17 00:40:35 2020       ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                 ; asip                                        ;
 ; Top-level Entity Name         ; path                                        ;
@@ -181,6 +196,134 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: id_ex_pipe:idexp ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ex_stage:exs ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ex_stage:exs|opb_mux:opb_mux_instance ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ex_stage:exs|alu:alu_instance ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ex_mem_pipe:exmemp ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 32    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem_stage:mems ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem0 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                       ;
+; BITS           ; 32    ; Signed Integer                                       ;
+; NUMBER         ; 0     ; String                                               ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                       ;
+; BITS           ; 32    ; Signed Integer                                       ;
+; NUMBER         ; 1     ; String                                               ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                       ;
+; BITS           ; 32    ; Signed Integer                                       ;
+; NUMBER         ; 2     ; String                                               ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem_stage:mems|data_memory:dmem3 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                       ;
+; BITS           ; 32    ; Signed Integer                                       ;
+; NUMBER         ; 3     ; String                                               ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mem_wb_pipe:memwbp ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 32    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: wb_stage:wbs ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -268,27 +411,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "id_stage:ids"                                                                                                                                                ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                                               ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; instruction ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "instruction[31..1]" will be connected to GND. ;
-; wd          ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "wd[31..1]" will be connected to GND.          ;
-; rw          ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "rw[4..1]" will be connected to GND.            ;
-; rda         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
-; rdb         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
-; extended    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "wb_stage:wbs"                                                                                                                                             ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                              ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; alu_result ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "alu_result[31..1]" will be connected to GND. ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "if_id_pipe:ifidp"                                                                                                                 ;
-+----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                                       ;
-+----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; instr_id ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "instr_id[31..1]" have no fanouts ;
-+----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mem_wb_pipe:memwbp"                                                                                                                                                ;
++----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                  ;
++----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; alu_result_mem ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "alu_result_mem[31..1]" will be connected to GND. ;
+; alu_result_wb  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "alu_result_wb[31..1]" have no fanouts                       ;
++----------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mem_stage:mems"                                                                                                                                     ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                           ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "address[31..1]" will be connected to GND. ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ex_mem_pipe:exmemp"                                                                                                                                               ;
++----------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                 ;
++----------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; alu_result_ex  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "alu_result_ex[31..1]" will be connected to GND. ;
+; alu_result_mem ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "alu_result_mem[31..1]" have no fanouts                     ;
++----------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ex_stage:exs"                                                                                                                         ;
++------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                         ;
++------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; alu_result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "alu_result[31..1]" have no fanouts ;
+; C          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                        ;
++------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -308,13 +476,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Jul 16 01:21:18 2020
+    Info: Processing started: Fri Jul 17 00:37:56 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off asip -c asip --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/mem_wb_pipe.sv
+    Info (12023): Found entity 1: mem_wb_pipe File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/ex_mem_pipe.sv
+    Info (12023): Found entity 1: ex_mem_pipe File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/if_id_pipe.sv
     Info (12023): Found entity 1: if_id_pipe File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file asip/processor/path/id_ex_pipe.sv
+Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/id_ex_pipe.sv
+    Info (12023): Found entity 1: id_ex_pipe File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/mem-stage/data_memory.sv
     Info (12023): Found entity 1: data_memory File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/path/mem-stage/mem_stage_test.sv
@@ -376,16 +549,12 @@ Info (12021): Found 0 design units, including 0 entities, in source file asip/pr
 Info (12021): Found 1 design units, including 1 entities, in source file asip/processor/control_unit/control_unit.sv
     Info (12023): Found entity 1: control_unit File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/control_unit/control_unit.sv Line: 18
 Info (12021): Found 0 design units, including 0 entities, in source file asip/vga-controller/vga_controller.sv
-Warning (10236): Verilog HDL Implicit Net warning at path.sv(19): created implicit net for "instruction_id" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at path.sv(20): created implicit net for "wd" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at path.sv(20): created implicit net for "rw_rb" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 20
 Info (12127): Elaborating entity "path" for the top level hierarchy
-Info (12128): Elaborating entity "if_stage" for hierarchy "if_stage:ifs" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 18
+Info (12128): Elaborating entity "if_stage" for hierarchy "if_stage:ifs" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 45
 Info (12128): Elaborating entity "pc_ff" for hierarchy "if_stage:ifs|pc_ff:pc_ff_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 28
 Info (12128): Elaborating entity "pc_mux" for hierarchy "if_stage:ifs|pc_mux:pc_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 29
 Info (12128): Elaborating entity "adder" for hierarchy "if_stage:ifs|adder:adder_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv Line: 30
-Info (12128): Elaborating entity "if_id_pipe" for hierarchy "if_id_pipe:ifidp" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 19
-Warning (10235): Verilog HDL Always Construct warning at if_id_pipe.sv(10): variable "reset" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 10
+Info (12128): Elaborating entity "if_id_pipe" for hierarchy "if_id_pipe:ifidp" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 47
 Warning (10235): Verilog HDL Always Construct warning at if_id_pipe.sv(15): variable "instr_if" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 15
 Warning (10235): Verilog HDL Always Construct warning at if_id_pipe.sv(18): variable "instr_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 18
 Warning (10240): Verilog HDL Always Construct warning at if_id_pipe.sv(9): inferring latch(es) for variable "instr_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 9
@@ -454,7 +623,7 @@ Info (10041): Inferred latch for "instr_temp[28]" at if_id_pipe.sv(14) File: C:/
 Info (10041): Inferred latch for "instr_temp[29]" at if_id_pipe.sv(14) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 14
 Info (10041): Inferred latch for "instr_temp[30]" at if_id_pipe.sv(14) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 14
 Info (10041): Inferred latch for "instr_temp[31]" at if_id_pipe.sv(14) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv Line: 14
-Info (12128): Elaborating entity "id_stage" for hierarchy "id_stage:ids" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 20
+Info (12128): Elaborating entity "id_stage" for hierarchy "id_stage:ids" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 51
 Info (12128): Elaborating entity "rb_mux" for hierarchy "id_stage:ids|rb_mux:rb_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 54
 Info (12128): Elaborating entity "registers" for hierarchy "id_stage:ids|registers:regs_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 55
 Warning (10235): Verilog HDL Always Construct warning at registers.sv(34): variable "we" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 34
@@ -1486,13 +1655,632 @@ Info (10041): Inferred latch for "rf[31][29]" at registers.sv(33) File: C:/Users
 Info (10041): Inferred latch for "rf[31][30]" at registers.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 33
 Info (10041): Inferred latch for "rf[31][31]" at registers.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv Line: 33
 Info (12128): Elaborating entity "zero_extension" for hierarchy "id_stage:ids|zero_extension:zext_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv Line: 56
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "id_ex_pipe" for hierarchy "id_ex_pipe:idexp" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 57
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(19): variable "reset" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 19
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(34): variable "wr_en_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 34
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(35): variable "opb_selector_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 35
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(36): variable "alu_func_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 36
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(37): variable "wd_selector_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 37
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(38): variable "wm_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 38
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(39): variable "ra_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 39
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(40): variable "rb_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 40
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(41): variable "rw_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 41
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(42): variable "rda_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 42
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(43): variable "rdb_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 43
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(44): variable "extended_id" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 44
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(47): variable "wr_en_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 47
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(48): variable "opb_selector_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 48
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(49): variable "alu_func_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 49
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(50): variable "wd_selector_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 50
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(51): variable "wm_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 51
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(52): variable "ra_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 52
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(53): variable "rb_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 53
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(54): variable "rw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 54
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(55): variable "rda_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 55
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(56): variable "rdb_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 56
+Warning (10235): Verilog HDL Always Construct warning at id_ex_pipe.sv(57): variable "extended_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 57
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "wr_en_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "opb_selector_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "alu_func_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "wd_selector_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "wm_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "ra_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rb_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rw_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rda_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rdb_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "extended_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "wr_en_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "opb_selector_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "alu_func_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "wd_selector_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "wm_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "ra_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rb_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rw_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rda_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "rdb_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Warning (10240): Verilog HDL Always Construct warning at id_ex_pipe.sv(18): inferring latch(es) for variable "extended_ex", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 18
+Info (10041): Inferred latch for "extended_ex[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[5]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[6]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[7]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[8]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[9]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[10]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[11]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[12]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[13]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[14]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[15]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[16]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[17]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[18]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[19]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[20]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[21]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[22]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[23]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[24]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[25]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[26]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[27]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[28]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[29]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[30]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_ex[31]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[5]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[6]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[7]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[8]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[9]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[10]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[11]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[12]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[13]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[14]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[15]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[16]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[17]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[18]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[19]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[20]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[21]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[22]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[23]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[24]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[25]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[26]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[27]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[28]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[29]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[30]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_ex[31]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[5]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[6]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[7]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[8]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[9]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[10]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[11]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[12]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[13]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[14]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[15]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[16]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[17]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[18]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[19]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[20]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[21]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[22]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[23]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[24]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[25]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[26]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[27]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[28]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[29]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[30]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_ex[31]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_ex[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_ex[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_ex[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_ex[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_ex[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_ex[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_ex[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_ex[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_ex[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_ex[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_ex[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_ex[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_ex[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_ex[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_ex[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "wm_ex" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "wd_selector_ex" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "alu_func_ex" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "opb_selector_ex" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "wr_en_ex" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[5]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[6]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[7]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[8]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[9]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[10]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[11]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[12]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[13]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[14]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[15]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[16]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[17]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[18]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[19]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[20]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[21]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[22]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[23]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[24]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[25]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[26]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[27]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[28]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[29]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[30]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "extended_temp[31]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[5]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[6]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[7]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[8]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[9]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[10]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[11]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[12]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[13]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[14]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[15]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[16]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[17]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[18]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[19]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[20]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[21]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[22]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[23]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[24]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[25]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[26]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[27]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[28]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[29]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[30]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rdb_temp[31]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[5]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[6]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[7]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[8]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[9]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[10]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[11]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[12]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[13]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[14]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[15]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[16]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[17]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[18]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[19]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[20]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[21]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[22]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[23]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[24]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[25]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[26]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[27]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[28]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[29]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[30]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rda_temp[31]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_temp[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_temp[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_temp[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_temp[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rw_temp[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_temp[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_temp[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_temp[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_temp[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "rb_temp[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_temp[0]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_temp[1]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_temp[2]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_temp[3]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "ra_temp[4]" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "wm_temp" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "wd_selector_temp" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "alu_func_temp" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "opb_selector_temp" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (10041): Inferred latch for "wr_en_temp" at id_ex_pipe.sv(33) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv Line: 33
+Info (12128): Elaborating entity "ex_stage" for hierarchy "ex_stage:exs" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 60
+Info (12128): Elaborating entity "opb_mux" for hierarchy "ex_stage:exs|opb_mux:opb_mux_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv Line: 29
+Info (12128): Elaborating entity "alu" for hierarchy "ex_stage:exs|alu:alu_instance" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv Line: 30
+Info (12128): Elaborating entity "ex_mem_pipe" for hierarchy "ex_mem_pipe:exmemp" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 64
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(26): variable "wr_en_ex" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 26
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(27): variable "wd_sel_ex" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 27
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(28): variable "wm_en_ex" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 28
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(29): variable "rw_ex" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 29
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(30): variable "alu_result_ex" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 30
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(31): variable "rdb_ex" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 31
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(34): variable "wr_en_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 34
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(35): variable "wd_sel_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 35
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(36): variable "wm_en_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 36
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(37): variable "rw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 37
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(38): variable "alu_result_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 38
+Warning (10235): Verilog HDL Always Construct warning at ex_mem_pipe.sv(39): variable "rdb_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 39
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "wr_en_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "wd_sel_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "wm_en_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "rw_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "alu_result_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "rdb_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "wr_en_mem", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "wd_sel_mem", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "wm_en_mem", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "rw_mem", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "alu_result_mem", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at ex_mem_pipe.sv(15): inferring latch(es) for variable "rdb_mem", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 15
+Info (10041): Inferred latch for "rdb_mem[0]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[1]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[2]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[3]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[4]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[5]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[6]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[7]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[8]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[9]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[10]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[11]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[12]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[13]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[14]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[15]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[16]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[17]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[18]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[19]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[20]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[21]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[22]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[23]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[24]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[25]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[26]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[27]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[28]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[29]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[30]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_mem[31]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[0]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[1]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[2]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[3]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[4]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[5]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[6]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[7]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[8]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[9]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[10]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[11]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[12]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[13]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[14]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[15]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[16]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[17]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[18]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[19]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[20]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[21]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[22]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[23]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[24]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[25]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[26]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[27]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[28]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[29]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[30]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_mem[31]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_mem[0]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_mem[1]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_mem[2]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_mem[3]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_mem[4]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "wm_en_mem" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "wd_sel_mem" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "wr_en_mem" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[0]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[1]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[2]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[3]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[4]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[5]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[6]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[7]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[8]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[9]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[10]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[11]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[12]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[13]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[14]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[15]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[16]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[17]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[18]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[19]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[20]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[21]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[22]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[23]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[24]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[25]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[26]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[27]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[28]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[29]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[30]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rdb_temp[31]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[0]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[1]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[2]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[3]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[4]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[5]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[6]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[7]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[8]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[9]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[10]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[11]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[12]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[13]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[14]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[15]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[16]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[17]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[18]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[19]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[20]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[21]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[22]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[23]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[24]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[25]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[26]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[27]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[28]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[29]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[30]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "alu_result_temp[31]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_temp[0]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_temp[1]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_temp[2]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_temp[3]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "rw_temp[4]" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "wm_en_temp" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "wd_sel_temp" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (10041): Inferred latch for "wr_en_temp" at ex_mem_pipe.sv(25) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv Line: 25
+Info (12128): Elaborating entity "mem_stage" for hierarchy "mem_stage:mems" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 66
+Info (12128): Elaborating entity "data_memory" for hierarchy "mem_stage:mems|data_memory:dmem0" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv Line: 35
+Info (12128): Elaborating entity "data_memory" for hierarchy "mem_stage:mems|data_memory:dmem1" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv Line: 36
+Info (12128): Elaborating entity "data_memory" for hierarchy "mem_stage:mems|data_memory:dmem2" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv Line: 37
+Info (12128): Elaborating entity "data_memory" for hierarchy "mem_stage:mems|data_memory:dmem3" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv Line: 38
+Info (12128): Elaborating entity "mem_wb_pipe" for hierarchy "mem_wb_pipe:memwbp" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 70
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(25): variable "wr_en_mem" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 25
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(26): variable "wd_sel_mem" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 26
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(27): variable "rw_mem" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 27
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(28): variable "alu_result_mem" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 28
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(29): variable "rd_mem" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 29
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(32): variable "wr_en_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 32
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(33): variable "wd_sel_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 33
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(34): variable "rw_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 34
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(35): variable "alu_result_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 35
+Warning (10235): Verilog HDL Always Construct warning at mem_wb_pipe.sv(36): variable "rd_temp" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 36
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "wr_en_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "wd_sel_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "rw_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "alu_result_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "rd_temp", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "wr_en_wb", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "wd_sel_wb", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "rw_wb", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "alu_result_wb", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at mem_wb_pipe.sv(15): inferring latch(es) for variable "rd_wb", which holds its previous value in one or more paths through the always construct File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 15
+Info (10041): Inferred latch for "rd_wb[0]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[1]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[2]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[3]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[4]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[5]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[6]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[7]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[8]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[9]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[10]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[11]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[12]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[13]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[14]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[15]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[16]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[17]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[18]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[19]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[20]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[21]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[22]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[23]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[24]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[25]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[26]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[27]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[28]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[29]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[30]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_wb[31]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[0]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[1]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[2]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[3]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[4]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[5]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[6]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[7]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[8]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[9]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[10]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[11]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[12]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[13]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[14]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[15]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[16]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[17]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[18]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[19]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[20]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[21]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[22]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[23]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[24]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[25]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[26]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[27]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[28]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[29]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[30]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_wb[31]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_wb[0]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_wb[1]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_wb[2]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_wb[3]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_wb[4]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "wd_sel_wb" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "wr_en_wb" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[0]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[1]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[2]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[3]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[4]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[5]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[6]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[7]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[8]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[9]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[10]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[11]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[12]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[13]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[14]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[15]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[16]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[17]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[18]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[19]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[20]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[21]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[22]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[23]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[24]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[25]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[26]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[27]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[28]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[29]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[30]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rd_temp[31]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[0]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[1]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[2]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[3]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[4]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[5]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[6]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[7]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[8]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[9]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[10]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[11]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[12]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[13]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[14]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[15]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[16]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[17]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[18]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[19]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[20]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[21]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[22]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[23]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[24]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[25]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[26]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[27]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[28]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[29]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[30]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "alu_result_temp[31]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_temp[0]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_temp[1]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_temp[2]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_temp[3]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "rw_temp[4]" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "wd_sel_temp" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (10041): Inferred latch for "wr_en_temp" at mem_wb_pipe.sv(24) File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv Line: 24
+Info (12128): Elaborating entity "wb_stage" for hierarchy "wb_stage:wbs" File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv Line: 72
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/output_files/asip.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Thu Jul 16 01:21:29 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 99 warnings
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Fri Jul 17 00:40:35 2020
+    Info: Elapsed time: 00:02:39
+    Info: Total CPU time (on all processors): 00:02:52
 
 
 +--------------------------------------------+
