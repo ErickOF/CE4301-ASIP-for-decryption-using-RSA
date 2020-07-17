@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-name = "Hexa"
+name = "mem"
 pixel_per_block = 65536
 
 #Abre el archivo "0.txt" que tiene la información de la imagen 
@@ -27,7 +27,7 @@ for x in listaPixelString:
     n = int(x)
     listaPixelInt.append(n)
 
-size_image = len(listaPixelInt)
+size_image = len(listaPixelInt) * 2
 cont = 0
 i = 0
 while i < size_image:
