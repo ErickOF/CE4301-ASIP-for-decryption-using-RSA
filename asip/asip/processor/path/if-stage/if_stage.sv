@@ -21,7 +21,6 @@ module if_stage #(parameter N=32)
 				      output logic [N-1:0] pc);
 
 	// Var to save result
-	logic [N-1:0] result;
 	logic [N-1:0] pc_plus4;
 	logic [N-1:0] pc_reg;
 	

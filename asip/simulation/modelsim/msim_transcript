@@ -10,216 +10,489 @@
 # Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:04 on Jul 15,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage_test.sv 
-# -- Compiling module mem_stage_test
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv 
+# -- Compiling module path_test
 # 
 # Top level modules:
-# 	mem_stage_test
-# End time: 14:39:04 on Jul 15,2020, Elapsed time: 0:00:00
+# 	path_test
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv}
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:05 on Jul 15,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv 
-# -- Compiling module mem_stage
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv 
+# -- Compiling module mem_wb_pipe
 # 
 # Top level modules:
-# 	mem_stage
-# End time: 14:39:05 on Jul 15,2020, Elapsed time: 0:00:00
+# 	mem_wb_pipe
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv 
+# -- Compiling module ex_mem_pipe
+# 
+# Top level modules:
+# 	ex_mem_pipe
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv 
+# -- Compiling module if_id_pipe
+# 
+# Top level modules:
+# 	if_id_pipe
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv 
+# -- Compiling module id_ex_pipe
+# 
+# Top level modules:
+# 	id_ex_pipe
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:05 on Jul 15,2020
+# Start time: 12:56:48 on Jul 17,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/data_memory.sv 
 # -- Compiling module data_memory
 # 
 # Top level modules:
 # 	data_memory
-# End time: 14:39:05 on Jul 15,2020, Elapsed time: 0:00:00
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv 
+# -- Compiling module opb_mux
+# 
+# Top level modules:
+# 	opb_mux
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv 
+# -- Compiling module zero_extension
+# 
+# Top level modules:
+# 	zero_extension
+# End time: 12:56:48 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:48 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv 
+# -- Compiling module registers
+# 
+# Top level modules:
+# 	registers
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv 
+# -- Compiling module rb_mux
+# 
+# Top level modules:
+# 	rb_mux
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv 
+# -- Compiling module pc_ff
+# 
+# Top level modules:
+# 	pc_ff
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv 
+# -- Compiling module pc_mux
+# 
+# Top level modules:
+# 	pc_mux
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv 
+# -- Compiling module wb_stage
+# 
+# Top level modules:
+# 	wb_stage
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv 
+# -- Compiling module mem_stage
+# 
+# Top level modules:
+# 	mem_stage
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv 
+# -- Compiling module if_stage
+# 
+# Top level modules:
+# 	if_stage
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv 
+# -- Compiling module id_stage
+# 
+# Top level modules:
+# 	id_stage
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv 
+# -- Compiling module ex_stage
+# 
+# Top level modules:
+# 	ex_stage
+# End time: 12:56:49 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:56:49 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv 
+# -- Compiling module path
+# 
+# Top level modules:
+# 	path
+# End time: 12:56:50 on Jul 17,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.mem_stage_test
-# vsim work.mem_stage_test 
-# Start time: 14:39:07 on Jul 15,2020
+vsim work.path_test
+# vsim work.path_test 
+# Start time: 12:57:04 on Jul 17,2020
 # Loading sv_std.std
-# Loading work.mem_stage_test
+# Loading work.path_test
+# Loading work.path
+# Loading work.if_stage
+# Loading work.pc_ff
+# Loading work.pc_mux
+# Loading work.adder
+# Loading work.if_id_pipe
+# Loading work.id_stage
+# Loading work.rb_mux
+# Loading work.registers
+# Loading work.zero_extension
+# Loading work.id_ex_pipe
+# Loading work.ex_stage
+# Loading work.opb_mux
+# Loading work.alu
+# Loading work.ex_mem_pipe
 # Loading work.mem_stage
 # Loading work.data_memory
-add wave -position end  sim:/mem_stage_test/address
-add wave -position end  sim:/mem_stage_test/write_data
-add wave -position end  sim:/mem_stage_test/read_data
-add wave -position end  sim:/mem_stage_test/clk
-add wave -position end  sim:/mem_stage_test/write_enable
+# Loading work.mem_wb_pipe
+# Loading work.wb_stage
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Missing connection for port 'C'.
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_ex'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(66): [PCDPC] - Port size (32) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/mems File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_wb'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(72): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/wbs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
+add wave -position end  sim:/path_test/clock
+add wave -position end  sim:/path_test/reset
+add wave -position end  sim:/path_test/branch
+add wave -position end  sim:/path_test/ext_sel
+add wave -position end  sim:/path_test/rb_sel
+add wave -position end  sim:/path_test/wr_en
+add wave -position end  sim:/path_test/opb_sel
+add wave -position end  sim:/path_test/alu_func
+add wave -position end  sim:/path_test/wd_sel
+add wave -position end  sim:/path_test/wm_en
+add wave -position end  sim:/path_test/instruction
+add wave -position end  sim:/path_test/pc
+add wave -position end  sim:/path_test/opcode
+add wave -position end  sim:/path_test/func
+add wave -position end  sim:/path_test/ra_id
+add wave -position end  sim:/path_test/rb_id
+add wave -position end  sim:/path_test/rw_id
+add wave -position end  sim:/path_test/ra_ex
+add wave -position end  sim:/path_test/rb_ex
+add wave -position end  sim:/path_test/rw_ex
+add wave -position end  sim:/path_test/rw_mem
+add wave -position end  sim:/path_test/rw_wb
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
-#           Attempting to use alternate WLF file "./wlftia2n8h".
+#           Attempting to use alternate WLF file "./wlft3rseqv".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftia2n8h
-add wave -position end  sim:/mem_stage_test/DUT/we0
-add wave -position end  sim:/mem_stage_test/DUT/we1
-add wave -position end  sim:/mem_stage_test/DUT/we2
-add wave -position end  sim:/mem_stage_test/DUT/we3
-run 800
-# Read memory 0
-# clk=1, write_enable=0, address=00000000, write_data=00000005, read_data=00000006
-# 
-# clk=0, write_enable=0, address=00000000, write_data=00000005, read_data=00000006
-# 
-# clk=1, write_enable=0, address=00000004, write_data=00000005, read_data=00000031
-# 
-# clk=0, write_enable=0, address=00000004, write_data=00000005, read_data=00000031
-# 
-# clk=1, write_enable=0, address=00000008, write_data=00000009, read_data=00000005
-# 
-# clk=0, write_enable=0, address=00000008, write_data=00000009, read_data=00000005
-# 
-# Read memory 1
-# clk=1, write_enable=0, address=00010000, write_data=00000005, read_data=00000006
-# 
-# clk=0, write_enable=0, address=00010000, write_data=00000005, read_data=00000006
-# 
-# clk=1, write_enable=0, address=00010004, write_data=00000005, read_data=00000031
-# 
-# clk=0, write_enable=0, address=00010004, write_data=00000005, read_data=00000031
-# 
-# clk=1, write_enable=0, address=00010008, write_data=00000009, read_data=00000005
-# 
-# clk=0, write_enable=0, address=00010008, write_data=00000009, read_data=00000005
-# 
-# Read memory 2
-# clk=1, write_enable=0, address=00020000, write_data=00000005, read_data=00000006
-# 
-# clk=0, write_enable=0, address=00020000, write_data=00000005, read_data=00000006
-# 
-# clk=1, write_enable=0, address=00020004, write_data=00000005, read_data=00000031
-# 
-# clk=0, write_enable=0, address=00020004, write_data=00000005, read_data=00000031
-# 
-# clk=1, write_enable=0, address=00020008, write_data=00000009, read_data=00000005
-# 
-# clk=0, write_enable=0, address=00020008, write_data=00000009, read_data=00000005
-# 
-# Read memory 3
-# clk=1, write_enable=0, address=00030000, write_data=00000005, read_data=00000006
-# 
-# clk=0, write_enable=0, address=00030000, write_data=00000005, read_data=00000006
-# 
-# clk=1, write_enable=0, address=00030004, write_data=00000005, read_data=00000031
-# 
-# clk=0, write_enable=0, address=00030004, write_data=00000005, read_data=00000031
-# 
-# clk=1, write_enable=0, address=00030008, write_data=00000009, read_data=00000005
-# 
-# clk=0, write_enable=0, address=00030008, write_data=00000009, read_data=00000005
-# 
-# Write into memory 0
-# clk=1, write_enable=1, address=00000000, write_data=00000010, read_data=00000010
-# 
-# clk=0, write_enable=1, address=00000000, write_data=00000010, read_data=00000010
-# 
-# clk=1, write_enable=1, address=00000004, write_data=00000011, read_data=00000011
-# 
-# clk=0, write_enable=1, address=00000004, write_data=00000011, read_data=00000011
-# 
-# clk=1, write_enable=1, address=00000008, write_data=00000012, read_data=00000012
-# 
-# clk=0, write_enable=1, address=00000008, write_data=00000012, read_data=00000012
-# 
-# Write into memory 1
-# clk=1, write_enable=1, address=00010000, write_data=00010024, read_data=00000024
-# 
-# clk=0, write_enable=1, address=00010000, write_data=00010024, read_data=00000024
-# 
-# clk=1, write_enable=1, address=00010004, write_data=00010007, read_data=00000007
-# 
-# clk=0, write_enable=1, address=00010004, write_data=00010007, read_data=00000007
-# 
-# clk=1, write_enable=1, address=00010008, write_data=00010009, read_data=00000009
-# 
-# clk=0, write_enable=1, address=00010008, write_data=00010009, read_data=00000009
-# 
-# Write into memory 2
-# clk=1, write_enable=1, address=00020000, write_data=00020024, read_data=00000024
-# 
-# clk=0, write_enable=1, address=00020000, write_data=00020024, read_data=00000024
-# 
-# clk=1, write_enable=1, address=00020004, write_data=00020007, read_data=00000007
-# 
-# clk=0, write_enable=1, address=00020004, write_data=00020007, read_data=00000007
-# 
-# clk=1, write_enable=1, address=00020008, write_data=00020009, read_data=00000009
-# 
-# clk=0, write_enable=1, address=00020008, write_data=00020009, read_data=00000009
-# 
-# Write into memory 3
-# clk=1, write_enable=1, address=00030000, write_data=00030012, read_data=00000012
-# 
-# clk=0, write_enable=1, address=00030000, write_data=00030012, read_data=00000012
-# 
-# clk=1, write_enable=1, address=00030004, write_data=00030018, read_data=00000018
-# 
-# clk=0, write_enable=1, address=00030004, write_data=00030018, read_data=00000018
-# 
-# clk=1, write_enable=1, address=00030008, write_data=00030032, read_data=00000032
-# 
-# clk=0, write_enable=1, address=00030008, write_data=00030032, read_data=00000032
-# 
-# Read memory 0
-# clk=1, write_enable=0, address=00000000, write_data=00000005, read_data=00000010
-# 
-# clk=0, write_enable=0, address=00000000, write_data=00000005, read_data=00000010
-# 
-# clk=1, write_enable=0, address=00000004, write_data=00000005, read_data=00000011
-# 
-# clk=0, write_enable=0, address=00000004, write_data=00000005, read_data=00000011
-# 
-# clk=1, write_enable=0, address=00000008, write_data=00000009, read_data=00000012
-# 
-# clk=0, write_enable=0, address=00000008, write_data=00000009, read_data=00000012
-# 
-# Read memory 1
-# clk=1, write_enable=0, address=00010000, write_data=00000005, read_data=00000024
-# 
-# clk=0, write_enable=0, address=00010000, write_data=00000005, read_data=00000024
-# 
-# clk=1, write_enable=0, address=00010004, write_data=00000005, read_data=00000007
-# 
-# clk=0, write_enable=0, address=00010004, write_data=00000005, read_data=00000007
-# 
-# clk=1, write_enable=0, address=00010008, write_data=00000009, read_data=00000009
-# 
-# clk=0, write_enable=0, address=00010008, write_data=00000009, read_data=00000009
-# 
-# Read memory 2
-# clk=1, write_enable=0, address=00020000, write_data=00000005, read_data=00000024
-# 
-# clk=0, write_enable=0, address=00020000, write_data=00000005, read_data=00000024
-# 
-# clk=1, write_enable=0, address=00020004, write_data=00000005, read_data=00000007
-# 
-# clk=0, write_enable=0, address=00020004, write_data=00000005, read_data=00000007
-# 
-# clk=1, write_enable=0, address=00020008, write_data=00000009, read_data=00000009
-# 
-# clk=0, write_enable=0, address=00020008, write_data=00000009, read_data=00000009
-# 
-# Read memory 3
-# clk=1, write_enable=0, address=00030000, write_data=00000005, read_data=00000012
-# 
-# clk=0, write_enable=0, address=00030000, write_data=00000005, read_data=00000012
-# 
-# clk=1, write_enable=0, address=00030004, write_data=00000005, read_data=00000018
-# 
-# clk=0, write_enable=0, address=00030004, write_data=00000005, read_data=00000018
-# 
-# clk=1, write_enable=0, address=00030008, write_data=00000009, read_data=00000032
-# 
-# clk=0, write_enable=0, address=00030008, write_data=00000009, read_data=00000032
-# 
-# A time value could not be extracted from the current line
-# A time value could not be extracted from the current line
-# End time: 14:56:58 on Jul 15,2020, Elapsed time: 0:17:51
-# Errors: 0, Warnings: 2
+#           Using alternate file: ./wlft3rseqv
+add wave -position end  sim:/path_test/DUT/ifs/jmp_pc
+add wave -position end  sim:/path_test/DUT/ifs/pc_selector
+add wave -position end  sim:/path_test/DUT/ifs/pc
+add wave -position end  sim:/path_test/DUT/ifs/result
+add wave -position end  sim:/path_test/DUT/ifs/pc_plus4
+add wave -position end  sim:/path_test/DUT/ifs/pc_reg
+run 1us
+restart -f
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Missing connection for port 'C'.
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_ex'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(66): [PCDPC] - Port size (32) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/mems File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_wb'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(72): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/wbs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
+vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:44 on Jul 17,2020
+# vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv 
+# -- Compiling module path_test
+# 
+# Top level modules:
+# 	path_test
+# End time: 13:04:44 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:51 on Jul 17,2020
+# vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv 
+# -- Compiling module pc_ff
+# 
+# Top level modules:
+# 	pc_ff
+# End time: 13:04:51 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:57 on Jul 17,2020
+# vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv 
+# -- Compiling module if_stage
+# 
+# Top level modules:
+# 	if_stage
+# End time: 13:04:57 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.path_test
+# End time: 13:05:42 on Jul 17,2020, Elapsed time: 0:08:38
+# Errors: 0, Warnings: 20
+# vsim work.path_test 
+# Start time: 13:05:42 on Jul 17,2020
+# Loading sv_std.std
+# Loading work.path_test
+# Loading work.path
+# Loading work.if_stage
+# Loading work.pc_ff
+# Loading work.pc_mux
+# Loading work.adder
+# Loading work.if_id_pipe
+# Loading work.id_stage
+# Loading work.rb_mux
+# Loading work.registers
+# Loading work.zero_extension
+# Loading work.id_ex_pipe
+# Loading work.ex_stage
+# Loading work.opb_mux
+# Loading work.alu
+# Loading work.ex_mem_pipe
+# Loading work.mem_stage
+# Loading work.data_memory
+# Loading work.mem_wb_pipe
+# Loading work.wb_stage
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Missing connection for port 'C'.
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_ex'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(66): [PCDPC] - Port size (32) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/mems File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_wb'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(72): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/wbs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
+add wave -position end  sim:/path_test/clock
+add wave -position end  sim:/path_test/reset
+add wave -position end  sim:/path_test/branch
+add wave -position end  sim:/path_test/ext_sel
+add wave -position end  sim:/path_test/rb_sel
+add wave -position end  sim:/path_test/wr_en
+add wave -position end  sim:/path_test/opb_sel
+add wave -position end  sim:/path_test/alu_func
+add wave -position end  sim:/path_test/wd_sel
+add wave -position end  sim:/path_test/wm_en
+add wave -position end  sim:/path_test/instruction
+add wave -position end  sim:/path_test/pc
+add wave -position end  sim:/path_test/opcode
+add wave -position end  sim:/path_test/func
+add wave -position end  sim:/path_test/ra_id
+add wave -position end  sim:/path_test/rb_id
+add wave -position end  sim:/path_test/rw_id
+add wave -position end  sim:/path_test/ra_ex
+add wave -position end  sim:/path_test/rb_ex
+add wave -position end  sim:/path_test/rw_ex
+add wave -position end  sim:/path_test/rw_mem
+add wave -position end  sim:/path_test/rw_wb
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
+#           Attempting to use alternate WLF file "./wlftc7v2r2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc7v2r2
+add wave -position end  sim:/path_test/DUT/ifs/jmp_pc
+add wave -position end  sim:/path_test/DUT/ifs/pc_selector
+add wave -position end  sim:/path_test/DUT/ifs/pc
+add wave -position end  sim:/path_test/DUT/ifs/pc_plus4
+add wave -position end  sim:/path_test/DUT/ifs/pc_reg
+run 1us
+vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:07:53 on Jul 17,2020
+# vlog -reportprogress 300 -work work C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv 
+# -- Compiling module path_test
+# 
+# Top level modules:
+# 	path_test
+# End time: 13:07:53 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.path_test
+# End time: 13:08:04 on Jul 17,2020, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 11
+# vsim work.path_test 
+# Start time: 13:08:04 on Jul 17,2020
+# Loading sv_std.std
+# Loading work.path_test
+# Loading work.path
+# Loading work.if_stage
+# Loading work.pc_ff
+# Loading work.pc_mux
+# Loading work.adder
+# Loading work.if_id_pipe
+# Loading work.id_stage
+# Loading work.rb_mux
+# Loading work.registers
+# Loading work.zero_extension
+# Loading work.id_ex_pipe
+# Loading work.ex_stage
+# Loading work.opb_mux
+# Loading work.alu
+# Loading work.ex_mem_pipe
+# Loading work.mem_stage
+# Loading work.data_memory
+# Loading work.mem_wb_pipe
+# Loading work.wb_stage
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(59): [TFMPC] - Missing connection for port 'C'.
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_ex'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(62): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exmemp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(66): [PCDPC] - Port size (32) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/mems File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem-stage/mem_stage.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_mem'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(68): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result_wb'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/memwbp File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv
+# ** Warning: (vsim-3015) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(72): [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_result'. The port definition is at: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/wbs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv
+add wave -position end  sim:/path_test/clock
+add wave -position end  sim:/path_test/reset
+add wave -position end  sim:/path_test/branch
+add wave -position end  sim:/path_test/ext_sel
+add wave -position end  sim:/path_test/rb_sel
+add wave -position end  sim:/path_test/wr_en
+add wave -position end  sim:/path_test/opb_sel
+add wave -position end  sim:/path_test/alu_func
+add wave -position end  sim:/path_test/wd_sel
+add wave -position end  sim:/path_test/wm_en
+add wave -position end  sim:/path_test/instruction
+add wave -position end  sim:/path_test/pc
+add wave -position end  sim:/path_test/opcode
+add wave -position end  sim:/path_test/func
+add wave -position end  sim:/path_test/ra_id
+add wave -position end  sim:/path_test/rb_id
+add wave -position end  sim:/path_test/rw_id
+add wave -position end  sim:/path_test/ra_ex
+add wave -position end  sim:/path_test/rb_ex
+add wave -position end  sim:/path_test/rw_ex
+add wave -position end  sim:/path_test/rw_mem
+add wave -position end  sim:/path_test/rw_wb
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
+#           Attempting to use alternate WLF file "./wlftebah8h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftebah8h
+add wave -position end  sim:/path_test/DUT/ifs/jmp_pc
+add wave -position end  sim:/path_test/DUT/ifs/pc_selector
+add wave -position end  sim:/path_test/DUT/ifs/pc
+add wave -position end  sim:/path_test/DUT/ifs/pc_plus4
+add wave -position end  sim:/path_test/DUT/ifs/pc_reg
+run 1us

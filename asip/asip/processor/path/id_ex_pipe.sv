@@ -30,7 +30,7 @@ module id_ex_pipe #(parameter N=32)
 			extended_temp = 32'b0;
 		end
 		else begin
-			if (clock) begin
+			if (clock == 1'b0) begin
 				wr_en_temp = wr_en_id;
 				opb_selector_temp = opb_selector_id;
 				alu_func_temp = alu_func_id;

@@ -22,7 +22,7 @@ module ex_mem_pipe #(parameter N=32)
 			rdb_temp = 32'b0;
 		end
 		else begin
-			if (clock) begin
+			if (clock == 1'b0) begin
 				wr_en_temp = wr_en_ex;
 				wd_sel_temp = wd_sel_ex;
 				wm_en_temp = wm_en_ex;

@@ -1,4 +1,7 @@
-|path
+|path_test
+
+
+|path_test|path:DUT
 clock => clock.IN7
 reset => reset.IN6
 branch[0] => Mux0.IN4
@@ -122,7 +125,7 @@ pc[30] <= if_stage:ifs.port4
 pc[31] <= if_stage:ifs.port4
 
 
-|path|if_stage:ifs
+|path_test|path:DUT|if_stage:ifs
 clk => clk.IN1
 reset => reset.IN1
 jmp_pc[0] => jmp_pc[0].IN1
@@ -192,7 +195,7 @@ pc[30] <= pc[30].DB_MAX_OUTPUT_PORT_TYPE
 pc[31] <= pc[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|if_stage:ifs|pc_ff:pc_ff_instance
+|path_test|path:DUT|if_stage:ifs|pc_ff:pc_ff_instance
 clk => next_pc[0]~reg0.CLK
 clk => next_pc[1]~reg0.CLK
 clk => next_pc[2]~reg0.CLK
@@ -323,7 +326,7 @@ next_pc[30] <= next_pc[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 next_pc[31] <= next_pc[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|if_stage:ifs|pc_mux:pc_mux_instance
+|path_test|path:DUT|if_stage:ifs|pc_mux:pc_mux_instance
 pc[0] => result.DATAB
 pc[1] => result.DATAB
 pc[2] => result.DATAB
@@ -454,7 +457,7 @@ selected_pc[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_pc[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|if_stage:ifs|adder:adder_instance
+|path_test|path:DUT|if_stage:ifs|adder:adder_instance
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -553,7 +556,8 @@ result[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|if_id_pipe:ifidp
+|path_test|path:DUT|if_id_pipe:ifidp
+clock => instr_id[31].IN0
 clock => instr_temp[0].LATCH_ENABLE
 clock => instr_temp[1].LATCH_ENABLE
 clock => instr_temp[2].LATCH_ENABLE
@@ -586,7 +590,6 @@ clock => instr_temp[28].LATCH_ENABLE
 clock => instr_temp[29].LATCH_ENABLE
 clock => instr_temp[30].LATCH_ENABLE
 clock => instr_temp[31].LATCH_ENABLE
-clock => instr_id[31].IN0
 reset => instr_temp[0].ACLR
 reset => instr_temp[1].ACLR
 reset => instr_temp[2].ACLR
@@ -686,7 +689,7 @@ instr_id[30] <= instr_id[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 instr_id[31] <= instr_id[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|id_stage:ids
+|path_test|path:DUT|id_stage:ids
 clk => clk.IN1
 reset => reset.IN1
 rb_selector => rb_selector.IN1
@@ -880,7 +883,7 @@ extended[30] <= zero_extension:zext_instance.port2
 extended[31] <= zero_extension:zext_instance.port2
 
 
-|path|id_stage:ids|rb_mux:rb_mux_instance
+|path_test|path:DUT|id_stage:ids|rb_mux:rb_mux_instance
 rb[0] => result.DATAB
 rb[1] => result.DATAB
 rb[2] => result.DATAB
@@ -903,7 +906,7 @@ selected_rb[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_rb[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|id_stage:ids|registers:regs_instance
+|path_test|path:DUT|id_stage:ids|registers:regs_instance
 clk => always0.IN0
 reset => rf[0][0].ACLR
 reset => rf[0][1].ACLR
@@ -3345,7 +3348,7 @@ rdb[30] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
 rdb[31] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|id_stage:ids|zero_extension:zext_instance
+|path_test|path:DUT|id_stage:ids|zero_extension:zext_instance
 value[0] => Mux11.IN2
 value[0] => Mux11.IN3
 value[1] => Mux10.IN2
@@ -3459,7 +3462,8 @@ entended[30] <= <GND>
 entended[31] <= <GND>
 
 
-|path|id_ex_pipe:idexp
+|path_test|path:DUT|id_ex_pipe:idexp
+clock => rda_ex[31].IN0
 clock => wr_en_temp.LATCH_ENABLE
 clock => opb_selector_temp.LATCH_ENABLE
 clock => alu_func_temp.LATCH_ENABLE
@@ -3576,7 +3580,6 @@ clock => extended_temp[3].LATCH_ENABLE
 clock => extended_temp[2].LATCH_ENABLE
 clock => extended_temp[1].LATCH_ENABLE
 clock => extended_temp[0].LATCH_ENABLE
-clock => rda_ex[31].IN0
 reset => wr_en_temp.ACLR
 reset => opb_selector_temp.ACLR
 reset => alu_func_temp.ACLR
@@ -3928,7 +3931,7 @@ wd_selector_ex <= wd_selector_ex$latch.DB_MAX_OUTPUT_PORT_TYPE
 wm_ex <= wm_ex$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|ex_stage:exs
+|path_test|path:DUT|ex_stage:exs
 rda[0] => rda[0].IN1
 rda[1] => rda[1].IN1
 rda[2] => rda[2].IN1
@@ -4063,7 +4066,7 @@ Z <= alu:alu_instance.port4
 C <= alu:alu_instance.port5
 
 
-|path|ex_stage:exs|opb_mux:opb_mux_instance
+|path_test|path:DUT|ex_stage:exs|opb_mux:opb_mux_instance
 rdb[0] => result.DATAB
 rdb[1] => result.DATAB
 rdb[2] => result.DATAB
@@ -4194,7 +4197,7 @@ selected_opb[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_opb[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|ex_stage:exs|alu:alu_instance
+|path_test|path:DUT|ex_stage:exs|alu:alu_instance
 a[0] => Add0.IN32
 a[0] => Add1.IN64
 a[1] => Add0.IN31
@@ -4392,7 +4395,8 @@ Z <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 C <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|ex_mem_pipe:exmemp
+|path_test|path:DUT|ex_mem_pipe:exmemp
+clock => wr_en_mem.IN0
 clock => wr_en_temp.LATCH_ENABLE
 clock => wd_sel_temp.LATCH_ENABLE
 clock => wm_en_temp.LATCH_ENABLE
@@ -4465,7 +4469,6 @@ clock => rdb_temp[3].LATCH_ENABLE
 clock => rdb_temp[2].LATCH_ENABLE
 clock => rdb_temp[1].LATCH_ENABLE
 clock => rdb_temp[0].LATCH_ENABLE
-clock => wr_en_mem.IN0
 reset => wr_en_temp.ACLR
 reset => wd_sel_temp.ACLR
 reset => wm_en_temp.ACLR
@@ -4685,7 +4688,7 @@ rdb_mem[30] <= rdb_mem[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 rdb_mem[31] <= rdb_mem[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|mem_stage:mems
+|path_test|path:DUT|mem_stage:mems
 clk => clk.IN4
 write_enable => we0.DATAB
 write_enable => we1.DATAB
@@ -4901,7 +4904,7 @@ read_data[30] <= rd.DB_MAX_OUTPUT_PORT_TYPE
 read_data[31] <= rd.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|mem_stage:mems|data_memory:dmem0
+|path_test|path:DUT|mem_stage:mems|data_memory:dmem0
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5048,7 +5051,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path|mem_stage:mems|data_memory:dmem1
+|path_test|path:DUT|mem_stage:mems|data_memory:dmem1
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5195,7 +5198,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path|mem_stage:mems|data_memory:dmem2
+|path_test|path:DUT|mem_stage:mems|data_memory:dmem2
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5342,7 +5345,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path|mem_stage:mems|data_memory:dmem3
+|path_test|path:DUT|mem_stage:mems|data_memory:dmem3
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5489,7 +5492,8 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path|mem_wb_pipe:memwbp
+|path_test|path:DUT|mem_wb_pipe:memwbp
+clock => wr_en_wb.IN0
 clock => wr_en_temp.LATCH_ENABLE
 clock => wd_sel_temp.LATCH_ENABLE
 clock => rw_temp[4].LATCH_ENABLE
@@ -5561,7 +5565,6 @@ clock => rd_temp[3].LATCH_ENABLE
 clock => rd_temp[2].LATCH_ENABLE
 clock => rd_temp[1].LATCH_ENABLE
 clock => rd_temp[0].LATCH_ENABLE
-clock => wr_en_wb.IN0
 reset => wr_en_temp.ACLR
 reset => wd_sel_temp.ACLR
 reset => rw_temp[4].ACLR
@@ -5778,7 +5781,7 @@ rd_wb[30] <= rd_wb[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 rd_wb[31] <= rd_wb[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path|wb_stage:wbs
+|path_test|path:DUT|wb_stage:wbs
 wd_selector => result.OUTPUTSELECT
 wd_selector => result.OUTPUTSELECT
 wd_selector => result.OUTPUTSELECT

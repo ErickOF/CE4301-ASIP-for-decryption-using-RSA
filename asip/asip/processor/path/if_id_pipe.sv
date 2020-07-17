@@ -11,7 +11,7 @@ module if_id_pipe #(parameter N=32)
 			instr_temp = 0;
 		end
 		else begin
-			if (clock) begin
+			if (clock == 1'b0) begin
 				instr_temp <= instr_if;
 			end
 			else begin

@@ -21,7 +21,7 @@ module mem_wb_pipe #(parameter N=32)
 			rd_temp = 32'b0;
 		end
 		else begin
-			if (clock) begin
+			if (clock == 1'b0) begin
 				wr_en_temp = wr_en_mem;
 				wd_sel_temp = wd_sel_mem;
 				rw_temp = rw_mem;
