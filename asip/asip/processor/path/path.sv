@@ -1,6 +1,6 @@
 module path #(parameter N=32)
 				 (input  logic         clock, reset,
-				  input  logic [1:0]   branch, ext_selector,
+				  input  logic [1:0]   forward_ra, forward_rb, branch, ext_selector,
 				  input  logic         rb_selector, wr_en_id, opb_sel_id,
 				  input  logic         alu_func_id, wd_sel_id, wm_en_id,
 				  input  logic [N-1:0] instruction,
@@ -15,6 +15,7 @@ module path #(parameter N=32)
 	logic [N-1:0] rdb_id, rdb_ex, rdb_mem;
 	logic [N-1:0] extended_id, extended_ex;
 	logic [N-1:0] wd_wb, rd_mem, rd_wb;
+	logic [N-1:0] operand_a, operand_b;
 	logic pc_selector;
 	logic alu_func_ex;
 	logic wr_en_ex, wr_en_mem;
@@ -55,8 +56,31 @@ module path #(parameter N=32)
 								  wd_sel_id, wm_en_id, rda_ex, rdb_ex, extended_ex,
                           ra_ex, rb_ex, rw_ex, wr_en_ex, opb_sel_ex,
 								  alu_func_ex, wd_sel_ex, wm_en_ex);
+	// Forwarding data
+	// RA
+	always_comb begin
+		case(forward_ra)
+			2'b00: operand_a = rda_ex;
+			2'b01: operand_a = alu_result_mem;
+			2'b10: operand_a = wd_wb;
+			2'b11: operand_a = 32'b0;
+			default: operand_a = 32'b0;
+		endcase
+	end
+	
+	// RB
+	always_comb begin
+		case(forward_rb)
+			2'b00: operand_b = rdb_ex;
+			2'b01: operand_b = alu_result_mem;
+			2'b10: operand_b = wd_wb;
+			2'b11: operand_b = 32'b0;
+			default: operand_b = 32'b0;
+		endcase
+	end
+
 	// Execution stage
-	ex_stage    #(N) exs (rda_ex, rdb_ex, extended_ex, alu_func_ex, opb_sel_ex,
+	ex_stage    #(N) exs (operand_a, operand_b, extended_ex, alu_func_ex, opb_sel_ex,
 	                     alu_result_ex, Z);
 	// EX/MEM Pipe
 	ex_mem_pipe #(N) exmemp (clock, reset, wr_en_ex, wd_sel_ex, wm_en_ex,

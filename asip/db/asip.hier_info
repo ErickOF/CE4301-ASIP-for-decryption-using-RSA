@@ -1,9 +1,134 @@
-|path_test
-
-
-|path_test|path:DUT
+|path
 clock => clock.IN7
 reset => reset.IN6
+forward_ra[0] => Mux1.IN3
+forward_ra[0] => Mux2.IN3
+forward_ra[0] => Mux3.IN3
+forward_ra[0] => Mux4.IN3
+forward_ra[0] => Mux5.IN3
+forward_ra[0] => Mux6.IN3
+forward_ra[0] => Mux7.IN3
+forward_ra[0] => Mux8.IN3
+forward_ra[0] => Mux9.IN3
+forward_ra[0] => Mux10.IN3
+forward_ra[0] => Mux11.IN3
+forward_ra[0] => Mux12.IN3
+forward_ra[0] => Mux13.IN3
+forward_ra[0] => Mux14.IN3
+forward_ra[0] => Mux15.IN3
+forward_ra[0] => Mux16.IN3
+forward_ra[0] => Mux17.IN3
+forward_ra[0] => Mux18.IN3
+forward_ra[0] => Mux19.IN3
+forward_ra[0] => Mux20.IN3
+forward_ra[0] => Mux21.IN3
+forward_ra[0] => Mux22.IN3
+forward_ra[0] => Mux23.IN3
+forward_ra[0] => Mux24.IN3
+forward_ra[0] => Mux25.IN3
+forward_ra[0] => Mux26.IN3
+forward_ra[0] => Mux27.IN3
+forward_ra[0] => Mux28.IN3
+forward_ra[0] => Mux29.IN3
+forward_ra[0] => Mux30.IN3
+forward_ra[0] => Mux31.IN3
+forward_ra[0] => Mux32.IN2
+forward_ra[1] => Mux1.IN2
+forward_ra[1] => Mux2.IN2
+forward_ra[1] => Mux3.IN2
+forward_ra[1] => Mux4.IN2
+forward_ra[1] => Mux5.IN2
+forward_ra[1] => Mux6.IN2
+forward_ra[1] => Mux7.IN2
+forward_ra[1] => Mux8.IN2
+forward_ra[1] => Mux9.IN2
+forward_ra[1] => Mux10.IN2
+forward_ra[1] => Mux11.IN2
+forward_ra[1] => Mux12.IN2
+forward_ra[1] => Mux13.IN2
+forward_ra[1] => Mux14.IN2
+forward_ra[1] => Mux15.IN2
+forward_ra[1] => Mux16.IN2
+forward_ra[1] => Mux17.IN2
+forward_ra[1] => Mux18.IN2
+forward_ra[1] => Mux19.IN2
+forward_ra[1] => Mux20.IN2
+forward_ra[1] => Mux21.IN2
+forward_ra[1] => Mux22.IN2
+forward_ra[1] => Mux23.IN2
+forward_ra[1] => Mux24.IN2
+forward_ra[1] => Mux25.IN2
+forward_ra[1] => Mux26.IN2
+forward_ra[1] => Mux27.IN2
+forward_ra[1] => Mux28.IN2
+forward_ra[1] => Mux29.IN2
+forward_ra[1] => Mux30.IN2
+forward_ra[1] => Mux31.IN2
+forward_ra[1] => Mux32.IN1
+forward_rb[0] => Mux33.IN3
+forward_rb[0] => Mux34.IN3
+forward_rb[0] => Mux35.IN3
+forward_rb[0] => Mux36.IN3
+forward_rb[0] => Mux37.IN3
+forward_rb[0] => Mux38.IN3
+forward_rb[0] => Mux39.IN3
+forward_rb[0] => Mux40.IN3
+forward_rb[0] => Mux41.IN3
+forward_rb[0] => Mux42.IN3
+forward_rb[0] => Mux43.IN3
+forward_rb[0] => Mux44.IN3
+forward_rb[0] => Mux45.IN3
+forward_rb[0] => Mux46.IN3
+forward_rb[0] => Mux47.IN3
+forward_rb[0] => Mux48.IN3
+forward_rb[0] => Mux49.IN3
+forward_rb[0] => Mux50.IN3
+forward_rb[0] => Mux51.IN3
+forward_rb[0] => Mux52.IN3
+forward_rb[0] => Mux53.IN3
+forward_rb[0] => Mux54.IN3
+forward_rb[0] => Mux55.IN3
+forward_rb[0] => Mux56.IN3
+forward_rb[0] => Mux57.IN3
+forward_rb[0] => Mux58.IN3
+forward_rb[0] => Mux59.IN3
+forward_rb[0] => Mux60.IN3
+forward_rb[0] => Mux61.IN3
+forward_rb[0] => Mux62.IN3
+forward_rb[0] => Mux63.IN3
+forward_rb[0] => Mux64.IN2
+forward_rb[1] => Mux33.IN2
+forward_rb[1] => Mux34.IN2
+forward_rb[1] => Mux35.IN2
+forward_rb[1] => Mux36.IN2
+forward_rb[1] => Mux37.IN2
+forward_rb[1] => Mux38.IN2
+forward_rb[1] => Mux39.IN2
+forward_rb[1] => Mux40.IN2
+forward_rb[1] => Mux41.IN2
+forward_rb[1] => Mux42.IN2
+forward_rb[1] => Mux43.IN2
+forward_rb[1] => Mux44.IN2
+forward_rb[1] => Mux45.IN2
+forward_rb[1] => Mux46.IN2
+forward_rb[1] => Mux47.IN2
+forward_rb[1] => Mux48.IN2
+forward_rb[1] => Mux49.IN2
+forward_rb[1] => Mux50.IN2
+forward_rb[1] => Mux51.IN2
+forward_rb[1] => Mux52.IN2
+forward_rb[1] => Mux53.IN2
+forward_rb[1] => Mux54.IN2
+forward_rb[1] => Mux55.IN2
+forward_rb[1] => Mux56.IN2
+forward_rb[1] => Mux57.IN2
+forward_rb[1] => Mux58.IN2
+forward_rb[1] => Mux59.IN2
+forward_rb[1] => Mux60.IN2
+forward_rb[1] => Mux61.IN2
+forward_rb[1] => Mux62.IN2
+forward_rb[1] => Mux63.IN2
+forward_rb[1] => Mux64.IN1
 branch[0] => Mux0.IN4
 branch[1] => Mux0.IN3
 ext_selector[0] => ext_selector[0].IN1
@@ -125,7 +250,7 @@ pc[30] <= if_stage:ifs.port4
 pc[31] <= if_stage:ifs.port4
 
 
-|path_test|path:DUT|if_stage:ifs
+|path|if_stage:ifs
 clk => clk.IN1
 reset => reset.IN1
 jmp_pc[0] => jmp_pc[0].IN1
@@ -195,7 +320,7 @@ pc[30] <= pc[30].DB_MAX_OUTPUT_PORT_TYPE
 pc[31] <= pc[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|if_stage:ifs|pc_ff:pc_ff_instance
+|path|if_stage:ifs|pc_ff:pc_ff_instance
 clk => next_pc[0]~reg0.CLK
 clk => next_pc[1]~reg0.CLK
 clk => next_pc[2]~reg0.CLK
@@ -326,7 +451,7 @@ next_pc[30] <= next_pc[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 next_pc[31] <= next_pc[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|if_stage:ifs|pc_mux:pc_mux_instance
+|path|if_stage:ifs|pc_mux:pc_mux_instance
 pc[0] => result.DATAB
 pc[1] => result.DATAB
 pc[2] => result.DATAB
@@ -457,7 +582,7 @@ selected_pc[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_pc[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|if_stage:ifs|adder:adder_instance
+|path|if_stage:ifs|adder:adder_instance
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -556,7 +681,7 @@ result[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|if_id_pipe:ifidp
+|path|if_id_pipe:ifidp
 clock => instr_id[31].IN0
 clock => instr_temp[0].LATCH_ENABLE
 clock => instr_temp[1].LATCH_ENABLE
@@ -689,7 +814,7 @@ instr_id[30] <= instr_id[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 instr_id[31] <= instr_id[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|id_stage:ids
+|path|id_stage:ids
 clk => clk.IN1
 reset => reset.IN1
 rb_selector => rb_selector.IN1
@@ -883,7 +1008,7 @@ extended[30] <= zero_extension:zext_instance.port2
 extended[31] <= zero_extension:zext_instance.port2
 
 
-|path_test|path:DUT|id_stage:ids|rb_mux:rb_mux_instance
+|path|id_stage:ids|rb_mux:rb_mux_instance
 rb[0] => result.DATAB
 rb[1] => result.DATAB
 rb[2] => result.DATAB
@@ -906,7 +1031,7 @@ selected_rb[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_rb[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|id_stage:ids|registers:regs_instance
+|path|id_stage:ids|registers:regs_instance
 clk => always0.IN0
 reset => rf[0][0].ACLR
 reset => rf[0][1].ACLR
@@ -3348,7 +3473,7 @@ rdb[30] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
 rdb[31] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|id_stage:ids|zero_extension:zext_instance
+|path|id_stage:ids|zero_extension:zext_instance
 value[0] => Mux11.IN2
 value[0] => Mux11.IN3
 value[1] => Mux10.IN2
@@ -3462,7 +3587,7 @@ entended[30] <= <GND>
 entended[31] <= <GND>
 
 
-|path_test|path:DUT|id_ex_pipe:idexp
+|path|id_ex_pipe:idexp
 clock => rda_ex[31].IN0
 clock => wr_en_temp.LATCH_ENABLE
 clock => opb_selector_temp.LATCH_ENABLE
@@ -3931,7 +4056,7 @@ wd_selector_ex <= wd_selector_ex$latch.DB_MAX_OUTPUT_PORT_TYPE
 wm_ex <= wm_ex$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|ex_stage:exs
+|path|ex_stage:exs
 rda[0] => rda[0].IN1
 rda[1] => rda[1].IN1
 rda[2] => rda[2].IN1
@@ -4066,7 +4191,7 @@ Z <= alu:alu_instance.port4
 C <= alu:alu_instance.port5
 
 
-|path_test|path:DUT|ex_stage:exs|opb_mux:opb_mux_instance
+|path|ex_stage:exs|opb_mux:opb_mux_instance
 rdb[0] => result.DATAB
 rdb[1] => result.DATAB
 rdb[2] => result.DATAB
@@ -4197,7 +4322,7 @@ selected_opb[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 selected_opb[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|ex_stage:exs|alu:alu_instance
+|path|ex_stage:exs|alu:alu_instance
 a[0] => Add0.IN32
 a[0] => Add1.IN64
 a[1] => Add0.IN31
@@ -4395,7 +4520,7 @@ Z <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 C <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|ex_mem_pipe:exmemp
+|path|ex_mem_pipe:exmemp
 clock => wr_en_mem.IN0
 clock => wr_en_temp.LATCH_ENABLE
 clock => wd_sel_temp.LATCH_ENABLE
@@ -4688,7 +4813,7 @@ rdb_mem[30] <= rdb_mem[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 rdb_mem[31] <= rdb_mem[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|mem_stage:mems
+|path|mem_stage:mems
 clk => clk.IN4
 write_enable => we0.DATAB
 write_enable => we1.DATAB
@@ -4904,7 +5029,7 @@ read_data[30] <= rd.DB_MAX_OUTPUT_PORT_TYPE
 read_data[31] <= rd.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|mem_stage:mems|data_memory:dmem0
+|path|mem_stage:mems|data_memory:dmem0
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5051,7 +5176,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path_test|path:DUT|mem_stage:mems|data_memory:dmem1
+|path|mem_stage:mems|data_memory:dmem1
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5198,7 +5323,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path_test|path:DUT|mem_stage:mems|data_memory:dmem2
+|path|mem_stage:mems|data_memory:dmem2
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5345,7 +5470,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path_test|path:DUT|mem_stage:mems|data_memory:dmem3
+|path|mem_stage:mems|data_memory:dmem3
 clk => memory.we_a.CLK
 clk => memory.waddr_a[15].CLK
 clk => memory.waddr_a[14].CLK
@@ -5492,7 +5617,7 @@ read_data[30] <= <GND>
 read_data[31] <= <GND>
 
 
-|path_test|path:DUT|mem_wb_pipe:memwbp
+|path|mem_wb_pipe:memwbp
 clock => wr_en_wb.IN0
 clock => wr_en_temp.LATCH_ENABLE
 clock => wd_sel_temp.LATCH_ENABLE
@@ -5781,7 +5906,7 @@ rd_wb[30] <= rd_wb[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
 rd_wb[31] <= rd_wb[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|path_test|path:DUT|wb_stage:wbs
+|path|wb_stage:wbs
 wd_selector => result.OUTPUTSELECT
 wd_selector => result.OUTPUTSELECT
 wd_selector => result.OUTPUTSELECT

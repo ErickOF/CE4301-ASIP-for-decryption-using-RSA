@@ -496,3 +496,5 @@ add wave -position end  sim:/path_test/DUT/ifs/pc
 add wave -position end  sim:/path_test/DUT/ifs/pc_plus4
 add wave -position end  sim:/path_test/DUT/ifs/pc_reg
 run 1us
+# End time: 13:12:41 on Jul 17,2020, Elapsed time: 0:04:37
+# Errors: 0, Warnings: 11
