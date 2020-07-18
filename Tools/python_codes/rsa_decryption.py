@@ -69,9 +69,9 @@ if __name__ == '__main__':
     print(len(encrypted_img))
 
     # Decrypt image
-    decrypted_img = np.array(decryption(encrypted_img, n, d), dtype=np.int).reshape(640, 480)
+    decrypted_img = np.array(decryption(encrypted_img, n, d), dtype=np.int).reshape(320, 320)
     print(decrypted_img.shape)
 
     # Show results
-    show_imgs(np.array(encrypted_img, dtype=np.int).reshape(960, 640), decrypted_img)
+    show_imgs(np.array(encrypted_img, dtype=np.int).reshape(320, 640), decrypted_img)
 
