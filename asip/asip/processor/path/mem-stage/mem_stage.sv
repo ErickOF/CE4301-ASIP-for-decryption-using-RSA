@@ -16,8 +16,8 @@
  */
  
 module mem_stage #(parameter N=32)
-                  (input  logic         clk, write_enable,        
-                   input  logic [N-1:0] address, write_data, 
+                  (input  logic         clk, write_enable,
+                   input  logic [N-1:0] address, write_data,
                    output logic [N-1:0] read_data);
 
 	// Signals

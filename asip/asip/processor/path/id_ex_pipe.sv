@@ -15,8 +15,8 @@ module id_ex_pipe #(parameter N=32)
 	logic [4:0] ra_temp, rb_temp, rw_temp;
 	logic [N-1:0] rda_temp, rdb_temp, extended_temp;
 
-	always_ff @(clock) begin
-		if (reset) begin
+	always_ff @(clock, reset) begin
+		if (reset == 1'b1) begin
 			wr_en_temp = 0;
 		   opb_selector_temp = 0;
 			alu_func_temp = 0;
