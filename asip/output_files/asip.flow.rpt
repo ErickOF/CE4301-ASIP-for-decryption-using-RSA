@@ -1,5 +1,5 @@
 Flow report for asip
-Fri Jul 17 21:24:33 2020
+Fri Jul 17 23:46:18 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Fri Jul 17 21:24:33 2020       ;
+; Flow Status                 ; Successful - Fri Jul 17 23:46:18 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; asip                                        ;
-; Top-level Entity Name       ; path_test                                   ;
+; Top-level Entity Name       ; asip                                        ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/17/2020 21:24:20 ;
+; Start date & time ; 07/17/2020 23:39:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; asip                ;
 +-------------------+---------------------+
@@ -73,19 +73,18 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 97351243532289.159504265906344         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 97351243532289.159505076705028         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; path_test   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; path_test   ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; path_test   ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; path_test                              ; asip          ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -94,8 +93,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:14     ; 1.0                     ; 4784 MB             ; 00:00:27                           ;
-; Total                  ; 00:00:14     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Elaboration ; 00:06:52     ; 1.0                     ; 4886 MB             ; 00:07:06                           ;
+; Total                  ; 00:06:52     ; --                      ; --                  ; 00:07:06                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
