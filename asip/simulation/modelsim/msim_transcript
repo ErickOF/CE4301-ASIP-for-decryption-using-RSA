@@ -1,0 +1,255 @@
+# Reading C:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do asip_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:40 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv 
+# -- Compiling module path_test
+# 
+# Top level modules:
+# 	path_test
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/mem_wb_pipe.sv 
+# -- Compiling module mem_wb_pipe
+# 
+# Top level modules:
+# 	mem_wb_pipe
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex_mem_pipe.sv 
+# -- Compiling module ex_mem_pipe
+# 
+# Top level modules:
+# 	ex_mem_pipe
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if_id_pipe.sv 
+# -- Compiling module if_id_pipe
+# 
+# Top level modules:
+# 	if_id_pipe
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id_ex_pipe.sv 
+# -- Compiling module id_ex_pipe
+# 
+# Top level modules:
+# 	id_ex_pipe
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/opb_mux.sv 
+# -- Compiling module opb_mux
+# 
+# Top level modules:
+# 	opb_mux
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/zero_extension.sv 
+# -- Compiling module zero_extension
+# 
+# Top level modules:
+# 	zero_extension
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/registers.sv 
+# -- Compiling module registers
+# 
+# Top level modules:
+# 	registers
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:41 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/rb_mux.sv 
+# -- Compiling module rb_mux
+# 
+# Top level modules:
+# 	rb_mux
+# End time: 21:24:41 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_ff.sv 
+# -- Compiling module pc_ff
+# 
+# Top level modules:
+# 	pc_ff
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/pc_mux.sv 
+# -- Compiling module pc_mux
+# 
+# Top level modules:
+# 	pc_mux
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/alu/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/wb-stage/wb_stage.sv 
+# -- Compiling module wb_stage
+# 
+# Top level modules:
+# 	wb_stage
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/if-stage/if_stage.sv 
+# -- Compiling module if_stage
+# 
+# Top level modules:
+# 	if_stage
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/id-stage/id_stage.sv 
+# -- Compiling module id_stage
+# 
+# Top level modules:
+# 	id_stage
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv 
+# -- Compiling module ex_stage
+# 
+# Top level modules:
+# 	ex_stage
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path {C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:42 on Jul 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path" C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv 
+# -- Compiling module path
+# 
+# Top level modules:
+# 	path
+# End time: 21:24:42 on Jul 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.path_test
+# vsim work.path_test 
+# Start time: 21:24:50 on Jul 17,2020
+# Loading sv_std.std
+# Loading work.path_test
+# Loading work.path
+# Loading work.if_stage
+# Loading work.pc_ff
+# Loading work.pc_mux
+# Loading work.adder
+# Loading work.if_id_pipe
+# Loading work.id_stage
+# Loading work.rb_mux
+# Loading work.registers
+# Loading work.zero_extension
+# Loading work.id_ex_pipe
+# Loading work.ex_stage
+# Loading work.opb_mux
+# Loading work.alu
+# Loading work.ex_mem_pipe
+# Loading work.mem_wb_pipe
+# Loading work.wb_stage
+# ** Warning: (vsim-3017) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(86): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /path_test/DUT/exs File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/ex-stage/ex_stage.sv
+# ** Warning: (vsim-3722) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path.sv(86): [TFMPC] - Missing connection for port 'C'.
+# ** Warning: (vsim-3839) C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv(56): Variable '/path_test/wm_en', driven via a port connection, is multiply driven. See C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /path_test File: C:/Users/erick/Documents/Git/ASIP-for-decryption-using-RSA/asip/asip/processor/path/path_test.sv
+add wave -position end  sim:/path_test/clock
+add wave -position end  sim:/path_test/reset
+add wave -position end  sim:/path_test/branch
+add wave -position end  sim:/path_test/ext_sel
+add wave -position end  sim:/path_test/forward_ra
+add wave -position end  sim:/path_test/forward_rb
+add wave -position end  sim:/path_test/rb_sel
+add wave -position end  sim:/path_test/wr_en
+add wave -position end  sim:/path_test/opb_sel
+add wave -position end  sim:/path_test/alu_func
+add wave -position end  sim:/path_test/wd_sel
+add wave -position end  sim:/path_test/wm_en
+add wave -position end  sim:/path_test/instruction
+add wave -position end  sim:/path_test/pc
+add wave -position end  sim:/path_test/rd
+add wave -position end  sim:/path_test/alu_result
+add wave -position end  sim:/path_test/rdb
+add wave -position end  sim:/path_test/opcode
+add wave -position end  sim:/path_test/func
+add wave -position end  sim:/path_test/ra_id
+add wave -position end  sim:/path_test/rb_id
+add wave -position end  sim:/path_test/rw_id
+add wave -position end  sim:/path_test/ra_ex
+add wave -position end  sim:/path_test/rb_ex
+add wave -position end  sim:/path_test/rw_ex
+add wave -position end  sim:/path_test/rw_mem
+add wave -position end  sim:/path_test/rw_wb
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erick  Hostname: DESKTOP-4PN9CM5  ProcessID: 12636
+#           Attempting to use alternate WLF file "./wlft8w4dce".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8w4dce
+run 250ns
+# End time: 21:25:26 on Jul 17,2020, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 5
