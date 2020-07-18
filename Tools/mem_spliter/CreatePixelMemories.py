@@ -4,7 +4,7 @@ name = "mem"
 pixel_per_block = 65536
 
 #Abre el archivo "0.txt" que tiene la información de la imagen 
-archivo0 = open ("0.txt", "r")
+archivo0 = open ("../src/img.txt", "r")
 
 #Leemos las líneas del txt para extraer la info necesaria
 line1_info = archivo0.readline()
