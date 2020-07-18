@@ -90,13 +90,7 @@ class Compiler:
             dump.append(compiledLine)
             hexLine = hex(int(compiledLine.replace('-', ''), 2))[2:].upper()
             hexLine = (8 - len(hexLine))*'0' + hexLine
-
-            compiledInstr = ''
-
-            for i in range(0, 8, 2):
-                compiledInstr += hexLine[i:i+2] + ' '
-
-            output.append(compiledInstr[:-1])
+            output.append(hexLine)
 
         with open('tools/.temp/compile.txt', 'w') as file:
             file.write("\n".join(output))
